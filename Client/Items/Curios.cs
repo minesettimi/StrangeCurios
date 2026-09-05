@@ -10,7 +10,7 @@ public class Curios : Item
 {
     public Curios(string id, CuriosTemplate template) : base(id, template)
     {
-        Components.Add(CurioEffectsComponent = new CurioEffectsComponent(this, template));
+        Components.Add(CurioComponent = new CurioComponent(this, template));
     }
 
     public override bool Compare(Item item)
@@ -19,5 +19,5 @@ public class Curios : Item
     }
 
     [JsonProperty("curioEffects")] [EFT.Component]
-    public readonly CurioEffectsComponent CurioEffectsComponent;
+    public readonly CurioComponent CurioComponent;
 }

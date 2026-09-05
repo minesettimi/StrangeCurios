@@ -5,7 +5,8 @@
     "overrideProperties":
     {
       "Weight": 1.5,
-      "Curse": 9.8
+      "Curse": 9.8,
+      "MaxNumberOfUsage": 1
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "newItemName": "curio_debug",
