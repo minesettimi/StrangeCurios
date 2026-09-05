@@ -10,7 +10,7 @@
 
         <Version>1.0.0</Version>
         <RootNamespace>CuriosServer</RootNamespace>
-        <AssemblyName>PowerfulCurios</AssemblyName>
+        <AssemblyName>StrangeCuriosServer</AssemblyName>
 
         <!-- The two lines below will set the output path for the binaries -->
         <OutputPath>bin\$(Configuration)\$(SolutionName)\</OutputPath>

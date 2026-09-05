@@ -8,8 +8,8 @@
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "newItemName": "curio_debug",
-    "fleaPriceRoubles": 75000,
-    "handbookPriceRoubles": 50000,
+    "fleaPriceRoubles": 175000,
+    "handbookPriceRoubles": 150000,
     "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
     "locales":
     {
@@ -18,6 +18,50 @@
         "name": "Debug Relic",
         "shortName": "Relic",
         "description": "A relic for testing the relic system."
+      }
+    }
+  },
+  "6a9c69d268c1c9442bd028b2":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "overrideProperties":
+    {
+      "Weight": 0.1
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "trinket_debug",
+    "fleaPriceRoubles": 25000,
+    "handbookPriceRoubles": 15000,
+    "handbookParentId": "6a9b96d5ef81726d8c766f45",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Debug Trinket",
+        "shortName": "Trinket",
+        "description": "A trinket for testing the curio system."
+      }
+    }
+  },
+  "6a9c69d8a9c8a818bdaef55d":
+  {
+    "itemTplToClone": "6a9ba96856754311ed20f844",
+    "overrideProperties":
+    {
+      "Weight": 0.5
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "talisman_debug",
+    "fleaPriceRoubles": 75000,
+    "handbookPriceRoubles": 50000,
+    "handbookParentId": "6a9b96dd91603a7d84c27136",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Debug Talisman",
+        "shortName": "Talisman",
+        "description": "A talisman for testing the talisman system."
       }
     }
   }

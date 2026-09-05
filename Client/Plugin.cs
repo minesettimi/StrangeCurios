@@ -4,7 +4,7 @@ using SPT.Reflection.Patching;
 
 namespace CuriosClient;
 
-[BepInPlugin("com.minesettimi.curios", "Powerful Curios and Trinkets", "1.0.0")]
+[BepInPlugin("com.minesettimi.curios", "Strange Curios", "1.0.0")]
 public class Plugin : BaseUnityPlugin
 {
     public static ManualLogSource PluginLogger = null!;

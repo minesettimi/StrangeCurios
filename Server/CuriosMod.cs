@@ -12,11 +12,12 @@ using Path = System.IO.Path;
 namespace CuriosServer.Services;
 
 [Injectable(TypePriority = OnLoadOrder.Preload + 25)]
-public class TemplateService(JsonUtil jsonUtil,
+public class CuriosMod(JsonUtil jsonUtil,
     TemplateTable templateTable,
     WTTCustomItemParentService itemParentService,
     WTTCustomItemServiceExtended itemServiceExtended,
-    ISptLogger<TemplateService> logger) : IOnLoad
+    WTTCustomLocaleService localeService,
+    ISptLogger<CuriosMod> logger) : IOnLoad
 {
     public static readonly Assembly Assembly = Assembly.GetExecutingAssembly();
     public static readonly string ModPath = Path.GetDirectoryName(Assembly.Location)!;
@@ -34,8 +35,8 @@ public class TemplateService(JsonUtil jsonUtil,
         
         templateTable.Handbook.Categories.AddRange(handbookCategories);
         
-        
         await itemParentService.CreateCustomParents(Assembly, "db/Parents");
         await itemServiceExtended.CreateCustomItems(Assembly, "db/Items");
+        await localeService.CreateCustomLocales(Assembly, "db/Locales");
     }
 }

@@ -3,18 +3,18 @@
   {
     "itemTplToClone": "5e54f62086f774219b0f1937",
     "parentId": "6a9b52c15dfaf97d11fc341e",
-    "newItemName": "temp_curio",
+    "newItemName": "temp_trinket",
     "overrideProperties":
     {
       "AnimationVariantsNumber": 0,
-      "BackgroundColor": "tracerRed",
+      "BackgroundColor": "tracerGreen",
       "CanRequireOnRagfair": false,
       "CanSellOnRagfair": true,
       "Description": "Item",
-      "ExamineExperience": 20,
-      "ExamineTime": 5,
+      "ExamineExperience": 15,
+      "ExamineTime": 1,
       "ExaminedByDefault": true,
-      "Height": 2,
+      "Height": 1,
       "InsuranceDisabled": true,
       "IsAlwaysAvailableForInsurance": false,
       "IsLockedafterEquip": false,
@@ -26,7 +26,7 @@
       "IsUnremovable": false,
       "IsUnsaleable": false,
       "ItemSound": "generic",
-      "LootExperience": 35,
+      "LootExperience": 25,
       "Name": "Item",
       "Prefab": {
         "path": "assets/content/items/spec/item_spec_lightkeeper_amulet/item_spec_lightkeeper_amulet.bundle",
@@ -48,9 +48,9 @@
     {
       "en":
       {
-        "name": "Sample Curio",
-        "shortName": "Curio",
-        "description": "Curio"
+        "name": "Sample Trinket",
+        "shortName": "Trinket",
+        "description": "Trinket"
       }
     }
   },
@@ -61,17 +61,17 @@
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "overrideProperties":
     {
-      "ExamineExperience": 15,
-      "ExamineTime": 1,
-      "ExaminedByDefault": true,
-      "Height": 1,
-      "LootExperience": 25,
+      "ExamineExperience": 20,
+      "ExamineTime": 5,
+      "ExaminedByDefault": false,
+      "Height": 2,
+      "LootExperience": 35,
       "Name": "Item",
       "Prefab": {
         "path": "assets/content/items/spec/item_spec_lightkeeper_amulet/item_spec_lightkeeper_amulet.bundle",
         "rcid": ""
       },
-      "Weight": 0.25,
+      "Weight": 0.5,
       "Width": 1
     },
     "registerInHandbook": false,
@@ -81,7 +81,7 @@
       "en":
       {
         "name": "Sample Talisman",
-        "shortName": "Talism",
+        "shortName": "Talisman",
         "description": "Talisman"
       }
     }
@@ -93,9 +93,11 @@
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "overrideProperties":
     {
-      "CanSellOnRagfair": true,
+      "BackgroundColor": "tracerRed",
+      "CanSellOnRagfair": false,
       "ExamineExperience": 25,
       "ExamineTime": 10,
+      "ExaminedByDefault": false,
       "Height": 2,
       "LootExperience": 50,
       "Prefab": {

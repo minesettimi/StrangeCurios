@@ -9,21 +9,21 @@
   {
     "Id": "6a9b96d5ef81726d8c766f45",
     "ParentId": "6a9b96bb8ae5dd2024416c0e",
-    "Icon": "/files/handbook/",
+    "Icon": "/files/handbook/EfT_UI_Icons_SmallTrophy.png",
     "Color": "",
     "Order": "1"
   },
   {
     "Id": "6a9b96dd91603a7d84c27136",
     "ParentId": "6a9b96bb8ae5dd2024416c0e",
-    "Icon": "/files/handbook/",
+    "Icon": "/files/handbook/EfT_UI_Icons_SmallTrophy.png",
     "Color": "",
     "Order": "2"
   },
   {
     "Id": "6a9b96e1a54f9affdaaa22b4",
     "ParentId": "6a9b96bb8ae5dd2024416c0e",
-    "Icon": "/files/handbook/",
+    "Icon": "/files/handbook/EfT_UI_Icons_SmallTrophy.png",
     "Color": "",
     "Order": "3"
   }

@@ -9,7 +9,7 @@ public static class Metadata
     public record ModMetadata : IModMetadata
     {
         public string ModGuid { get; init; } = "com.minesettimi.curios";
-        public string Name { get; init; } = "Powerful Curios and Trinkers";
+        public string Name { get; init; } = "Strange Curios";
         public string Author { get; init; } = "minesettimi";
         public List<string>? Contributors { get; init; }
 

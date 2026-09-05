@@ -10,7 +10,7 @@
         <Version>1.0.0</Version>
         <RootNamespace>CuriosClient</RootNamespace>
 
-        <AssemblyName>PowerfulCuriosClient</AssemblyName>
+        <AssemblyName>StrangeCuriosClient</AssemblyName>
         <OutputPath>bin\$(Configuration)\$(SolutionName)\</OutputPath>
         <GamePath>$(SolutionDir)../../BepInEx/plugins/$(SolutionName)/</GamePath>
         <RewardPath>$(SolutionDir)release/BepInEx/plugins/$(SolutionName)/</RewardPath>
