@@ -1,22 +1,23 @@
 using System.Collections.Generic;
 using EFT;
+using EFT.HealthSystem;
 using EFT.InventoryLogic;
+using JsonType;
 using Newtonsoft.Json;
 
 namespace CuriosClient.Models;
 
 public class CuriosTemplate : ItemTemplate
 {
-    [JsonProperty("curse")] public float Curse { get; set; }
-    [JsonProperty("energy")] public float EnergyChange { get; set; }
-    [JsonProperty("hydration")] public float HydrationChange { get; set; }
-    [JsonProperty("heal")] public float HealChange { get; set; }
-    [JsonProperty("damageReduction")] public float DamageReduction { get; set; }
-    [JsonProperty("penResistance")] public int PenResistance { get; set; }
-    [JsonProperty("equipmentRepair")] public float EquipmentRepair { get; set; }
-    [JsonProperty("equipmentTargets")] public List<EquipmentSlot> EquipmentTargets { get; set; } = [];
-    [JsonProperty("specialEffect")] public CurioSpecialEffects SpecialEffect { get; set; } = CurioSpecialEffects.None;
-    [JsonProperty("skillIncreases")] public Dictionary<ESkillId, int>? SkillIncreases;
+    [JsonProperty("Curse")] public float Curse { get; set; } = 1.0f;
+    [JsonProperty("HealthEffects")] public Dictionary<EHealthFactorType, HealthEffectSpecification> HealthEffects = [];
+    [JsonProperty("DamageEffects")] public List<EDamageEffectType> DamageEffects = [];
+    [JsonProperty("DamageReduction")] public float? DamageReduction { get; set; }
+    [JsonProperty("PenResistance")] public int? PenResistance { get; set; }
+    [JsonProperty("EquipmentRepair")] public float? EquipmentRepair { get; set; }
+    [JsonProperty("EquipmentTargets")] public List<EquipmentSlot>? EquipmentTargets { get; set; } = [];
+    [JsonProperty("SpecialEffect")] public CurioSpecialEffects? SpecialEffect { get; set; } = CurioSpecialEffects.None;
+    [JsonProperty("SkillIncreases")] public Dictionary<ESkillId, int>? SkillIncreases;
 }
 
 public enum CurioSpecialEffects
@@ -26,4 +27,13 @@ public enum CurioSpecialEffects
     ExfilTp,
     DoorBreaker,
     Reflect
+}
+
+public enum CurioAttributes
+{
+    Curse,
+    DamageReduction,
+    PenResistance,
+    EquipmentRepair,
+    SpecialEffect
 }

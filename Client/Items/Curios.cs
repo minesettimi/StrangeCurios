@@ -1,4 +1,6 @@
+using CuriosClient.Components;
 using EFT.InventoryLogic;
+using Newtonsoft.Json;
 using WTTClientCommonLib.Attributes;
 
 namespace CuriosClient.Models;
@@ -8,5 +10,14 @@ public class Curios : Item
 {
     public Curios(string id, CuriosTemplate template) : base(id, template)
     {
+        Components.Add(CurioEffectsComponent = new CurioEffectsComponent(this, template));
     }
+
+    public override bool Compare(Item item)
+    {
+        return base.Compare(item) && item is Curios;
+    }
+
+    [JsonProperty("curioEffects")] [EFT.Component]
+    public readonly CurioEffectsComponent CurioEffectsComponent;
 }

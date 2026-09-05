@@ -4,7 +4,8 @@
     "itemTplToClone": "6a9ba9689be966b80551f5f2",
     "overrideProperties":
     {
-      "Weight": 1.5
+      "Weight": 1.5,
+      "Curse": 9.8
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "newItemName": "curio_debug",
@@ -26,7 +27,8 @@
     "itemTplToClone": "6a9ba968f28685d280db910c",
     "overrideProperties":
     {
-      "Weight": 0.1
+      "Weight": 0.1,
+      "Curse": 3
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "newItemName": "trinket_debug",
