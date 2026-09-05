@@ -1,0 +1,247 @@
+{
+  "6a9b52c15dfaf97d11fc341e":
+  {
+    "_id": "6a9b52c15dfaf97d11fc341e",
+    "_name": "Curios",
+    "_parent": "54009119af1c881c07000029",
+    "_props": 
+    {
+      "curse": 1.0,
+      "energy": 0.0,
+      "hydration": 0.0,
+      "heal": 0.0,
+      "damageReduction": 0.0,
+      "penResistance": 0,
+      "equipmentRepair": 0.0,
+      "equipmentTargets": [],
+      "specialEffects": "None",
+      "skillIncreases": {}
+    },
+    "_type": "Node"
+  },
+  "6a9b5350da1a4de5c2618943":
+  {
+    "_id": "6a9b5350da1a4de5c2618943",
+    "_name": "Talismans",
+    "_parent": "6a9b52c15dfaf97d11fc341e",
+    "_props": {},
+    "_type": "Node"
+  },
+  "6a9b5350369c93965bf5dc53":
+  {
+    "_id": "6a9b5350369c93965bf5dc53",
+    "_name": "Trinkets",
+    "_parent": "6a9b52c15dfaf97d11fc341e",
+    "_props": {},
+    "_type": "Node"
+  },
+  "6a9b535026509ac130d9a26e":
+  {
+    "_id": "6a9b535026509ac130d9a26e",
+    "_name": "Relics",
+    "_parent": "6a9b52c15dfaf97d11fc341e",
+    "_props": {},
+    "_type": "Node"
+  },
+  "6a9ba968f28685d280db910c":
+  {
+    "_id": "6a9ba968f28685d280db910c",
+    "_name": "SampleCurios",
+    "_parent": "6a9b52c15dfaf97d11fc341e",
+    "_props": 
+    {
+      "AnimationVariantsNumber": 0,
+      "BackgroundColor": "black",
+      "CanRequireOnRagfair": false,
+      "CanSellOnRagfair": true,
+      "ConflictingItems": [],
+      "Description": "Item",
+      "DiscardLimit": -1,
+      "DiscardingBlock": false,
+      "DropSoundType": "None",
+      "ExamineExperience": 20,
+      "ExamineTime": 5,
+      "ExaminedByDefault": true,
+      "ExtraSizeDown": 0,
+      "ExtraSizeForceAdd": false,
+      "ExtraSizeLeft": 0,
+      "ExtraSizeRight": 0,
+      "ExtraSizeUp": 0,
+      "Height": 2,
+      "HideEntrails": false,
+      "InsuranceDisabled": true,
+      "IsAlwaysAvailableForInsurance": false,
+      "IsLockedafterEquip": false,
+      "IsSecretExitRequirement": false,
+      "IsSpecialSlotOnly": false,
+      "IsUnbuyable": false,
+      "IsUndiscardable": false,
+      "IsUngivable": false,
+      "IsUnremovable": false,
+      "IsUnsaleable": false,
+      "ItemSound": "generic",
+      "LeftHandItem": false,
+      "LootExperience": 35,
+      "MergesWithChildren": false,
+      "Name": "Item",
+      "NotShownInSlot": false,
+      "Prefab": {
+        "path": "assets/content/items/spec/item_spec_lightkeeper_amulet/item_spec_lightkeeper_amulet.bundle",
+        "rcid": ""
+      },
+      "QuestItem": false,
+      "QuestStashMaxCount": 0,
+      "RagFairCommissionModifier": 1,
+      "RarityPvE": "Superrare",
+      "RepairCost": 0,
+      "RepairSpeed": 0,
+      "ShortName": "Item",
+      "StackMaxSize": 1,
+      "StackObjectsCount": 1,
+      "Unlootable": false,
+      "UnlootableFromSide": [],
+      "UnlootableFromSlot": "FirstPrimaryWeapon",
+      "UsePrefab": {
+        "path": "",
+        "rcid": ""
+      },
+      "Weight": 0.25,
+      "Width": 1
+    },
+    "_type": "Item"
+  },
+  "6a9ba96856754311ed20f844":
+  {
+    "_id": "6a9ba96856754311ed20f844",
+    "_name": "SampleTalisman",
+    "_parent": "6a9b5350369c93965bf5dc53",
+    "_props": 
+    {
+      "AnimationVariantsNumber": 0,
+      "BackgroundColor": "black",
+      "CanRequireOnRagfair": false,
+      "CanSellOnRagfair": true,
+      "ConflictingItems": [],
+      "Description": "Item",
+      "DiscardLimit": -1,
+      "DiscardingBlock": false,
+      "DropSoundType": "None",
+      "ExamineExperience": 15,
+      "ExamineTime": 1,
+      "ExaminedByDefault": true,
+      "ExtraSizeDown": 0,
+      "ExtraSizeForceAdd": false,
+      "ExtraSizeLeft": 0,
+      "ExtraSizeRight": 0,
+      "ExtraSizeUp": 0,
+      "Height": 1,
+      "HideEntrails": false,
+      "InsuranceDisabled": true,
+      "IsAlwaysAvailableForInsurance": false,
+      "IsLockedafterEquip": false,
+      "IsSecretExitRequirement": false,
+      "IsSpecialSlotOnly": false,
+      "IsUnbuyable": false,
+      "IsUndiscardable": false,
+      "IsUngivable": false,
+      "IsUnremovable": false,
+      "IsUnsaleable": false,
+      "ItemSound": "generic",
+      "LeftHandItem": false,
+      "LootExperience": 25,
+      "MergesWithChildren": false,
+      "Name": "Item",
+      "NotShownInSlot": false,
+      "Prefab": {
+        "path": "assets/content/items/spec/item_spec_lightkeeper_amulet/item_spec_lightkeeper_amulet.bundle",
+        "rcid": ""
+      },
+      "QuestItem": false,
+      "QuestStashMaxCount": 0,
+      "RagFairCommissionModifier": 1,
+      "RarityPvE": "Superrare",
+      "RepairCost": 0,
+      "RepairSpeed": 0,
+      "ShortName": "Item",
+      "StackMaxSize": 1,
+      "StackObjectsCount": 1,
+      "Unlootable": false,
+      "UnlootableFromSide": [],
+      "UnlootableFromSlot": "FirstPrimaryWeapon",
+      "UsePrefab": {
+        "path": "",
+        "rcid": ""
+      },
+      "Weight": 0.25,
+      "Width": 1
+    },
+    "_type": "Item"
+  },
+  "6a9ba9689be966b80551f5f2":
+  {
+    "_id": "6a9ba9689be966b80551f5f2",
+    "_name": "SampleRelics",
+    "_parent": "6a9b535026509ac130d9a26e",
+    "_props": 
+    {
+      "AnimationVariantsNumber": 0,
+      "BackgroundColor": "black",
+      "CanRequireOnRagfair": false,
+      "CanSellOnRagfair": true,
+      "ConflictingItems": [],
+      "Description": "Item",
+      "DiscardLimit": -1,
+      "DiscardingBlock": false,
+      "DropSoundType": "None",
+      "ExamineExperience": 25,
+      "ExamineTime": 10,
+      "ExaminedByDefault": false,
+      "ExtraSizeDown": 0,
+      "ExtraSizeForceAdd": false,
+      "ExtraSizeLeft": 0,
+      "ExtraSizeRight": 0,
+      "ExtraSizeUp": 0,
+      "Height": 2,
+      "HideEntrails": false,
+      "InsuranceDisabled": true,
+      "IsAlwaysAvailableForInsurance": false,
+      "IsLockedafterEquip": false,
+      "IsSecretExitRequirement": false,
+      "IsSpecialSlotOnly": false,
+      "IsUnbuyable": false,
+      "IsUndiscardable": false,
+      "IsUngivable": false,
+      "IsUnremovable": false,
+      "IsUnsaleable": false,
+      "ItemSound": "generic",
+      "LeftHandItem": false,
+      "LootExperience": 50,
+      "MergesWithChildren": false,
+      "Name": "Item",
+      "NotShownInSlot": false,
+      "Prefab": {
+        "path": "assets/content/items/spec/item_spec_lightkeeper_amulet/item_spec_lightkeeper_amulet.bundle",
+        "rcid": ""
+      },
+      "QuestItem": false,
+      "QuestStashMaxCount": 0,
+      "RagFairCommissionModifier": 1,
+      "RarityPvE": "Superrare",
+      "RepairCost": 0,
+      "RepairSpeed": 0,
+      "ShortName": "Item",
+      "StackMaxSize": 1,
+      "StackObjectsCount": 1,
+      "Unlootable": false,
+      "UnlootableFromSide": [],
+      "UnlootableFromSlot": "FirstPrimaryWeapon",
+      "UsePrefab": {
+        "path": "",
+        "rcid": ""
+      },
+      "Weight": 1,
+      "Width": 2
+    },
+    "_type": "Item"
+  }
+}
