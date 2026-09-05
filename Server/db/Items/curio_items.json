@@ -1,0 +1,24 @@
+{
+  "6a9b9bc6621cfc60fce5e612": 
+  {
+    "itemTplToClone": "6a9ba9689be966b80551f5f2",
+    "overrideProperties":
+    {
+      "Weight": 1.5
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "curio_debug",
+    "fleaPriceRoubles": 75000,
+    "handbookPriceRoubles": 50000,
+    "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Debug Relic",
+        "shortName": "Relic",
+        "description": "A relic for testing the relic system."
+      }
+    }
+  }
+}

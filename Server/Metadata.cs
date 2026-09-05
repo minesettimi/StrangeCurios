@@ -14,11 +14,14 @@ public static class Metadata
         public List<string>? Contributors { get; init; }
 
         public Version Version { get; init; } = new(1, 0, 0);
-        public Range SptVersion { get; init; } = new("~4.1.4");
+        public Range SptVersion { get; init; } = new("~4.1.5");
 
         public bool HasPrepatcher { get; init; } = false;
         public List<string>? Incompatibilities { get; init; }
-        public Dictionary<string, Range>? ModDependencies { get; init; }
+        public Dictionary<string, Range>? ModDependencies { get; init; } = new()
+        {
+            { "com.wtt.commonlib", new Range("^3.0.6") }
+        };
 
         public string? Url { get; init; } = "https://github.com/minesettimi/TushonkaTerritories";
         public string License { get; init; } = "MIT";

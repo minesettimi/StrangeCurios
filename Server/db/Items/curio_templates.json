@@ -1,0 +1,121 @@
+{
+  "6a9ba968f28685d280db910c":
+  {
+    "itemTplToClone": "5e54f62086f774219b0f1937",
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "temp_curio",
+    "overrideProperties":
+    {
+      "AnimationVariantsNumber": 0,
+      "BackgroundColor": "tracerRed",
+      "CanRequireOnRagfair": false,
+      "CanSellOnRagfair": true,
+      "Description": "Item",
+      "ExamineExperience": 20,
+      "ExamineTime": 5,
+      "ExaminedByDefault": true,
+      "Height": 2,
+      "InsuranceDisabled": true,
+      "IsAlwaysAvailableForInsurance": false,
+      "IsLockedafterEquip": false,
+      "IsSecretExitRequirement": false,
+      "IsSpecialSlotOnly": false,
+      "IsUnbuyable": false,
+      "IsUndiscardable": false,
+      "IsUngivable": false,
+      "IsUnremovable": false,
+      "IsUnsaleable": false,
+      "ItemSound": "generic",
+      "LootExperience": 35,
+      "Name": "Item",
+      "Prefab": {
+        "path": "assets/content/items/spec/item_spec_lightkeeper_amulet/item_spec_lightkeeper_amulet.bundle",
+        "rcid": ""
+      },
+      "RagFairCommissionModifier": 1,
+      "RarityPvE": "Superrare",
+      "ShortName": "Item",
+      "StackMaxSize": 1,
+      "StackObjectsCount": 1,
+      "Unlootable": false,
+      "UnlootableFromSide": [],
+      "Weight": 0.25,
+      "Width": 1
+    },
+    "registerInHandbook": false,
+    "registerInFleaPrices": false,
+    "locales":
+    {
+      "en":
+      {
+        "name": "Sample Curio",
+        "shortName": "Curio",
+        "description": "Curio"
+      }
+    }
+  },
+  "6a9ba96856754311ed20f844":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "newItemName": "temp_talisman",
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "overrideProperties":
+    {
+      "ExamineExperience": 15,
+      "ExamineTime": 1,
+      "ExaminedByDefault": true,
+      "Height": 1,
+      "LootExperience": 25,
+      "Name": "Item",
+      "Prefab": {
+        "path": "assets/content/items/spec/item_spec_lightkeeper_amulet/item_spec_lightkeeper_amulet.bundle",
+        "rcid": ""
+      },
+      "Weight": 0.25,
+      "Width": 1
+    },
+    "registerInHandbook": false,
+    "registerInFleaPrices": false,
+    "locales":
+    {
+      "en":
+      {
+        "name": "Sample Talisman",
+        "shortName": "Talism",
+        "description": "Talisman"
+      }
+    }
+  },
+  "6a9ba9689be966b80551f5f2":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "newItemName": "temp_relic",
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "overrideProperties":
+    {
+      "CanSellOnRagfair": true,
+      "ExamineExperience": 25,
+      "ExamineTime": 10,
+      "Height": 2,
+      "LootExperience": 50,
+      "Prefab": {
+        "path": "assets/content/items/spec/item_spec_lightkeeper_amulet/item_spec_lightkeeper_amulet.bundle",
+        "rcid": ""
+      },
+      "RarityPvE": "Superrare",
+      "Weight": 1,
+      "Width": 2
+    },
+    "registerInHandbook": false,
+    "registerInFleaPrices": false,
+    "locales":
+    {
+      "en":
+      {
+        "name": "Sample Relic",
+        "shortName": "Relic",
+        "description": "Relic"
+      }
+    }
+  }
+}

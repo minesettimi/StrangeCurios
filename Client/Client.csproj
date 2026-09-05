@@ -11,7 +11,7 @@
         <RootNamespace>CuriosClient</RootNamespace>
 
         <AssemblyName>PowerfulCuriosClient</AssemblyName>
-        <OutputPath>bin\$(Configuration)\$(SolutionName)\$(AssemblyName)\</OutputPath>
+        <OutputPath>bin\$(Configuration)\$(SolutionName)\</OutputPath>
         <GamePath>$(SolutionDir)../../BepInEx/plugins/$(SolutionName)/</GamePath>
         <RewardPath>$(SolutionDir)release/BepInEx/plugins/$(SolutionName)/</RewardPath>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -31,6 +31,7 @@
         <Reference Include="spt-common" HintPath="..\..\..\BepInEx\plugins\spt\spt-common.dll" />
         <Reference Include="spt-custom" HintPath="..\..\..\BepInEx\plugins\spt\spt-custom.dll" />
         <Reference Include="spt-reflection" HintPath="..\..\..\BepInEx\plugins\spt\spt-reflection.dll" />
+        <Reference Include="WTT-ClientCommonLib" HintPath="..\..\..\BepInEx\plugins\WTT-ClientCommonLib\WTT-ClientCommonLib.dll" />
         <Reference Include="Assembly-CSharp" HintPath="..\..\..\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll" />
         <Reference Include="BepInEx" HintPath="..\..\..\BepInEx\core\BepInEx.dll" />
         <Reference Include="Comfort" HintPath="..\..\..\EscapeFromTarkov_Data\Managed\Comfort.dll" />
@@ -46,10 +47,6 @@
         <Reference Include="UnityEngine.TextRenderingModule" HintPath="..\..\..\EscapeFromTarkov_Data\Managed\UnityEngine.TextRenderingModule.dll" />
         <Reference Include="UnityEngine.UI" HintPath="..\..\..\EscapeFromTarkov_Data\Managed\UnityEngine.UI.dll" />
         <Reference Include="UnityEngine.UIModule" HintPath="..\..\..\EscapeFromTarkov_Data\Managed\UnityEngine.UIModule.dll" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Patches\" />
     </ItemGroup>
 
 </Project>

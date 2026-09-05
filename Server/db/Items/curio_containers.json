@@ -1,5 +1,5 @@
-[
-  {
+{
+  "6a9b56cad5853c9309c78fbf": {
     "itemTplToClone": "59fafd4b86f7745ca07e1232",
     "overrideProperties":
     {
@@ -42,44 +42,21 @@
       ]
     },
     "parentId": "5795f317245977243854e041",
-    "newId": "6a9b56cad5853c9309c78fbf",
     "newItemName": "item_container_curio",
     "fleaPriceRoubles": 0,
     "handbookPriceRoubles": 324000,
     "handbookParentId": "5b5f6fa186f77409407a7eb7",
     "addToFleaPriceDb": false,
     "addToWeaponShelf": false,
+    "addtoSecureFilters": true,
     "locales": 
     {
       "en": 
       {
         "name": "Curio Loop",
-        "shortName": "C.Loop",
+        "shortName": "CurioLoop",
         "description": "A loop of rope enchanted to hold extra curios while withstanding their curse."
       }
     }
-  },
-  {
-    "itemTplToClone": "6a9ba9689be966b80551f5f2",
-    "overrideProperties":
-    {
-      "Weight": 0.5
-    },
-    "parentId": "6a9b535026509ac130d9a26e",
-    "newId": "6a9b9bc6621cfc60fce5e612",
-    "newItemName": "curio_debug",
-    "fleaPriceRoubles": 75000,
-    "handbookPriceRoubles": 50000,
-    "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
-    "addToWeaponShelf": false,
-    "locales":
-    {
-      "en":
-      {
-        "name": "Debug Relic",
-        "shortName": "Relic",
-        "description": "A relic for testing the relic system."
-      }
-    }
   }
-]
+}
