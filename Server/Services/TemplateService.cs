@@ -26,56 +26,31 @@ public class TemplateService(JsonUtil jsonUtil,
     
     public async Task OnLoadAsync(CancellationToken cancellationToken)
     {
-        // Dictionary<MongoId, TemplateItem>? baseItems =
-        //     await jsonUtil.DeserializeFromFileAsync<Dictionary<MongoId, TemplateItem>>(
-        //         Path.Join(DataPath, "baseItems.json"), cancellationToken);
-        //
-        // if (baseItems == null)
-        // {
-        //     throw new Exception("[Curios] Failed to load baseItems.json!");
-        // }
-        //
-        //
-        //
-        // foreach ((MongoId id, TemplateItem item) in baseItems)
-        // {
-        //     templateTable.Items.Add(id, item);
-        //     itemBaseClassService.AddItemToCache(id);
-        // }
-
+        Dictionary<MongoId, CurioTemplateItem>? baseItems =
+            await jsonUtil.DeserializeFromFileAsync<Dictionary<MongoId, CurioTemplateItem>>(
+                Path.Join(DataPath, "baseItems.json"), cancellationToken);
         
+        if (baseItems == null)
+        {
+            throw new Exception("[Curios] Failed to load baseItems.json!");
+        }
+
         templateTable.Items["6a9b52c15dfaf97d11fc341e"] = new TemplateItem()
         {
             Id = "6a9b52c15dfaf97d11fc341e",
             Name = "Curios",
             Parent = "54009119af1c881c07000029",
-            Properties = new CuriosTemplateProperties()
+            Properties = new CuriosTemplateProperties(),
+            Type = "Node"
         };
         
-        templateTable.Items["6a9b5350da1a4de5c2618943"] = new TemplateItem()
+        foreach ((MongoId id, CurioTemplateItem item) in baseItems)
         {
-            Id = "6a9b5350da1a4de5c2618943",
-            Name = "Talismans",
-            Parent = "6a9b52c15dfaf97d11fc341e",
-            Properties = new CuriosTemplateProperties()
-        };
-        
-        templateTable.Items["6a9b5350369c93965bf5dc53"] = new TemplateItem()
-        {
-            Id = "6a9b5350369c93965bf5dc53",
-            Name = "Trinkets",
-            Parent = "6a9b52c15dfaf97d11fc341e",
-            Properties = new CuriosTemplateProperties()
-        };
-        
-        templateTable.Items["6a9b535026509ac130d9a26e"] = new TemplateItem()
-        {
-            Id = "6a9b535026509ac130d9a26e",
-            Name = "Relics",
-            Parent = "6a9b52c15dfaf97d11fc341e",
-            Properties = new CuriosTemplateProperties()
-        };
-        
+            item.Properties = item.CustomProperties;
+            
+            templateTable.Items.TryAdd(id, item);
+            itemBaseClassService.AddItemToCache(id);
+        }
 
         List<HandbookCategory>? handbookCategories = await jsonUtil.DeserializeFromFileAsync<List<HandbookCategory>>(
             Path.Join(DataPath, "handbook.json"), cancellationToken);

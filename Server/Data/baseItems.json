@@ -4,43 +4,7 @@
     "_id": "6a9b52c15dfaf97d11fc341e",
     "_name": "Curios",
     "_parent": "54009119af1c881c07000029",
-    "_props": 
-    {
-      "curse": 1.0,
-      "energy": 0.0,
-      "hydration": 0.0,
-      "heal": 0.0,
-      "damageReduction": 0.0,
-      "penResistance": 0,
-      "equipmentRepair": 0.0,
-      "equipmentTargets": [],
-      "specialEffects": "None",
-      "skillIncreases": {}
-    },
-    "_type": "Node"
-  },
-  "6a9b5350da1a4de5c2618943":
-  {
-    "_id": "6a9b5350da1a4de5c2618943",
-    "_name": "Talismans",
-    "_parent": "6a9b52c15dfaf97d11fc341e",
-    "_props": {},
-    "_type": "Node"
-  },
-  "6a9b5350369c93965bf5dc53":
-  {
-    "_id": "6a9b5350369c93965bf5dc53",
-    "_name": "Trinkets",
-    "_parent": "6a9b52c15dfaf97d11fc341e",
-    "_props": {},
-    "_type": "Node"
-  },
-  "6a9b535026509ac130d9a26e":
-  {
-    "_id": "6a9b535026509ac130d9a26e",
-    "_name": "Relics",
-    "_parent": "6a9b52c15dfaf97d11fc341e",
-    "_props": {},
+    "_customProps": {},
     "_type": "Node"
   },
   "6a9ba968f28685d280db910c":
@@ -48,7 +12,7 @@
     "_id": "6a9ba968f28685d280db910c",
     "_name": "SampleCurios",
     "_parent": "6a9b52c15dfaf97d11fc341e",
-    "_props": 
+    "_customProps": 
     {
       "AnimationVariantsNumber": 0,
       "BackgroundColor": "black",
@@ -114,8 +78,8 @@
   {
     "_id": "6a9ba96856754311ed20f844",
     "_name": "SampleTalisman",
-    "_parent": "6a9b5350369c93965bf5dc53",
-    "_props": 
+    "_parent": "6a9b52c15dfaf97d11fc341e",
+    "_customProps": 
     {
       "AnimationVariantsNumber": 0,
       "BackgroundColor": "black",
@@ -181,8 +145,8 @@
   {
     "_id": "6a9ba9689be966b80551f5f2",
     "_name": "SampleRelics",
-    "_parent": "6a9b535026509ac130d9a26e",
-    "_props": 
+    "_parent": "6a9b52c15dfaf97d11fc341e",
+    "_customProps": 
     {
       "AnimationVariantsNumber": 0,
       "BackgroundColor": "black",
