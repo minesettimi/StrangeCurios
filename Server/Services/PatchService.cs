@@ -12,7 +12,7 @@ public class PatchService(ClientEnumDefinitions clientEnumDefinitions) : IOnLoad
         clientEnumDefinitions.Add("com.minesettimi.curios",
         new EnumEntryDefinition
         {
-            EnumType = "EFT.EItemType",
+            EnumType = "EItemType",
             ConstantName = "Curios",
             ConstantValue = 20
         });
