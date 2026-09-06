@@ -7,5 +7,5 @@ namespace CuriosClient.System;
 public static class CurioManager
 {
     //entries are deleted if the inventory controller is gone
-    public static ConditionalWeakTable<InventoryController, CurioController> InvControllerToCurio = new();
+    public static readonly ConditionalWeakTable<InventoryController, CurioController> InvControllerCurioTable = new();
 }

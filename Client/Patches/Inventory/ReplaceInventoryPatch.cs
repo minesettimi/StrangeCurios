@@ -17,7 +17,7 @@ public class ReplaceInventoryPatch : ModulePatch
     [PatchPrefix]
     public static void Prefix(InventoryController __instance, EFT.InventoryLogic.Inventory newInventory)
     {
-        if (!CurioManager.InvControllerToCurio.TryGetValue(__instance, out CurioController curioController))
+        if (!CurioManager.InvControllerCurioTable.TryGetValue(__instance, out CurioController curioController))
             return;
 
         curioController.Inventory = newInventory;
