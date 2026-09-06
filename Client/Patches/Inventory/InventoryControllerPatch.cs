@@ -1,6 +1,5 @@
 using System.Reflection;
 using CuriosClient.System;
-using EFT;
 using EFT.InventoryLogic;
 using HarmonyLib;
 using SPT.Reflection.Patching;

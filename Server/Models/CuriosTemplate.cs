@@ -1,7 +1,6 @@
 using System.Text.Json.Serialization;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Enums;
-using SPTarkov.Server.Core.Utils.Json.Converters;
 
 namespace CuriosServer.Models;
 

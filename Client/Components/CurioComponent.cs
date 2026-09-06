@@ -1,9 +1,7 @@
 using System.Collections.Generic;
 using CuriosClient.Models;
 using EFT;
-using EFT.HealthSystem;
 using EFT.InventoryLogic;
-using JsonType;
 
 namespace CuriosClient.Components;
 

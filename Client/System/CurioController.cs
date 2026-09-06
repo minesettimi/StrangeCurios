@@ -1,6 +1,5 @@
 using System;
 using Diz.Binding;
-using EFT;
 using EFT.InventoryLogic;
 
 namespace CuriosClient.System;

@@ -1,4 +1,3 @@
-using System;
 using BepInEx;
 using BepInEx.Logging;
 using CuriosClient.Models;

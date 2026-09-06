@@ -1,5 +1,4 @@
 using System.Reflection;
-using CuriosServer.Models;
 using SPTarkov.Common.Models.Logging;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Reflection.Patching;

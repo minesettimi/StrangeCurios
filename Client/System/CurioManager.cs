@@ -1,5 +1,4 @@
 using System.Runtime.CompilerServices;
-using EFT;
 using EFT.InventoryLogic;
 
 namespace CuriosClient.System;
