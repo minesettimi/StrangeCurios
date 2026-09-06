@@ -4,7 +4,9 @@ using SPTarkov.Common.Models.Logging;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Reflection.Patching;
 using SPTarkov.Server.Core.DI;
+using SPTarkov.Server.Core.Models.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
+using SPTarkov.Server.Core.Models.Spt.Config;
 using SPTarkov.Server.Core.Models.Spt.Tables;
 using SPTarkov.Server.Core.Utils;
 using WTTServerCommonLib.Services;
@@ -19,6 +21,7 @@ public class CuriosMod(JsonUtil jsonUtil,
     WTTCustomItemServiceExtended itemServiceExtended,
     WTTCustomLocaleService localeService,
     IEnumerable<IRuntimePatch> patches,
+    RagfairConfig ragfairConfig,
     ISptLogger<CuriosMod> logger) : IOnLoad
 {
     public static readonly Assembly Assembly = Assembly.GetExecutingAssembly();
@@ -36,6 +39,8 @@ public class CuriosMod(JsonUtil jsonUtil,
         }
         
         templateTable.Handbook.Categories.AddRange(handbookCategories);
+
+        ragfairConfig.Dynamic.ShowAsSingleStack.Add(new MongoId("6a9b52c15dfaf97d11fc341e"));
      
         foreach (IRuntimePatch patch in patches)
             patch.Enable();
