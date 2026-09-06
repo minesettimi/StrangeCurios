@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using CuriosClient.Components;
 using CuriosClient.Models;
 using Diz.Binding;
+using Diz.LanguageExtensions;
 using EFT;
 using EFT.InventoryLogic;
 
@@ -19,7 +20,7 @@ public class CurioController
     public float TotalDamageReduction = 0f;
     public int HighestPenResistance = 0;
     public Dictionary<float, List<EquipmentSlot>> EquipmentRepair = [];
-    public Dictionary<MongoID, CurioSpecialEffects> ItemSpecialEffects = [];
+    public Dictionary<CurioSpecialEffects, CurioComponent> ItemSpecialEffects = [];
     public Dictionary<ESkillId, int> SkillAdjustments = [];
 
     public CurioController(InventoryController inventoryController, IInventoryProfileInfo profile)
@@ -53,13 +54,10 @@ public class CurioController
         ItemSpecialEffects.Clear();
         SkillAdjustments.Clear();
 
-        IEnumerable<Item> itemsToScan = Inventory.GetPlayerItems(EPlayerItems.Equipment);
+        IEnumerable<CurioComponent> curiosToScan = Inventory.Equipment.GetItemComponentsInChildren<CurioComponent>(false);
         
-        foreach (Item item in itemsToScan)
+        foreach (CurioComponent curioComponent in curiosToScan)
         {
-            if (!item.TryGetItemComponent(out CurioComponent curioComponent))
-                continue;
-
             CuriosTemplate template = curioComponent.Template;
             
             TotalCurse += template.Curse;
@@ -78,7 +76,7 @@ public class CurioController
             }
             
             if (template.SpecialEffect != CurioSpecialEffects.None)
-                ItemSpecialEffects.Add(item.Id, template.SpecialEffect);
+                ItemSpecialEffects.TryAdd(template.SpecialEffect, curioComponent);
 
             if (template.SkillIncreases != null)
             {
@@ -91,5 +89,23 @@ public class CurioController
         }
         
         Plugin.PluginLogger.LogInfo($"New total curse value: {TotalCurse}");
+    }
+
+    public bool UseSpecialEffect(CurioSpecialEffects effect)
+    {
+        if (effect == CurioSpecialEffects.None || !ItemSpecialEffects.TryGetValue(effect, out CurioComponent? curioComponent))
+            return false;
+
+        if (curioComponent.Template.MaxUses < 1)
+            return true;
+
+        curioComponent.NumberOfUsages++;
+
+        if (curioComponent.NumberOfUsages < curioComponent.Template.MaxUses) return true;
+
+        OperationResult<DiscardResult> operationResult = ItemManipulator.Discard(curioComponent.Item, 
+            (ItemController)curioComponent.Item.Parent.GetOwner());
+
+        return !operationResult.Failed;
     }
 }

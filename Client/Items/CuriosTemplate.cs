@@ -27,7 +27,8 @@ public enum CurioSpecialEffects
     HeadshotProt,
     ExfilTp,
     DoorBreaker,
-    Reflect
+    Reflect,
+    NewLife
 }
 
 public enum CurioAttributes
