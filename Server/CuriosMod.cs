@@ -2,6 +2,7 @@ using System.Reflection;
 using CuriosServer.Models;
 using SPTarkov.Common.Models.Logging;
 using SPTarkov.DI.Annotations;
+using SPTarkov.Reflection.Patching;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Spt.Tables;
@@ -17,6 +18,7 @@ public class CuriosMod(JsonUtil jsonUtil,
     WTTCustomItemParentService itemParentService,
     WTTCustomItemServiceExtended itemServiceExtended,
     WTTCustomLocaleService localeService,
+    IEnumerable<IRuntimePatch> patches,
     ISptLogger<CuriosMod> logger) : IOnLoad
 {
     public static readonly Assembly Assembly = Assembly.GetExecutingAssembly();
@@ -34,6 +36,9 @@ public class CuriosMod(JsonUtil jsonUtil,
         }
         
         templateTable.Handbook.Categories.AddRange(handbookCategories);
+     
+        foreach (IRuntimePatch patch in patches)
+            patch.Enable();
         
         await itemParentService.CreateCustomParents(Assembly, "db/Parents");
         await itemServiceExtended.CreateCustomItems(Assembly, "db/Items");

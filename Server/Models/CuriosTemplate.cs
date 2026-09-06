@@ -7,7 +7,8 @@ namespace CuriosServer.Models;
 
 public record CuriosTemplateProperties : TemplateItemProperties
 {
-    [JsonPropertyName("Curse")] public float? Curse { get; set; } = 1.0f;
+    [JsonPropertyName("MaxUses")] public int? MaxUses { get; set; }
+    [JsonPropertyName("Curse")] public float? Curse { get; set; }
     [JsonPropertyName("HealthEffects")] public Dictionary<HealthFactor, EffectsHealthProperties>? HealthEffects;
     [JsonPropertyName("DamageEffects")] public List<DamageEffectType>? DamageEffects;
     [JsonPropertyName("DamageReduction")] public float? DamageReduction { get; set; }

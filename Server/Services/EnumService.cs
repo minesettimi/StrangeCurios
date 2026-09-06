@@ -5,7 +5,7 @@ using SPTarkov.Server.Core.Models.Spt.Mod;
 namespace CuriosServer.Services;
 
 [Injectable(TypePriority = OnLoadOrder.PostLoad + 30)]
-public class PatchService(ClientEnumDefinitions clientEnumDefinitions) : IOnLoad
+public class EnumService(ClientEnumDefinitions clientEnumDefinitions) : IOnLoad
 {
     public Task OnLoadAsync(CancellationToken cancellationToken)
     {
