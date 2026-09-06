@@ -25,7 +25,7 @@ public class GridItemViewPatch : ModulePatch
         __instance.SetItemValue(GridItemView.EItemValueFormat.TwoValues, 
             __instance.Examined, 
             "#ff5335",
-            curioComponent.UsesLeft,
+            curioComponent.Template.MaxUses - curioComponent.NumberOfUsages,
             curioComponent.Template.MaxUses);
         
         __instance.SetValueVisibility(__instance.CurrentItemValue.Length > 0 && 

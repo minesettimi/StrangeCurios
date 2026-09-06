@@ -4,5 +4,5 @@ namespace CuriosClient.Models;
 
 public class CurioComponentDescriptor : ItemComponentDescriptor
 {
-    public int UsesLeft;
+    public int NumberOfUsages;
 }

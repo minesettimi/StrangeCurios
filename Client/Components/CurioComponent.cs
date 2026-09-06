@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using CuriosClient.Models;
+using EFT;
 using EFT.HealthSystem;
 using EFT.InventoryLogic;
 using JsonType;
@@ -9,7 +10,9 @@ namespace CuriosClient.Components;
 public class CurioComponent : ItemComponent, IRelativeComponent
 {
     public readonly CuriosTemplate Template;
-    public int UsesLeft = 0;
+    
+    [Diffable]
+    public int NumberOfUsages;
     
     public CurioComponent(Item item, CuriosTemplate template) : base(item)
     {
@@ -22,7 +25,9 @@ public class CurioComponent : ItemComponent, IRelativeComponent
                 Name = "CURIO USES",
                 StringValue = () =>
                 {
-                    string usesLeft = UsesLeft == 1 ? $"<color=red>{UsesLeft}</color>" : UsesLeft.ToString();
+                    int uses = template.MaxUses - NumberOfUsages;
+                    string usesLeft = uses == 1 ? $"<color=red>{uses}</color>" : 
+                        uses.ToString();
                     return $"{usesLeft}/{template.MaxUses}";
                 },
                 DisplayType = () => EItemAttributeDisplayType.Compact
@@ -59,7 +64,7 @@ public class CurioComponent : ItemComponent, IRelativeComponent
             attributes.Add(itemAttribute);
         }
 
-        if (Template.DamageReduction != null)
+        if (Template.DamageReduction != null && Template.DamageReduction != 0)
         {
             attributes.Add(new ItemAttribute(CurioAttributes.DamageReduction)
             {
@@ -95,5 +100,5 @@ public class CurioComponent : ItemComponent, IRelativeComponent
         
     }
 
-    public float RelativeValue => UsesLeft / (float)Template.MaxUses;
+    public float RelativeValue => 1 - NumberOfUsages / (float)Template.MaxUses;
 }

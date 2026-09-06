@@ -20,7 +20,7 @@ public class ItemDeserializerPatch : ModulePatch
     {
         if (descriptor is CurioComponentDescriptor curioDescriptor)
         {
-            item.GetItemComponent<CurioComponent>()!.UsesLeft = curioDescriptor.UsesLeft;
+            item.GetItemComponent<CurioComponent>()!.NumberOfUsages = curioDescriptor.NumberOfUsages;
             return false;
         }
 
@@ -42,7 +42,7 @@ public class ItemSerializerPatch : ModulePatch
         {
             __result = new CurioComponentDescriptor
             {
-                UsesLeft = curioComponent.UsesLeft
+                NumberOfUsages = curioComponent.NumberOfUsages
             };
             
             return false;

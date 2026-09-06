@@ -15,7 +15,7 @@ public static class DescriptorExtensions
     {
         return new CurioComponentDescriptor
         {
-            UsesLeft = BinaryCloneExtensions.CloneStruct(source.UsesLeft)
+            NumberOfUsages = BinaryCloneExtensions.CloneStruct(source.NumberOfUsages)
         };
     }
 
@@ -23,12 +23,12 @@ public static class DescriptorExtensions
     {
         return new CurioComponentDescriptor()
         {
-            UsesLeft = reader.ReadInt()
+            NumberOfUsages = reader.ReadInt()
         };
     }
 
     public static void WriteCurioComponentDescriptor(this NetworkWriter writer, CurioComponentDescriptor target)
     {
-        writer.WriteInt(target.UsesLeft);
+        writer.WriteInt(target.NumberOfUsages);
     }
 }

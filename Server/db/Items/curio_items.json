@@ -6,7 +6,7 @@
     {
       "Weight": 1.5,
       "Curse": 9.8,
-      "MaxNumberOfUsage": 1
+      "MaxNumberOfUsage": 3
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "newItemName": "curio_debug",
@@ -28,8 +28,7 @@
     "itemTplToClone": "6a9ba968f28685d280db910c",
     "overrideProperties":
     {
-      "Weight": 0.1,
-      "Curse": 3
+      "Weight": 0.1
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "newItemName": "trinket_debug",
@@ -51,7 +50,9 @@
     "itemTplToClone": "6a9ba96856754311ed20f844",
     "overrideProperties":
     {
-      "Weight": 0.5
+      "Weight": 0.5,
+      "MaxNumberOfUsage": 3,
+      "Curse": 3
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "newItemName": "talisman_debug",
