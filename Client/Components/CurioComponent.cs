@@ -96,8 +96,6 @@ public class CurioComponent : ItemComponent, IRelativeComponent
                 LabelVariations = EItemAttributeLabelVariations.Colored
             });
         }
-        
-        
     }
 
     public float RelativeValue => 1 - NumberOfUsages / (float)Template.MaxUses;
