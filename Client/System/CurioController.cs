@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using CuriosClient.Components;
 using CuriosClient.Models;
 using Diz.Binding;
 using Diz.LanguageExtensions;
 using EFT;
+using EFT.HealthSystem;
 using EFT.InventoryLogic;
 
 namespace CuriosClient.System;
@@ -19,6 +21,8 @@ public class CurioController
     public float TotalCurse = 0f;
     public float TotalDamageReduction = 0f;
     public int HighestPenResistance = 0;
+    public Dictionary<EHealthFactorType, float> HealthEffects = [];
+    public HashSet<EDamageEffectType> DamageEffects = [];
     public Dictionary<float, List<EquipmentSlot>> EquipmentRepair = [];
     public Dictionary<CurioSpecialEffects, CurioComponent> ItemSpecialEffects = [];
     public Dictionary<ESkillId, int> SkillAdjustments = [];
@@ -50,6 +54,8 @@ public class CurioController
         TotalCurse = 0f;
         TotalDamageReduction = 0f;
         HighestPenResistance = 0;
+        HealthEffects.Clear();
+        DamageEffects.Clear();
         EquipmentRepair.Clear();
         ItemSpecialEffects.Clear();
         SkillAdjustments.Clear();
@@ -62,6 +68,17 @@ public class CurioController
             
             TotalCurse += template.Curse;
 
+            foreach ((EHealthFactorType healthFactor, float value) in template.HealthEffects)
+            {
+                HealthEffects.TryAdd(healthFactor, 0f);
+                HealthEffects[healthFactor] += value;
+            }
+
+            foreach (EDamageEffectType damageEffectType in template.DamageEffects)
+            {
+                DamageEffects.Add(damageEffectType);
+            }
+            
             if (template.DamageReduction != null)
                 TotalDamageReduction += (float)template.DamageReduction;
 
@@ -87,8 +104,6 @@ public class CurioController
                 }
             }
         }
-        
-        Plugin.PluginLogger.LogInfo($"New total curse value: {TotalCurse}");
     }
 
     public bool UseSpecialEffect(CurioSpecialEffects effect)
@@ -106,6 +121,12 @@ public class CurioController
         OperationResult<DiscardResult> operationResult = ItemManipulator.Discard(curioComponent.Item, 
             (ItemController)curioComponent.Item.Parent.GetOwner());
 
-        return !operationResult.Failed;
+        if (!operationResult.Failed)
+        {
+            RefreshCurioStats();
+            return true;
+        }
+        
+        return false;
     }
 }

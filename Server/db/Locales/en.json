@@ -1,12 +1,18 @@
 {
-  "CURSE": "Curse",
-  "CURIO USES": "Uses Left",
-  "DAMAGE REDUCTION": "Damage Reduction",
-  "PEN RESISTANCE": "Penetration Resistance",
-  "EQUIPMENT REPAIR": "Equipment Repair",
+  "CURSE": "CURSE",
+  "CURIO USES": "USES LEFT",
+  "DAMAGE REDUCTION": "DAMAGE REDUCTION",
+  "PEN RESISTANCE": "PENETRATION RESISTANCE",
+  "EQUIPMENT REPAIR": "EQUIPMENT REPAIR",
   
   "6a9b96bb8ae5dd2024416c0e": "Curios",
   "6a9b96d5ef81726d8c766f45": "Trinkets",
   "6a9b96dd91603a7d84c27136": "Talismans",
-  "6a9b96e1a54f9affdaaa22b4": "Relics"
+  "6a9b96e1a54f9affdaaa22b4": "Relics",
+  
+  "HeadshotProt": "HEADSHOT PROTECTION",
+  "ExfilTp": "EXFILTRATION TELEPORTATION",
+  "DoorBreaker": "DOOR BREAKER",
+  "Reflect": "REFLECT",
+  "NewLife": "SECOND CHANCE"
 }

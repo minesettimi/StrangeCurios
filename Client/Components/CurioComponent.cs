@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using CuriosClient.Models;
 using EFT;
@@ -33,9 +34,6 @@ public class CurioComponent : ItemComponent, IRelativeComponent
         }
         
         SetupCurioAttributes(item);
-        Item.CreateAttributesFromDictionary(Template.HealthEffects,
-            EItemAttributeDisplayType.Compact,
-            EItemAttributeLabelVariations.Colored);
     }
 
     public void SetupCurioAttributes(Item item)
@@ -44,7 +42,7 @@ public class CurioComponent : ItemComponent, IRelativeComponent
         
         attributes.Add(new ItemAttribute(CurioAttributes.Curse)
         {
-            Name = "CURSE",
+            Name = "CURSE".Localized(),
             StringValue = () => $"<color=purple>{Template.Curse}</color>",
             DisplayType = () => EItemAttributeDisplayType.Compact,
             LabelVariations = EItemAttributeLabelVariations.Colored
@@ -66,7 +64,7 @@ public class CurioComponent : ItemComponent, IRelativeComponent
         {
             attributes.Add(new ItemAttribute(CurioAttributes.DamageReduction)
             {
-                Name = "DAMAGE REDUCTION",
+                Name = "DAMAGE REDUCTION".Localized(),
                 StringValue = Template.DamageReduction.ToString,
                 DisplayType = () => EItemAttributeDisplayType.Compact,
                 LabelVariations = EItemAttributeLabelVariations.Colored
@@ -77,7 +75,7 @@ public class CurioComponent : ItemComponent, IRelativeComponent
         {
             attributes.Add(new ItemAttribute(CurioAttributes.PenResistance)
             {
-                Name = "PEN RESISTANCE",
+                Name = "PEN RESISTANCE".Localized(),
                 StringValue = Template.PenResistance.ToString,
                 DisplayType = () => EItemAttributeDisplayType.Compact,
                 LabelVariations = EItemAttributeLabelVariations.Colored
@@ -88,11 +86,39 @@ public class CurioComponent : ItemComponent, IRelativeComponent
         {
             attributes.Add(new ItemAttribute(CurioAttributes.EquipmentRepair)
             {
-                Name = "EQUIPMENT REPAIR",
+                Name = "EQUIPMENT REPAIR".Localized(),
                 StringValue = Template.EquipmentRepair.ToString,
                 DisplayType = () => EItemAttributeDisplayType.Compact,
                 LabelVariations = EItemAttributeLabelVariations.Colored
             });
+        }
+
+        if (Template.SpecialEffect != CurioSpecialEffects.None)
+        {
+            attributes.Add(new ItemAttribute(CurioAttributes.SpecialEffect)
+            {
+                Name = Template.SpecialEffect.ToString().Localized(),
+                DisplayType = () => EItemAttributeDisplayType.Compact,
+                LabelVariations = EItemAttributeLabelVariations.Colored
+            });
+        }
+
+        if (Template.SkillIncreases != null)
+        {
+            foreach ((ESkillId skill, int value) in Template.SkillIncreases)
+            {
+                attributes.Add(new ItemAttribute(CurioAttributes.EquipmentRepair)
+                {
+                    Name = skill.ToString(),
+                    DisplayNameFunc = () => $"{"Skill".Localized()} \"{skill.ToString().Localized()}\"",
+                    DisplayType = () => EItemAttributeDisplayType.Compact,
+                    LabelVariations = EItemAttributeLabelVariations.Colored,
+                    StringValue = () =>
+                        value >= 0
+                            ? $"{"Increase".Localized()}<color=blue>"
+                            : $"{"Decrease".Localized()}<color=red>" + $" { Math.Abs(value)}" + "</color>"
+                });
+            }
         }
     }
 

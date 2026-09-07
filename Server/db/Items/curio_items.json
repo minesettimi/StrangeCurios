@@ -6,7 +6,8 @@
     {
       "Weight": 1.5,
       "Curse": 9.8,
-      "MaxNumberOfUsage": 3
+      "MaxNumberOfUsage": 3,
+      "SpecialEffect": "NewLife"
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "newItemName": "curio_debug",
@@ -28,7 +29,24 @@
     "itemTplToClone": "6a9ba968f28685d280db910c",
     "overrideProperties":
     {
-      "Weight": 0.1
+      "MaxNumberOfUsage": 1,
+      "Weight": 0.1,
+      "HealthEffects":
+      {
+        "Energy": -20
+      },
+      "DamageEffects": 
+      [
+        "Intoxication"
+      ],
+      "DamageReduction": 10,
+      "PenResistance": 1,
+      "EquipmentRepair": -0.5,
+      "SpecialEffect": "DoorBreaker",
+      "SkillIncreases":
+      {
+        "Charisma": -4
+      }
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "newItemName": "trinket_debug",
