@@ -29,17 +29,11 @@
     "itemTplToClone": "6a9ba968f28685d280db910c",
     "overrideProperties":
     {
-      "MaxNumberOfUsage": 1,
+      "MaxNumberOfUsage": 3,
       "Weight": 0.1,
-      "HealthEffects":
-      {
-        "Energy": -0.124,
-        "Health": -0.124
-      },
       "DamageReduction": 10,
       "PenResistance": 1,
-      "JumpBuff": 2,
-      "SpecialEffect": "ExfilTp",
+      "SpecialEffect": "Reflect",
       "SkillIncreases":
       {
         "Charisma": -4

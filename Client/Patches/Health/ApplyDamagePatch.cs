@@ -30,11 +30,6 @@ public class ApplyDamagePatch : ModulePatch
 
         damage = Mathf.Max(damage - curioController.TotalDamageReduction, 0);
 
-        if (curioController.HighestPenResistance * 10 > damageInfo.PenetrationPower)
-        {
-            damage *= .5f;
-        }
-
         bool isEnemy = damageInfo.DamageType.IsEnemyDamage();
         if (isEnemy)
         {
@@ -42,9 +37,16 @@ public class ApplyDamagePatch : ModulePatch
 
             if (otherPlayer is { iPlayer: Player enemyPlayer } && curioController.UseSpecialEffect(CurioSpecialEffects.Reflect))
             {
-                enemyPlayer.ApplyDamageInfo(new DamageInfo { DamageType = EDamageType.Bullet }, bodyPart,
+                enemyPlayer.ApplyDamageInfo(new DamageInfo { DamageType = EDamageType.Bullet, Damage = damage * 2}, bodyPart,
                     damageInfo.BodyPartColliderType, 0f);
             }
+
+            damage *= .5f;
+        }
+        
+        if (curioController.HighestPenResistance * 10 > damageInfo.PenetrationPower)
+        {
+            damage *= .25f;
         }
         
         ValueStruct bodyPartHealth = __instance.GetBodyPartHealth(bodyPart);

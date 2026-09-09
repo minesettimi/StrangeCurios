@@ -61,6 +61,7 @@
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "overrideProperties":
     {
+      "CanSellOnRagfair": false,
       "ExamineExperience": 20,
       "ExamineTime": 5,
       "ExaminedByDefault": false,
@@ -93,7 +94,6 @@
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "overrideProperties":
     {
-      "BackgroundColor": "tracerRed",
       "CanSellOnRagfair": false,
       "ExamineExperience": 25,
       "ExamineTime": 10,
