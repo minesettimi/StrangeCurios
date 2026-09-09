@@ -8,6 +8,7 @@ using Diz.LanguageExtensions;
 using EFT;
 using EFT.HealthSystem;
 using EFT.InventoryLogic;
+using Newtonsoft.Json;
 
 namespace CuriosClient.System;
 
@@ -18,12 +19,12 @@ public class CurioController
     public Inventory Inventory;
 
 
+    //TODO: More dynamic system like done with the stimulator
     public float TotalCurse = 0f;
     public float TotalDamageReduction = 0f;
     public int HighestPenResistance = 0;
     public Dictionary<EHealthFactorType, float> HealthEffects = [];
-    public HashSet<EDamageEffectType> DamageEffects = [];
-    public Dictionary<float, List<EquipmentSlot>> EquipmentRepair = [];
+    public Dictionary<EquipmentSlot, float> EquipmentRepair = [];
     public Dictionary<CurioSpecialEffects, CurioComponent> ItemSpecialEffects = [];
     public Dictionary<ESkillId, int> SkillAdjustments = [];
 
@@ -54,7 +55,6 @@ public class CurioController
         TotalDamageReduction = 0f;
         HighestPenResistance = 0;
         HealthEffects.Clear();
-        DamageEffects.Clear();
         EquipmentRepair.Clear();
         ItemSpecialEffects.Clear();
         SkillAdjustments.Clear();
@@ -72,11 +72,6 @@ public class CurioController
                 HealthEffects.TryAdd(healthFactor, 0f);
                 HealthEffects[healthFactor] += value;
             }
-
-            foreach (EDamageEffectType damageEffectType in template.DamageEffects)
-            {
-                DamageEffects.Add(damageEffectType);
-            }
             
             if (template.DamageReduction != null)
                 TotalDamageReduction += (float)template.DamageReduction;
@@ -84,11 +79,24 @@ public class CurioController
             if (template.PenResistance > HighestPenResistance)
                 HighestPenResistance = (int)template.PenResistance;
 
-            if (template.EquipmentRepair != null)
+            if (template.EquipmentRepair != null && template.EquipmentRepair != 0)
             {
-                List<EquipmentSlot> equipSlots = template.EquipmentTargets ?? [EquipmentSlot.ArmorVest];
+                List<EquipmentSlot> equipSlots;
+
+                if (template.EquipmentTargets == null || template.EquipmentTargets.Count == 0)
+                    equipSlots = [.. Inventory.ArmorSlots];
+                else
+                    equipSlots = template.EquipmentTargets;
+
+                float repairAmount = (float)template.EquipmentRepair;
+
+                foreach (EquipmentSlot slot in equipSlots)
+                {
+                    EquipmentRepair.TryAdd(slot, 0);
+                    EquipmentRepair[slot] += repairAmount;
+                }
                 
-                EquipmentRepair.Add((float)template.EquipmentRepair, equipSlots);
+                Plugin.PluginLogger.LogInfo(JsonConvert.SerializeObject(EquipmentRepair));
             }
             
             if (template.SpecialEffect != CurioSpecialEffects.None)

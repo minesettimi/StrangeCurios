@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using CuriosClient.System;
 using EFT;
 using EFT.HealthSystem;
+using EFT.InventoryLogic;
 
 namespace CuriosClient.Effects;
 
@@ -14,21 +15,24 @@ public class Cursed : ActiveHealthController.Effect, IExistence
     private float _energyLoopTime;
     private float _hydrationLoopTime;
     private float _temperatureLoopTime;
+    private float _armorLoopTime;
 
     private float _curHealthLoopTime;
     private float _curEnergyLoopTime;
     private float _curHydrationLoopTime;
     private float _curTemperatureLoopTime;
-
+    private float _curArmorLoopTime;
+    
     private Dictionary<ESkillId, int> _previousSkillChanges = [];
 
     public override void Started()
     {
-        //I don't feel like hooking up settings for this atm, maybe later
+        //TODO: I don't feel like hooking up settings for this atm, maybe later
         _healthLoopTime = EffectsSettings.Existence.EnergyLoopTime;
         _energyLoopTime = EffectsSettings.Existence.EnergyLoopTime;
         _hydrationLoopTime = EffectsSettings.Existence.HydrationLoopTime;
         _temperatureLoopTime = EffectsSettings.Existence.HydrationLoopTime;
+        _armorLoopTime = EffectsSettings.Existence.EnergyLoopTime;
         
         if (HealthController._inventory == null ||
             !CurioManager.InvControllerCurioTable.TryGetValue(HealthController._inventory,
@@ -99,20 +103,28 @@ public class Cursed : ActiveHealthController.Effect, IExistence
         _curEnergyLoopTime += deltaTime;
         _curHydrationLoopTime += deltaTime;
         _curTemperatureLoopTime += deltaTime;
+        
+        if (_curioController.EquipmentRepair.Count > 1)
+            _curArmorLoopTime += deltaTime;
 
         if (_curHealthLoopTime >= _healthLoopTime)
         {
             _curHealthLoopTime -= _healthLoopTime;
             float healthBoost = GetHealthBoost();
-            
-            foreach (EBodyPart bodyPart in HealthHelper.RealBodyParts)
-            {
-                bool atClamp = (!HealthController.GetBodyPartHealth(bodyPart).AtMaximum && healthBoost >= 0) ||
-                               (!HealthController.GetBodyPartHealth(bodyPart).AtMinimum && healthBoost < 0);
 
-                if (atClamp && !HealthController.IsBodyPartDestroyed(bodyPart))
+            if (healthBoost != 0)
+            {
+
+                foreach (EBodyPart bodyPart in HealthHelper.RealBodyParts.Randomize())
                 {
-                    HealthController.ChangeHealth(bodyPart, healthBoost * _healthLoopTime, DamageHelper.Existence);
+                    bool atClamp = (!HealthController.GetBodyPartHealth(bodyPart).AtMaximum && healthBoost >= 0) ||
+                                   (!HealthController.GetBodyPartHealth(bodyPart).AtMinimum && healthBoost < 0);
+
+                    if (atClamp && !HealthController.IsBodyPartDestroyed(bodyPart))
+                    {
+                        HealthController.ChangeHealth(bodyPart, healthBoost * _healthLoopTime, DamageHelper.Existence);
+                        break;
+                    }
                 }
             }
         }
@@ -133,6 +145,34 @@ public class Cursed : ActiveHealthController.Effect, IExistence
         {
             _curTemperatureLoopTime -= _temperatureLoopTime;
             HealthController.ChangeTemperature(GetTemperatureBoost() * _temperatureLoopTime);
+        }
+
+        if (_curArmorLoopTime >= _armorLoopTime)
+        {
+            _curArmorLoopTime -= _armorLoopTime;
+
+            //dictionaries suck for indexing, im just going to break instead of using LINQ
+            foreach ((EquipmentSlot equipmentSlot, float amount) in _curioController.EquipmentRepair.Randomize())
+            {
+                if (amount == 0)
+                    continue;
+                
+                Slot slot = HealthController._inventory.Inventory.Equipment.GetSlot(equipmentSlot);
+                if (slot.ContainedItem == null)
+                    continue;
+
+                List<ArmorComponent> armorList = [];
+                slot.ContainedItem.GetItemComponentsInChildrenNonAlloc(armorList, false);
+
+                foreach (ArmorComponent armor in armorList.Randomize())
+                {
+                    armor.ApplyDurabilityDamage(-amount * _armorLoopTime, armorList);
+                    break;
+                }
+
+                break;
+            }
+            
         }
     }
 

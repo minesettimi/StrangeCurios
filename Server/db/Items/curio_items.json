@@ -33,15 +33,11 @@
       "Weight": 0.1,
       "HealthEffects":
       {
-        "Energy": -0.124
+        "Energy": -0.124,
+        "Health": -0.124
       },
-      "DamageEffects": 
-      [
-        "Intoxication"
-      ],
       "DamageReduction": 10,
       "PenResistance": 1,
-      "EquipmentRepair": -0.5,
       "SpecialEffect": "DoorBreaker",
       "SkillIncreases":
       {

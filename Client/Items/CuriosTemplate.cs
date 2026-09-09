@@ -12,11 +12,10 @@ public class CuriosTemplate : ItemTemplate
     [JsonProperty("MaxNumberOfUsage")] public int MaxUses { get; set; }
     [JsonProperty("Curse")] public float Curse { get; set; } = 1.0f;
     [JsonProperty("HealthEffects")] public Dictionary<EHealthFactorType, float> HealthEffects = [];
-    [JsonProperty("DamageEffects")] public List<EDamageEffectType> DamageEffects = [];
     [JsonProperty("DamageReduction")] public float? DamageReduction { get; set; }
     [JsonProperty("PenResistance")] public int? PenResistance { get; set; }
     [JsonProperty("EquipmentRepair")] public float? EquipmentRepair { get; set; }
-    [JsonProperty("EquipmentTargets")] public List<EquipmentSlot>? EquipmentTargets { get; set; } = [];
+    [JsonProperty("EquipmentTargets")] public List<EquipmentSlot>? EquipmentTargets { get; set; }
     [JsonProperty("SpecialEffect")] public CurioSpecialEffects SpecialEffect { get; set; } = CurioSpecialEffects.None;
     [JsonProperty("SkillIncreases")] public Dictionary<ESkillId, int>? SkillIncreases;
 }

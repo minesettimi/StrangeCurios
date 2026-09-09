@@ -48,18 +48,6 @@ public class CurioComponent : ItemComponent, IRelativeComponent
             LabelVariations = EItemAttributeLabelVariations.Colored
         });
 
-        foreach (EDamageEffectType damageEffectType in Template.DamageEffects)
-        {
-            ItemAttribute itemAttribute = new(damageEffectType)
-            {
-                Name = damageEffectType.ToString(),
-                DisplayType = () => EItemAttributeDisplayType.Compact,
-                IsTextValueDisplayable = false
-            };
-            
-            attributes.Add(itemAttribute);
-        }
-
         if (Template.DamageReduction != null && Template.DamageReduction != 0)
         {
             attributes.Add(new ItemAttribute(CurioAttributes.DamageReduction)
