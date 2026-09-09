@@ -21,7 +21,6 @@ public class CurioController
     public float TotalCurse = 0f;
     public float TotalDamageReduction = 0f;
     public int HighestPenResistance = 0;
-    public float HighestSpeedBuff = 0f;
     public float HighestJumpBuff = 0f;
     public Dictionary<EHealthFactorType, float> HealthEffects = [];
     public Dictionary<EquipmentSlot, float> EquipmentRepair = [];
@@ -54,7 +53,6 @@ public class CurioController
         TotalCurse = 0f;
         TotalDamageReduction = 0f;
         HighestPenResistance = 0;
-        HighestSpeedBuff = 0f;
         HighestJumpBuff = 0f;
         HealthEffects.Clear();
         EquipmentRepair.Clear();
@@ -76,9 +74,6 @@ public class CurioController
             }
             
             TotalDamageReduction += template.DamageReduction ?? 0;
-
-            if (template.SpeedBuff > HighestSpeedBuff)
-                HighestSpeedBuff = (float)template.SpeedBuff;
 
             if (template.JumpBuff > HighestJumpBuff)
                 HighestJumpBuff = (float)template.JumpBuff;

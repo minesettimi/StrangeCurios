@@ -14,7 +14,6 @@ public class CuriosTemplate : ItemTemplate
     [JsonProperty("DamageReduction")] public float? DamageReduction { get; set; }
     [JsonProperty("PenResistance")] public int? PenResistance { get; set; }
     [JsonProperty("EquipmentRepair")] public float? EquipmentRepair { get; set; }
-    [JsonProperty("SpeedBuff")] public float? SpeedBuff { get; set; }
     [JsonProperty("JumpBuff")] public float? JumpBuff { get; set; }
     [JsonProperty("EquipmentTargets")] public List<EquipmentSlot>? EquipmentTargets { get; set; }
     [JsonProperty("SpecialEffect")] public CurioSpecialEffects SpecialEffect { get; set; } = CurioSpecialEffects.None;

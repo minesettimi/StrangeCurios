@@ -47,17 +47,6 @@ public class CurioComponent : ItemComponent, IRelativeComponent
             DisplayType = () => EItemAttributeDisplayType.Compact,
             LabelVariations = EItemAttributeLabelVariations.Colored
         });
-
-        if (Template.SpeedBuff != null && Template.SpeedBuff != 0)
-        {
-            attributes.Add(new ItemAttribute(CurioAttributes.SpeedBuff)
-            {
-                Name = "SPEED BUFF".Localized(),
-                StringValue = Template.SpeedBuff.ToString,
-                DisplayType = () => EItemAttributeDisplayType.Compact,
-                LabelVariations = EItemAttributeLabelVariations.Colored
-            });
-        }
         
         if (Template.JumpBuff != null && Template.JumpBuff != 0)
         {
