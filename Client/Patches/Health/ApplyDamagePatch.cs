@@ -7,7 +7,6 @@ using EFT.HealthSystem;
 using HarmonyLib;
 using SPT.Reflection.Patching;
 using UnityEngine;
-using NotImplementedException = System.NotImplementedException;
 
 namespace CuriosClient.Patches.Health;
 

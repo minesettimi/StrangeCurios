@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using EFT;
 using EFT.HealthSystem;
 using EFT.InventoryLogic;
-using JsonType;
 using Newtonsoft.Json;
 
 namespace CuriosClient.Models;
@@ -15,6 +14,8 @@ public class CuriosTemplate : ItemTemplate
     [JsonProperty("DamageReduction")] public float? DamageReduction { get; set; }
     [JsonProperty("PenResistance")] public int? PenResistance { get; set; }
     [JsonProperty("EquipmentRepair")] public float? EquipmentRepair { get; set; }
+    [JsonProperty("SpeedBuff")] public float? SpeedBuff { get; set; }
+    [JsonProperty("JumpBuff")] public float? JumpBuff { get; set; }
     [JsonProperty("EquipmentTargets")] public List<EquipmentSlot>? EquipmentTargets { get; set; }
     [JsonProperty("SpecialEffect")] public CurioSpecialEffects SpecialEffect { get; set; } = CurioSpecialEffects.None;
     [JsonProperty("SkillIncreases")] public Dictionary<ESkillId, int>? SkillIncreases;
@@ -36,5 +37,7 @@ public enum CurioAttributes
     DamageReduction,
     PenResistance,
     EquipmentRepair,
-    SpecialEffect
+    SpecialEffect,
+    SpeedBuff,
+    JumpBuff
 }

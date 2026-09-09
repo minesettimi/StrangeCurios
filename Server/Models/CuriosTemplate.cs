@@ -11,6 +11,8 @@ public record CuriosTemplateProperties : TemplateItemProperties
     [JsonPropertyName("DamageReduction")] public float? DamageReduction { get; set; }
     [JsonPropertyName("PenResistance")] public int? PenResistance { get; set; }
     [JsonPropertyName("EquipmentRepair")] public float? EquipmentRepair { get; set; }
+    [JsonPropertyName("SpeedBuff")] public float? SpeedBuff { get; set; }
+    [JsonPropertyName("JumpBuff")] public float? JumpBuff { get; set; }
     [JsonPropertyName("EquipmentTargets")] public List<EquipmentSlots>? EquipmentTargets { get; set; }
     [JsonPropertyName("SpecialEffect")] public CurioSpecialEffects SpecialEffect { get; set; } = CurioSpecialEffects.None;
     [JsonPropertyName("SkillIncreases")] public Dictionary<SkillTypes, int>? SkillIncreases;
