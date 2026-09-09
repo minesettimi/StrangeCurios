@@ -14,7 +14,7 @@ namespace CuriosClient.System;
 public class CurioController
 {
     public readonly InventoryController InventoryController;
-    public readonly BindableEvent OnCurioUpdated = new();
+    public event Action? OnCurioUpdated;
     public Inventory Inventory;
 
 
@@ -46,7 +46,6 @@ public class CurioController
             return;
         
         RefreshCurioStats();
-        OnCurioUpdated.Invoke();
     }
 
     private void RefreshCurioStats()
@@ -104,6 +103,8 @@ public class CurioController
                 }
             }
         }
+        
+        OnCurioUpdated?.Invoke();
     }
 
     public bool UseSpecialEffect(CurioSpecialEffects effect)

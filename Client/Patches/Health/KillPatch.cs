@@ -1,11 +1,9 @@
 using System.Reflection;
 using CuriosClient.Models;
 using CuriosClient.System;
-using EFT;
 using EFT.HealthSystem;
 using HarmonyLib;
 using SPT.Reflection.Patching;
-using NotImplementedException = System.NotImplementedException;
 
 namespace CuriosClient.Patches.Health;
 

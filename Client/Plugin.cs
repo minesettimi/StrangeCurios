@@ -1,8 +1,12 @@
+using System;
 using BepInEx;
 using BepInEx.Logging;
+using CuriosClient.Effects;
 using CuriosClient.Models;
 using CuriosClient.Patches;
 using EFT.BinarySerialization;
+using EFT.HealthSystem;
+using HarmonyLib;
 using SPT.Reflection.Patching;
 
 namespace CuriosClient;
@@ -21,10 +25,21 @@ public class Plugin : BaseUnityPlugin
 
         PluginLogger = Logger;
     }
+    
+    private static readonly Type[] CustomEffects = [typeof(Cursed)];
 
     private void Start()
     {
+        //add to static classes
         BinarySerializationMirrorExtensions._types.Add(typeof(CurioComponentDescriptor));
         MirrorExtensionReadPatch.CurioIndex = BinarySerializationMirrorExtensions._types.Count - 1;
+
+        HealthHelper.EffectTypeCode._effectTypes.AddRangeToArray(CustomEffects);
+        foreach (Type type in CustomEffects)
+        {
+            byte index = (byte)Array.IndexOf(HealthHelper.EffectTypeCode._effectTypes, type);
+            HealthHelper.EffectTypeCode._typeToByte[type.Name] = index;
+            HealthHelper.EffectTypeCode._byteToType[index] = type.Name;
+        }
     }
 }

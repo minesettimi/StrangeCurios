@@ -33,7 +33,7 @@
       "Weight": 0.1,
       "HealthEffects":
       {
-        "Energy": -20
+        "Energy": -0.124
       },
       "DamageEffects": 
       [
