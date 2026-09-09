@@ -6,15 +6,15 @@
   "EQUIPMENT REPAIR": "EQUIPMENT REPAIR",
   "SPEED BUFF": "SPEED INCREASE",
   "JUMP BUFF": "JUMP HEIGHT INCREASE",
+
+  "HeadshotProt": "HEADSHOT PROTECTION",
+  "ExfilTp": "EXFILTRATION FREE ESCAPE",
+  "DoorBreaker": "DOOR BREAKER",
+  "Reflect": "REFLECT",
+  "NewLife": "SECOND CHANCE",
   
   "6a9b96bb8ae5dd2024416c0e": "Curios",
   "6a9b96d5ef81726d8c766f45": "Trinkets",
   "6a9b96dd91603a7d84c27136": "Talismans",
-  "6a9b96e1a54f9affdaaa22b4": "Relics",
-  
-  "HeadshotProt": "HEADSHOT PROTECTION",
-  "ExfilTp": "EXFILTRATION TELEPORTATION",
-  "DoorBreaker": "DOOR BREAKER",
-  "Reflect": "REFLECT",
-  "NewLife": "SECOND CHANCE"
+  "6a9b96e1a54f9affdaaa22b4": "Relics"
 }

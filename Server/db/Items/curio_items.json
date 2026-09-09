@@ -39,7 +39,7 @@
       "DamageReduction": 10,
       "PenResistance": 1,
       "JumpBuff": 2,
-      "SpecialEffect": "DoorBreaker",
+      "SpecialEffect": "ExfilTp",
       "SkillIncreases":
       {
         "Charisma": -4

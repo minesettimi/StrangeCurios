@@ -12,19 +12,17 @@ public class CloneExtensionsPatch : ModulePatch
 {
     protected override MethodBase GetTargetMethod()
     {
-        return AccessTools.Method(typeof(BinaryCloneExtensions), nameof(BinaryCloneExtensions.ClonePolymorph), 
-            generics: [typeof(ItemComponentDescriptor)]);
+        return AccessTools.Method(typeof(BinaryCloneExtensions), nameof(BinaryCloneExtensions.ClonePolymorph));
     }
 
     [PatchPrefix]
-    public static bool Prefix(object source, ref ItemComponentDescriptor __result)
+    public static bool Prefix(object source, ref object __result)
     {
         if (source is CurioComponentDescriptor curioComponentDescriptor)
         {
             __result = curioComponentDescriptor.Clone()!;
             return false;
         }
-
         
         return true;
     }
