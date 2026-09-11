@@ -26,6 +26,7 @@ public class CuriosMod(JsonUtil jsonUtil,
     public static readonly Assembly Assembly = Assembly.GetExecutingAssembly();
     public static readonly string ModPath = Path.GetDirectoryName(Assembly.Location)!;
     public static readonly string DataPath = Path.Join(ModPath, "Data");
+    public static readonly string ConfigPath = Path.Join(ModPath, "config.json");
     
     public async Task OnLoadAsync(CancellationToken cancellationToken)
     {

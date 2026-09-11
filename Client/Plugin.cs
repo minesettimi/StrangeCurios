@@ -4,6 +4,7 @@ using BepInEx.Logging;
 using CuriosClient.Effects;
 using CuriosClient.Models;
 using CuriosClient.Patches;
+using CuriosClient.System;
 using EFT.BinarySerialization;
 using EFT.HealthSystem;
 using HarmonyLib;
@@ -15,6 +16,7 @@ namespace CuriosClient;
 public class Plugin : BaseUnityPlugin
 {
     public static ManualLogSource PluginLogger = null!;
+    public static CurioConfig CurioConfig = ConfigSync.GetConfig();
 
     private PatchManager _patchManager = null!;
 

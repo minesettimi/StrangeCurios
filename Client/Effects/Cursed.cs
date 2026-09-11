@@ -27,12 +27,11 @@ public class Cursed : ActiveHealthController.Effect, IExistence
 
     public override void Started()
     {
-        //TODO: I don't feel like hooking up settings for this atm, maybe later
-        _healthLoopTime = EffectsSettings.Existence.EnergyLoopTime;
-        _energyLoopTime = EffectsSettings.Existence.EnergyLoopTime;
-        _hydrationLoopTime = EffectsSettings.Existence.HydrationLoopTime;
-        _temperatureLoopTime = EffectsSettings.Existence.HydrationLoopTime;
-        _armorLoopTime = EffectsSettings.Existence.EnergyLoopTime;
+        _healthLoopTime = Plugin.CurioConfig.EffectConfig.HealthLoopTime;
+        _energyLoopTime = Plugin.CurioConfig.EffectConfig.EnergyLoopTime;
+        _hydrationLoopTime = Plugin.CurioConfig.EffectConfig.HydrationLoopTime;
+        _temperatureLoopTime = Plugin.CurioConfig.EffectConfig.TemperatureLoopTime;
+        _armorLoopTime = Plugin.CurioConfig.EffectConfig.ArmorLoopTime;
         
         if (HealthController._inventory == null ||
             !CurioManager.InvControllerCurioTable.TryGetValue(HealthController._inventory,

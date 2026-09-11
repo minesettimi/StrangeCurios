@@ -25,7 +25,16 @@ public class GameEndPatch : ModulePatch
                 out CurioController curioController))
             return;
 
-        if ((exitStatus == ExitStatus.MissingInAction || exitStatus == ExitStatus.Left) && curioController.UseSpecialEffect(CurioSpecialEffects.ExfilTp))
+        if ((exitStatus == ExitStatus.MissingInAction || exitStatus == ExitStatus.Left) &&
+            curioController.UseSpecialEffect(CurioSpecialEffects.ExfilTp))
+        {
             exitStatus = exitStatus == ExitStatus.Left ? ExitStatus.Runner : ExitStatus.Survived;
+            return;
+        }
+        
+        if (curioController.TotalCurse > Plugin.CurioConfig.CurseConfig.CurseRunThrough && exitStatus == ExitStatus.Survived)
+        {
+            exitStatus = ExitStatus.Left;
+        }
     }
 }
