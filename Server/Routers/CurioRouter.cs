@@ -1,4 +1,3 @@
-using System.Text.Json;
 using CuriosServer.Models;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;

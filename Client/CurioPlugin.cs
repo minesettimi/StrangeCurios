@@ -1,5 +1,4 @@
 using System;
-using System.Threading.Tasks;
 using BepInEx;
 using BepInEx.Logging;
 using CuriosClient.Effects;

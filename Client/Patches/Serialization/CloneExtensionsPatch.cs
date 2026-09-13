@@ -1,7 +1,6 @@
 using System.Reflection;
 using CuriosClient.Extensions;
 using CuriosClient.Models;
-using EFT;
 using EFT.BinarySerialization;
 using HarmonyLib;
 using SPT.Reflection.Patching;
