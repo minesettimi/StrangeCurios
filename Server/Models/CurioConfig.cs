@@ -23,8 +23,10 @@ public class CurseConfig
 {
     [JsonPropertyName("minCurseRunThrough")] public int CurseRunThrough { get; set; } = 100;
     [JsonPropertyName("maxCurseXpMult")] public float CurseMaxXp { get; set; } = 0.5f;
+    [JsonPropertyName("maxCurseXpNum")] public int CurseXpCount { get; set; } = 100;
+    [JsonPropertyName("maxCurseXpNumMin")] public int CurseXpCountMin { get; set; } = 0;
     [JsonPropertyName("maxCurseMedFailRate")] public int CurseFailRate { get; set; } = 50;
     [JsonPropertyName("maxCurseMedFailNum")] public int CurseFailCount { get; set; } = 100;
-    [JsonPropertyName("maxCurseXpNum")] public int CurseXpCount { get; set; } = 100;
-    [JsonPropertyName("cursePerExtraKeyUse")] public int CurseKeys { get; set; } = 30;
+    [JsonPropertyName("curseExtraKeyUse")] public int CurseKeys { get; set; } = 30;
+    [JsonPropertyName("curseExtraKeyUseMin")] public int CurseKeysMin { get; set; } = 0;
 }

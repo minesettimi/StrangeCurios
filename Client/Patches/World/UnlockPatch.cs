@@ -29,9 +29,10 @@ public class UnlockKeycardPatch : ModulePatch
                 out CurioController curioController))
             return;
 
-        if (!result.Succeeded || key.NumberOfUsages >= key.Template.MaximumNumberOfUsage) return;
+        int minCurse = CurioPlugin.CurioConfig.CurseConfig.CurseKeysMin;
+        if (!result.Succeeded || key.NumberOfUsages >= key.Template.MaximumNumberOfUsage || curioController.TotalCurse < minCurse) return;
         
-        int extraKeyUses = Mathf.FloorToInt(curioController.TotalCurse / CurioPlugin.CurioConfig.CurseConfig.CurseKeys);
+        int extraKeyUses = Mathf.FloorToInt((curioController.TotalCurse - minCurse) / CurioPlugin.CurioConfig.CurseConfig.CurseKeys);
         key.NumberOfUsages += extraKeyUses;
 
         if (key.NumberOfUsages >= key.Template.MaximumNumberOfUsage && key.Template.MaximumNumberOfUsage > 0)

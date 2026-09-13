@@ -97,8 +97,6 @@ public class CurioController
                     EquipmentRepair.TryAdd(slot, 0);
                     EquipmentRepair[slot] += repairAmount;
                 }
-                
-                CurioPlugin.PluginLogger.LogInfo(JsonConvert.SerializeObject(EquipmentRepair));
             }
             
             if (template.SpecialEffect != CurioSpecialEffects.None)

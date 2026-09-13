@@ -28,10 +28,12 @@ public class StatsSessionEndPatch : ModulePatch
         ProfileStats stats = __instance.Profile.EftStats;
 
         CurseConfig curseConfig = CurioPlugin.CurioConfig.CurseConfig;
-        float xpMult = math.remap(0, curseConfig.CurseXpCount,
-            curseConfig.CurseMaxXp, 1f, Math.Max(curseConfig.CurseXpCount - curioController.TotalCurse, 0));
+
+        if (curioController.TotalCurse < curseConfig.CurseXpCountMin)
+            return;
         
-        CurioPlugin.PluginLogger.LogInfo($"Xp multiplier: {xpMult}");
+        float xpMult = math.remap(curseConfig.CurseXpCountMin, curseConfig.CurseXpCount,
+            curseConfig.CurseMaxXp, 1f, Math.Max(curseConfig.CurseXpCount - curioController.TotalCurse, 0));
         
         int xpReduction = Mathf.RoundToInt(Math.Clamp(xpMult, 0f, 1f));
         

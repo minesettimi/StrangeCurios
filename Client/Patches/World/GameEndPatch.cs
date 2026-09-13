@@ -18,9 +18,6 @@ public class GameEndPatch : ModulePatch
     [PatchPrefix]
     public static void Prefix(BaseLocalGame<EftGamePlayerOwner> __instance, ref ExitStatus exitStatus)
     {
-        ProfileDescriptor profileDescriptor = new(__instance.Profile, FullySearchedSearchController.Instance);
-        CurioPlugin.PluginLogger.LogInfo(JsonConvert.SerializeObject(profileDescriptor.Health));
-        
         if (!CurioManager.InvControllerCurioTable.TryGetValue(__instance.PlayerOwner.Player.InventoryController,
                 out CurioController curioController))
             return;
