@@ -19,7 +19,7 @@ public class GameEndPatch : ModulePatch
     public static void Prefix(BaseLocalGame<EftGamePlayerOwner> __instance, ref ExitStatus exitStatus)
     {
         ProfileDescriptor profileDescriptor = new(__instance.Profile, FullySearchedSearchController.Instance);
-        Plugin.PluginLogger.LogInfo(JsonConvert.SerializeObject(profileDescriptor.Health));
+        CurioPlugin.PluginLogger.LogInfo(JsonConvert.SerializeObject(profileDescriptor.Health));
         
         if (!CurioManager.InvControllerCurioTable.TryGetValue(__instance.PlayerOwner.Player.InventoryController,
                 out CurioController curioController))
@@ -32,7 +32,7 @@ public class GameEndPatch : ModulePatch
             return;
         }
         
-        if (curioController.TotalCurse > Plugin.CurioConfig.CurseConfig.CurseRunThrough && exitStatus == ExitStatus.Survived)
+        if (curioController.TotalCurse > CurioPlugin.CurioConfig.CurseConfig.CurseRunThrough && exitStatus == ExitStatus.Survived)
         {
             exitStatus = ExitStatus.Left;
         }

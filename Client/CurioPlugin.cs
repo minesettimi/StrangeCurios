@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using BepInEx;
 using BepInEx.Logging;
 using CuriosClient.Effects;
@@ -13,10 +14,10 @@ using SPT.Reflection.Patching;
 namespace CuriosClient;
 
 [BepInPlugin("com.minesettimi.curios", "Strange Curios", "1.0.0")]
-public class Plugin : BaseUnityPlugin
+public class CurioPlugin : BaseUnityPlugin
 {
     public static ManualLogSource PluginLogger = null!;
-    public static CurioConfig CurioConfig = ConfigSync.GetConfig();
+    public static CurioConfig CurioConfig = null!;
 
     private PatchManager _patchManager = null!;
 
@@ -26,6 +27,19 @@ public class Plugin : BaseUnityPlugin
         _patchManager.EnablePatches();
 
         PluginLogger = Logger;
+        SyncConfig();
+    }
+
+    private static void SyncConfig()
+    {
+        try
+        {
+            CurioConfig = ConfigSync.GetConfig();
+        }
+        catch (Exception e)
+        {
+            PluginLogger.LogError($"Failed to get config with error: {e.Message}");
+        }
     }
     
     private static readonly Type[] CustomEffects = [typeof(Cursed)];

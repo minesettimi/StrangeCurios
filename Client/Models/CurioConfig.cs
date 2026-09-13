@@ -11,7 +11,7 @@ public record CurioConfig
 public record EffectConfig
 {
     [JsonProperty("cumulativePenResist")] public bool CumulativePen { get; set; }
-    [JsonProperty("cumulativePenResist")] public bool CumulativeJump { get; set; }
+    [JsonProperty("cumulativeJumpHeight")] public bool CumulativeJump { get; set; }
     [JsonProperty("energyLoopTime")] public int EnergyLoopTime { get; set; }
     [JsonProperty("healthLoopTime")] public int HealthLoopTime { get; set; }
     [JsonProperty("hydrationLoopTime")] public int HydrationLoopTime { get; set; }
@@ -26,5 +26,5 @@ public record CurseConfig
     [JsonProperty("maxCurseMedFailRate")] public int CurseFailRate { get; set; }
     [JsonProperty("maxCurseMedFailNum")] public int CurseFailCount { get; set; }
     [JsonProperty("maxCurseXpNum")] public int CurseXpCount { get; set; }
-    [JsonProperty("cursePerExtraKeys")] public int CurseKeys { get; set; }
+    [JsonProperty("cursePerExtraKeyUse")] public int CurseKeys { get; set; }
 }

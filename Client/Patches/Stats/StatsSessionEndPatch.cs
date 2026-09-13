@@ -1,9 +1,11 @@
 using System;
 using System.Reflection;
+using CuriosClient.Models;
 using CuriosClient.System;
 using EFT;
 using HarmonyLib;
 using SPT.Reflection.Patching;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace CuriosClient.Patches.Stats;
@@ -18,17 +20,22 @@ public class StatsSessionEndPatch : ModulePatch
     [PatchPostfix]
     public static void Postfix(BaseStatisticsManager __instance)
     {
-        if (!CurioManager.InvControllerCurioTable.TryGetValue(__instance.Player.InventoryController,
-                out CurioController curioController))
+        if (__instance.Player == null || 
+            !CurioManager.InvControllerCurioTable.TryGetValue(
+                __instance.Player.InventoryController, out CurioController curioController))
             return;
                 
         ProfileStats stats = __instance.Profile.EftStats;
-                
-        //TODO: Config based xp rates
-        float xpReduction = stats.TotalSessionExperience * (1 - curioController.TotalCurse / 100);
-        int trueXpReduction = Mathf.RoundToInt(Math.Clamp(xpReduction, 0f, 1f));
+
+        CurseConfig curseConfig = CurioPlugin.CurioConfig.CurseConfig;
+        float xpMult = math.remap(0, curseConfig.CurseXpCount,
+            curseConfig.CurseMaxXp, 1f, Math.Max(curseConfig.CurseXpCount - curioController.TotalCurse, 0));
         
-        stats.TotalSessionExperience -= trueXpReduction;
-        __instance.Profile.Info.Experience -= trueXpReduction;
+        CurioPlugin.PluginLogger.LogInfo($"Xp multiplier: {xpMult}");
+        
+        int xpReduction = Mathf.RoundToInt(Math.Clamp(xpMult, 0f, 1f));
+        
+        stats.TotalSessionExperience -= xpReduction;
+        __instance.Profile.Info.Experience -= xpReduction;
     }
 }

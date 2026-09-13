@@ -1,15 +1,14 @@
-using System.ComponentModel;
 using System.Text.Json.Serialization;
 
 namespace CuriosServer.Models;
 
-public record CurioConfig
+public class CurioConfig
 {
     [JsonPropertyName("effects")] public EffectConfig EffectConfig { get; set; } = new();
     [JsonPropertyName("curse")] public CurseConfig CurseConfig { get; set; } = new();
 }
 
-public record EffectConfig
+public class EffectConfig
 {
     [JsonPropertyName("cumulativePenResist")] public bool CumulativePen { get; set; } = false;
     [JsonPropertyName("cumulativeJumpHeight")] public bool CumulativeJump { get; set; } = false;
@@ -20,12 +19,12 @@ public record EffectConfig
     [JsonPropertyName("armorLoopTime")] public int ArmorLoopTime { get; set; } = 45;
 }
 
-public record CurseConfig
+public class CurseConfig
 {
     [JsonPropertyName("minCurseRunThrough")] public int CurseRunThrough { get; set; } = 100;
     [JsonPropertyName("maxCurseXpMult")] public float CurseMaxXp { get; set; } = 0.5f;
     [JsonPropertyName("maxCurseMedFailRate")] public int CurseFailRate { get; set; } = 50;
     [JsonPropertyName("maxCurseMedFailNum")] public int CurseFailCount { get; set; } = 100;
     [JsonPropertyName("maxCurseXpNum")] public int CurseXpCount { get; set; } = 100;
-    [JsonPropertyName("cursePerExtraKeys")] public int CurseKeys { get; set; } = 50;
+    [JsonPropertyName("cursePerExtraKeyUse")] public int CurseKeys { get; set; } = 30;
 }

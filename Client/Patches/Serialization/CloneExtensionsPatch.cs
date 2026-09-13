@@ -12,7 +12,7 @@ public class CloneExtensionsPatch : ModulePatch
 {
     protected override MethodBase GetTargetMethod()
     {
-        return AccessTools.Method(typeof(BinaryCloneExtensions), nameof(BinaryCloneExtensions.ClonePolymorph));
+        return AccessTools.Method(typeof(BinaryCloneExtensions), nameof(BinaryCloneExtensions.ClonePolymorph), generics: [typeof(object)]); //kill me
     }
 
     [PatchPrefix]

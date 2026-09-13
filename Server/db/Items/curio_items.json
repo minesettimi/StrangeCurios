@@ -30,6 +30,7 @@
     "overrideProperties":
     {
       "MaxNumberOfUsage": 3,
+      "Curse": 80,
       "Weight": 0.1,
       "DamageReduction": 10,
       "PenResistance": 1,

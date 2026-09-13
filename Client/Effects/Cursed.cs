@@ -27,17 +27,17 @@ public class Cursed : ActiveHealthController.Effect, IExistence
 
     public override void Started()
     {
-        _healthLoopTime = Plugin.CurioConfig.EffectConfig.HealthLoopTime;
-        _energyLoopTime = Plugin.CurioConfig.EffectConfig.EnergyLoopTime;
-        _hydrationLoopTime = Plugin.CurioConfig.EffectConfig.HydrationLoopTime;
-        _temperatureLoopTime = Plugin.CurioConfig.EffectConfig.TemperatureLoopTime;
-        _armorLoopTime = Plugin.CurioConfig.EffectConfig.ArmorLoopTime;
+        _healthLoopTime = CurioPlugin.CurioConfig.EffectConfig.HealthLoopTime;
+        _energyLoopTime = CurioPlugin.CurioConfig.EffectConfig.EnergyLoopTime;
+        _hydrationLoopTime = CurioPlugin.CurioConfig.EffectConfig.HydrationLoopTime;
+        _temperatureLoopTime = CurioPlugin.CurioConfig.EffectConfig.TemperatureLoopTime;
+        _armorLoopTime = CurioPlugin.CurioConfig.EffectConfig.ArmorLoopTime;
         
         if (HealthController._inventory == null ||
             !CurioManager.InvControllerCurioTable.TryGetValue(HealthController._inventory,
                 out CurioController curioController))
         {
-            Plugin.PluginLogger.LogError("Failed to get curio controller for Cursed condition.");
+            CurioPlugin.PluginLogger.LogError("Failed to get curio controller for Cursed condition.");
             ForceRemove();
             return;
         }

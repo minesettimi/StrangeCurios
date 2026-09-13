@@ -9,6 +9,6 @@ public static class ConfigSync
     public static CurioConfig GetConfig()
     {
         string result = RequestHandler.GetJson("/curio/config");
-        return JsonConvert.DeserializeObject<CurioConfig>(result) ?? new CurioConfig();
+        return JsonConvert.DeserializeObject<CurioConfig>(result)!;
     }
 }
