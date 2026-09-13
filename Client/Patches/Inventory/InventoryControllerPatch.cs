@@ -16,6 +16,6 @@ public class InventoryControllerPatch : ModulePatch
     [PatchPostfix]
     public static void Postfix(InventoryController __instance, IInventoryProfileInfo profile)
     {
-        CurioManager.InvControllerCurioTable.Add(__instance, new CurioController(__instance, profile));
+        CurioManager.InvControllerCurioTable.AddOrUpdate(__instance, new CurioController(__instance, profile));
     }
 }

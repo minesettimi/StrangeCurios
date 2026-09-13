@@ -34,6 +34,8 @@ public class UnlockKeycardPatch : ModulePatch
         
         int extraKeyUses = Mathf.FloorToInt((curioController.TotalCurse - minCurse) / CurioPlugin.CurioConfig.CurseConfig.CurseKeys);
         key.NumberOfUsages += extraKeyUses;
+        
+        CurioPlugin.PluginLogger.LogInfo($"Total curse keys; {curioController.TotalCurse}");
 
         if (key.NumberOfUsages >= key.Template.MaximumNumberOfUsage && key.Template.MaximumNumberOfUsage > 0)
         {

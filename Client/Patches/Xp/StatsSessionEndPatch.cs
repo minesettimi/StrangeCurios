@@ -35,7 +35,7 @@ public class StatsSessionEndPatch : ModulePatch
         float xpMult = math.remap(curseConfig.CurseXpCountMin, curseConfig.CurseXpCount,
             curseConfig.CurseMaxXp, 1f, Math.Max(curseConfig.CurseXpCount - curioController.TotalCurse, 0));
         
-        int xpReduction = Mathf.RoundToInt(Math.Clamp(xpMult, 0f, 1f));
+        int xpReduction = Mathf.RoundToInt(Math.Clamp(xpMult, 0f, 1f) * stats.TotalSessionExperience);
         
         stats.TotalSessionExperience -= xpReduction;
         __instance.Profile.Info.Experience -= xpReduction;

@@ -22,10 +22,10 @@ public class CurioController
     public float TotalDamageReduction = 0f;
     public int HighestPenResistance = 0;
     public float HighestJumpBuff = 0f;
-    public Dictionary<EHealthFactorType, float> HealthEffects = [];
-    public Dictionary<EquipmentSlot, float> EquipmentRepair = [];
-    public Dictionary<CurioSpecialEffects, CurioComponent> ItemSpecialEffects = [];
-    public Dictionary<ESkillId, int> SkillAdjustments = [];
+    public readonly Dictionary<EHealthFactorType, float> HealthEffects = [];
+    public readonly Dictionary<EquipmentSlot, float> EquipmentRepair = [];
+    public readonly Dictionary<CurioSpecialEffects, CurioComponent> ItemSpecialEffects = [];
+    public readonly Dictionary<ESkillId, int> SkillAdjustments = [];
 
     public CurioController(InventoryController inventoryController, IInventoryProfileInfo profile)
     {
