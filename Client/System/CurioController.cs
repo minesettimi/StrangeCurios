@@ -6,7 +6,6 @@ using Diz.LanguageExtensions;
 using EFT;
 using EFT.HealthSystem;
 using EFT.InventoryLogic;
-using Newtonsoft.Json;
 
 namespace CuriosClient.System;
 
@@ -17,11 +16,13 @@ public class CurioController
     public Inventory Inventory;
 
 
-    //TODO: More dynamic system like done with the stimulator
-    public float TotalCurse = 0f;
-    public float TotalDamageReduction = 0f;
-    public int HighestPenResistance = 0;
-    public float HighestJumpBuff = 0f;
+    //TODO: More dynamic system like done with the stimulator (Maybe)
+    public float TotalCurse;
+    public float TotalDamageReduction;
+    public int HighestPenResistance;
+    public float HighestJumpBuff;
+    public float TotalStaminaMax;
+    public float TotalStaminaRate;
     public readonly Dictionary<EHealthFactorType, float> HealthEffects = [];
     public readonly Dictionary<EquipmentSlot, float> EquipmentRepair = [];
     public readonly Dictionary<CurioSpecialEffects, CurioComponent> ItemSpecialEffects = [];
@@ -54,6 +55,8 @@ public class CurioController
         TotalDamageReduction = 0f;
         HighestPenResistance = 0;
         HighestJumpBuff = 0f;
+        TotalStaminaMax = 0f;
+        TotalStaminaRate = 0f;
         HealthEffects.Clear();
         EquipmentRepair.Clear();
         ItemSpecialEffects.Clear();
@@ -74,12 +77,12 @@ public class CurioController
             }
             
             TotalDamageReduction += template.DamageReduction ?? 0;
+            EffectConfig effectConfig = CurioPlugin.CurioConfig.EffectConfig;
 
-            if (template.JumpBuff > HighestJumpBuff)
-                HighestJumpBuff = (float)template.JumpBuff;
-
-            if (template.PenResistance > HighestPenResistance)
-                HighestPenResistance = (int)template.PenResistance;
+            SetValueCumulative(effectConfig.CumulativeJump, ref HighestJumpBuff, template.JumpBuff);
+            SetValueCumulative(effectConfig.CumulativePen, ref HighestPenResistance, template.PenResistance);
+            SetValueCumulative(effectConfig.CumulativeStamina, ref TotalStaminaMax, template.StaminaMax);
+            SetValueCumulative(effectConfig.CumulativeStamina, ref TotalStaminaRate, template.StaminaRate);
 
             if (template.EquipmentRepair != null && template.EquipmentRepair != 0)
             {
@@ -113,6 +116,32 @@ public class CurioController
         }
         
         OnCurioUpdated?.Invoke();
+    }
+
+    private void SetValueCumulative(bool cumulative, ref float sourceVal, float? newValue)
+    {
+        if (cumulative)
+        {
+            if (newValue > sourceVal)
+                sourceVal = (float)newValue;
+        }
+        else if (newValue != null && newValue != 0)
+        {
+            sourceVal += (float)newValue;
+        }
+    }
+
+    private void SetValueCumulative(bool cumulative, ref int sourceVal, int? newValue)
+    {
+        if (cumulative)
+        {
+            if (newValue > sourceVal)
+                sourceVal = (int)newValue;
+        }
+        else if (newValue != null && newValue != 0)
+        {
+            sourceVal += (int)newValue;
+        }
     }
 
     public bool UseSpecialEffect(CurioSpecialEffects effect)

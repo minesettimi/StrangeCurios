@@ -15,6 +15,8 @@ public class CuriosTemplate : ItemTemplate
     [JsonProperty("PenResistance")] public int? PenResistance { get; set; }
     [JsonProperty("EquipmentRepair")] public float? EquipmentRepair { get; set; }
     [JsonProperty("JumpBuff")] public float? JumpBuff { get; set; }
+    [JsonProperty("StaminaRateBuff")] public float? StaminaRate { get; set; }
+    [JsonProperty("StaminaMaxBuff")] public float? StaminaMax { get; set; }
     [JsonProperty("EquipmentTargets")] public List<EquipmentSlot>? EquipmentTargets { get; set; }
     [JsonProperty("SpecialEffect")] public CurioSpecialEffects SpecialEffect { get; set; } = CurioSpecialEffects.None;
     [JsonProperty("SkillIncreases")] public Dictionary<ESkillId, int>? SkillIncreases;
@@ -37,6 +39,7 @@ public enum CurioAttributes
     PenResistance,
     EquipmentRepair,
     SpecialEffect,
-    SpeedBuff,
-    JumpBuff
+    JumpBuff,
+    StaminaMax,
+    StaminaRate
 }

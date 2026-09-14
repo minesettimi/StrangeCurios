@@ -1,7 +1,5 @@
 using System.Reflection;
-using System.Threading.Tasks;
 using CuriosClient.System;
-using EFT;
 using EFT.HealthSystem;
 using EFT.InventoryLogic;
 using HarmonyLib;

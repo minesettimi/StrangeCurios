@@ -12,11 +12,15 @@ public record EffectConfig
 {
     [JsonProperty("cumulativePenResist")] public bool CumulativePen { get; set; }
     [JsonProperty("cumulativeJumpHeight")] public bool CumulativeJump { get; set; }
+    [JsonProperty("cumulativeStamina")] public bool CumulativeStamina { get; set; }
     [JsonProperty("energyLoopTime")] public int EnergyLoopTime { get; set; }
     [JsonProperty("healthLoopTime")] public int HealthLoopTime { get; set; }
     [JsonProperty("hydrationLoopTime")] public int HydrationLoopTime { get; set; }
     [JsonProperty("temperatureLoopTime")] public int TemperatureLoopTime { get; set; }
     [JsonProperty("armorLoopTime")] public int ArmorLoopTime { get; set; }
+    [JsonProperty("reflectMult")] public float ReflectMult { get; set; }
+    [JsonProperty("reflectDmgMult")] public float ReflectDmgMult { get; set; }
+    [JsonProperty("penResistMult")] public float PenMult { get; set; }
 }
 
 public record CurseConfig

@@ -25,6 +25,9 @@ public class Cursed : ActiveHealthController.Effect, IExistence
     
     private Dictionary<ESkillId, int> _previousSkillChanges = [];
 
+    private float _previousStaminaRate = 0;
+    private float _previousStaminaMax = 0;
+
     public override void Started()
     {
         _healthLoopTime = CurioPlugin.CurioConfig.EffectConfig.HealthLoopTime;
@@ -51,6 +54,8 @@ public class Cursed : ActiveHealthController.Effect, IExistence
         {
             UpdateSkills(_curioController.SkillAdjustments);
         }
+        
+        UpdateBasicStats();
     }
 
     public override void Removed()
@@ -64,12 +69,14 @@ public class Cursed : ActiveHealthController.Effect, IExistence
         }
         
         UpdateSkills(skillChanges);
+        UpdateBasicStats();
     }
 
     private void Event_OnCurioUpdated()
     {
         SetHealthRatesPerSecond(GetHealthBoost(), GetEnergyBoost(), GetHydrationBoost(), GetTemperatureBoost());
-
+        UpdateBasicStats();
+        
         Dictionary<ESkillId, int> skillChanges = [];
         foreach ((ESkillId skillId, int skillVal) in _previousSkillChanges)
         {
@@ -214,5 +221,14 @@ public class Cursed : ActiveHealthController.Effect, IExistence
             if (_curioController.SkillAdjustments.TryGetValue(skill.Id, out int skillVal))
                 _previousSkillChanges[skill.Id] = skillVal;
         }
+    }
+
+    private void UpdateBasicStats()
+    {
+        HealthController.Player.Physical.RestoreRateBuff += _curioController.TotalStaminaRate - _previousStaminaRate;
+        HealthController.Player.Physical.CapacityBuff += _curioController.TotalStaminaMax - _previousStaminaMax;
+
+        _previousStaminaRate = _curioController.TotalStaminaRate;
+        _previousStaminaMax = _curioController.TotalStaminaMax;
     }
 }

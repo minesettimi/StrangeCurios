@@ -37,16 +37,17 @@ public class ApplyDamagePatch : ModulePatch
 
             if (otherPlayer is { iPlayer: Player enemyPlayer } && curioController.UseSpecialEffect(CurioSpecialEffects.Reflect))
             {
-                enemyPlayer.ApplyDamageInfo(new DamageInfo { DamageType = EDamageType.Bullet, Damage = damage * 2}, bodyPart,
+                enemyPlayer.ApplyDamageInfo(new DamageInfo { DamageType = EDamageType.Bullet, 
+                        Damage = damage * CurioPlugin.CurioConfig.EffectConfig.ReflectDmgMult}, bodyPart,
                     damageInfo.BodyPartColliderType, 0f);
+                
+                damage *= CurioPlugin.CurioConfig.EffectConfig.ReflectMult;
             }
-
-            damage *= .5f;
         }
         
         if (curioController.HighestPenResistance * 10 > damageInfo.PenetrationPower)
         {
-            damage *= .25f;
+            damage *= CurioPlugin.CurioConfig.EffectConfig.PenMult;
         }
         
         ValueStruct bodyPartHealth = __instance.GetBodyPartHealth(bodyPart);

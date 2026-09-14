@@ -3,7 +3,6 @@ using CuriosClient.Models;
 using CuriosClient.System;
 using EFT;
 using HarmonyLib;
-using Newtonsoft.Json;
 using SPT.Reflection.Patching;
 
 namespace CuriosClient.Patches.World;
@@ -12,7 +11,7 @@ public class GameEndPatch : ModulePatch
 {
     protected override MethodBase GetTargetMethod()
     {
-        return AccessTools.Method(typeof(BaseLocalGame<EftGamePlayerOwner>), nameof(BaseLocalGame<EftGamePlayerOwner>.GameEnd));
+        return AccessTools.Method(typeof(BaseLocalGame<EftGamePlayerOwner>), nameof(BaseLocalGame<>.GameEnd));
     }
 
     [PatchPrefix]

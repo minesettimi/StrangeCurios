@@ -8,19 +8,19 @@ using SPT.Reflection.Patching;
 
 namespace CuriosClient.Patches.Health;
 
-public class PlayerHealthControllerPatch : ModulePatch
+public class PlayerInitPatch : ModulePatch
 {
     protected override MethodBase GetTargetMethod()
     {
-        return AccessTools.Constructor(typeof(PlayerHealthController),
-        [
-            typeof(Profile.HealthInfo), typeof(Player), typeof(InventoryController), typeof(SkillManager), typeof(bool)
-        ]);
+        return AccessTools.Method(typeof(Player), nameof(Player.Init));
     }
 
     [PatchPostfix]
-    public static void Postfix(PlayerHealthController __instance)
+    public static void Postfix(Player __instance)
     {
-        __instance.AddEffect<Cursed>(EBodyPart.Head);
+        if (!__instance.IsYourPlayer || __instance.HealthController is not ActiveHealthController healthController)
+            return;
+        
+        healthController.AddEffect<Cursed>(EBodyPart.Head);
     }
 }

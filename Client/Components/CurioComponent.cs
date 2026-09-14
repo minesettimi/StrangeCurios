@@ -48,49 +48,13 @@ public class CurioComponent : ItemComponent, IRelativeComponent
             LabelVariations = EItemAttributeLabelVariations.Colored
         });
         
-        if (Template.JumpBuff != null && Template.JumpBuff != 0)
-        {
-            attributes.Add(new ItemAttribute(CurioAttributes.JumpBuff)
-            {
-                Name = "JUMP BUFF".Localized(),
-                StringValue = Template.JumpBuff.ToString,
-                DisplayType = () => EItemAttributeDisplayType.Compact,
-                LabelVariations = EItemAttributeLabelVariations.Colored
-            });
-        }
-
-        if (Template.DamageReduction != null && Template.DamageReduction != 0)
-        {
-            attributes.Add(new ItemAttribute(CurioAttributes.DamageReduction)
-            {
-                Name = "DAMAGE REDUCTION".Localized(),
-                StringValue = Template.DamageReduction.ToString,
-                DisplayType = () => EItemAttributeDisplayType.Compact,
-                LabelVariations = EItemAttributeLabelVariations.Colored
-            });
-        }
-
-        if (Template.PenResistance != null && Template.PenResistance != 0)
-        {
-            attributes.Add(new ItemAttribute(CurioAttributes.PenResistance)
-            {
-                Name = "PEN RESISTANCE".Localized(),
-                StringValue = Template.PenResistance.ToString,
-                DisplayType = () => EItemAttributeDisplayType.Compact,
-                LabelVariations = EItemAttributeLabelVariations.Colored
-            });
-        }
-
-        if (Template.EquipmentRepair != null && Template.EquipmentRepair != 0)
-        {
-            attributes.Add(new ItemAttribute(CurioAttributes.EquipmentRepair)
-            {
-                Name = "EQUIPMENT REPAIR".Localized(),
-                StringValue = Template.EquipmentRepair.ToString,
-                DisplayType = () => EItemAttributeDisplayType.Compact,
-                LabelVariations = EItemAttributeLabelVariations.Colored
-            });
-        }
+        AddBasicValue(attributes, Template.JumpBuff, CurioAttributes.JumpBuff, "JUMP BUFF");
+        AddBasicValue(attributes, Template.DamageReduction, CurioAttributes.DamageReduction, "DAMAGE REDUCTION");
+        AddBasicValue(attributes, Template.PenResistance, CurioAttributes.PenResistance, "PEN RESISTANCE");
+        AddBasicValue(attributes, Template.EquipmentRepair, CurioAttributes.EquipmentRepair, "EQUIPMENT REPAIR");
+        AddBasicValue(attributes, Template.StaminaMax, CurioAttributes.StaminaMax, "STAMINA MAX");
+        AddBasicValue(attributes, Template.StaminaRate, CurioAttributes.StaminaRate, "STAMINA RATE");
+        
 
         if (Template.SpecialEffect != CurioSpecialEffects.None)
         {
@@ -119,6 +83,20 @@ public class CurioComponent : ItemComponent, IRelativeComponent
                 });
             }
         }
+    }
+
+    private void AddBasicValue(List<ItemAttribute> attributes, float? value, CurioAttributes attributeEnum, string translation)
+    {
+        if (value == null || value == 0)
+            return;
+        
+        attributes.Add(new ItemAttribute(attributeEnum)
+        {
+            Name = translation.Localized(),
+            StringValue = value.ToString,
+            DisplayType = () => EItemAttributeDisplayType.Compact,
+            LabelVariations = EItemAttributeLabelVariations.Colored
+        });
     }
 
     public float RelativeValue => 1 - NumberOfUsages / (float)Template.MaxUses;

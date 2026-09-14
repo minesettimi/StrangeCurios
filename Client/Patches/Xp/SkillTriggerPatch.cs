@@ -7,7 +7,6 @@ using EFT;
 using HarmonyLib;
 using SPT.Reflection.Patching;
 using Unity.Mathematics;
-using UnityEngine;
 
 namespace CuriosClient.Patches.Stats;
 

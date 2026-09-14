@@ -34,6 +34,7 @@
       "Weight": 0.1,
       "DamageReduction": 10,
       "PenResistance": 1,
+      "StaminaRateBuff": 10,
       "SpecialEffect": "ExfilTp",
       "SkillIncreases":
       {
@@ -62,6 +63,7 @@
     {
       "Weight": 0.5,
       "MaxNumberOfUsage": 3,
+      "JumpBuff": 4,
       "Curse": 3
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
