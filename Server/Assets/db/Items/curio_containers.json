@@ -1,0 +1,120 @@
+{
+  "6a9b56cad5853c9309c78fbf": {
+    "itemTplToClone": "59fafd4b86f7745ca07e1232",
+    "overrideProperties":
+    {
+      "BackgroundColor": "red",
+      "CanSellOnRagfair": false,
+      "Description": "curioring",
+      "Name": "curioring",
+      "LootExperience": 50,
+      "Weight": 0.5,
+      "ItemSound": "generic",
+      "Grids": [
+        {
+          "_id": "6a9b58aa68771e771e640041",
+          "_name": "main",
+          "_parent": "59fafd4b86f7745ca07e1232",
+          "_props":
+          {
+            "filters":
+            [
+              {
+                "ExcludedFilter": [],
+                "Filter":
+                [
+                  "6a9b52c15dfaf97d11fc341e"
+                ]
+              }
+            ],
+            "cellsH": 2,
+            "cellsV": 2,
+            "minCount": 0,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "isSortingTable": false
+          },
+          "_proto": "6a9b58a7dcb7181f276eba3b"
+        }
+      ]
+    },
+    "parentId": "5795f317245977243854e041",
+    "newItemName": "item_container_curio",
+    "fleaPriceRoubles": 0,
+    "handbookPriceRoubles": 324000,
+    "handbookParentId": "5b5f6fa186f77409407a7eb7",
+    "addToFleaPriceDb": false,
+    "addToWeaponShelf": false,
+    "addtoSecureFilters": true,
+    "locales": 
+    {
+      "en": 
+      {
+        "name": "Curio Loop",
+        "shortName": "CurioLoop",
+        "description": "A loop of rope enchanted to hold extra curios while withstanding their curse."
+      }
+    }
+  },
+  "6aace290f6a9a5944e44b162": {
+    "itemTplToClone": "5b7c710788a4506dec015957",
+    "overrideProperties":
+    {
+      "BackgroundColor": "red",
+      "CanSellOnRagfair": false,
+      "Description": "curiocase",
+      "Name": "curiocase",
+      "LootExperience": 50,
+      "Grids": [
+        {
+          "_id": "6a9b58aa68771e771e640041",
+          "_name": "main",
+          "_parent": "59fafd4b86f7745ca07e1232",
+          "_props":
+          {
+            "filters":
+            [
+              {
+                "ExcludedFilter": [],
+                "Filter":
+                [
+                  "6a9b52c15dfaf97d11fc341e"
+                ]
+              }
+            ],
+            "cellsH": 6,
+            "cellsV": 6,
+            "minCount": 0,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "isSortingTable": false
+          },
+          "_proto": "6a9b58a7dcb7181f276eba3b"
+        }
+      ],
+      "Prefab": {
+        "path": "minesettimi/item_curio_case.bundle",
+        "rcid": ""
+      },
+      "Width": 5,
+      "Height": 3
+    },
+    "parentId": "5795f317245977243854e041",
+    "newItemName": "item_container_curio",
+    "fleaPriceRoubles": 3124000,
+    "handbookPriceRoubles": 2476000,
+    "handbookParentId": "5b5f6fa186f77409407a7eb7",
+    "addToFleaPriceDb": false,
+    "addToWeaponShelf": false,
+    "addtoSecureFilters": true,
+    "locales":
+    {
+      "en":
+      {
+        "name": "Curio Case",
+        "shortName": "Curio Case",
+        "description": "An old case that seems to have been designed to hold powerful curios."
+      }
+    }
+  }
+}

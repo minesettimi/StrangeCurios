@@ -40,8 +40,11 @@
         <None Update="Data/**">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
-        <None Update="db/**">
+        <None Update="Assets/**">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Assets\bundles\minesettimi\item_curio_case.bundle">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
     </ItemGroup>
 
@@ -52,10 +55,11 @@
         <Delete Files="@(CompileFiles)" />
         <ItemGroup>
             <CopyFiles Include="$(TargetDir)/**/*.*"/>
-<!--            <CopyFiles Remove="$(TargetDir)\TerritoriesPrepatch.json" />-->
+            <CopyFiles Remove="$(TargetDir)/Assets/**/*.*" />
+            <CopyAssets Include="$(TargetDir)/Assets/**/*.*" />
         </ItemGroup>
         <Copy SourceFiles="@(CopyFiles)" DestinationFolder="$(SolutionDir)../../SPT_Runtime/user/mods/$(AssemblyName)\%(RecursiveDir)" />
-<!--        <Copy SourceFiles="$(TargetDir)\TerritoriesPrepatch.json" DestinationFolder="$(SolutionDir)../../SPT_Runtime/user/patchers/com.minesettimi.territories" />-->
+        <Copy SourceFiles="@(CopyAssets)" DestinationFolder="$(SolutionDir)../../SPT_Runtime/user/mods/$(AssemblyName)\%(RecursiveDir)" />
     </Target>
 
     <Target Name="PostBuildCopy" AfterTargets="PostBuild" Condition="$(Configuration) == Release">

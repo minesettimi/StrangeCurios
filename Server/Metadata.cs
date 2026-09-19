@@ -17,6 +17,7 @@ public static class Metadata
         public Range SptVersion { get; init; } = new("~4.1.5");
 
         public bool HasPrepatcher { get; init; } = false;
+        
         public List<string>? Incompatibilities { get; init; }
         public Dictionary<string, Range>? ModDependencies { get; init; } = new()
         {
