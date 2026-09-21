@@ -1,0 +1,309 @@
+{
+  "6ab07ad94fd67008a0bcb68e":
+  {
+    "itemTplToClone": "6a9ba96856754311ed20f844",
+    "overrideProperties":
+    {
+      "Weight": 0.15,
+      "Curse": 20,
+      "HealthEffects":
+      {
+        "Energy": -0.0833,
+        "Hydration": -0.0833
+      },
+      "StaminaRegenBuff": 0.0833,
+      "StaminaMaxBuff": 10,
+      "JumpBuff": 0.04,
+      "SkillIncreases":
+      {
+        "Endurance": 4,
+        "Strength": 2
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "talisman_energetic",
+    "fleaPriceRoubles": 268000,
+    "handbookPriceRoubles": 238000,
+    "handbookParentId": "6a9b96dd91603a7d84c27136",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Energetic",
+        "shortName": "Energetic",
+        "description": "A blessing that emerges the energy within."
+      }
+    }
+  },
+  "6ab07ad92317a28f0be470d3":
+  {
+    "itemTplToClone": "6a9ba96856754311ed20f844",
+    "overrideProperties":
+    {
+      "Weight": 1.0,
+      "Curse": 30,
+      "HealthEffects":
+      {
+        "Health": 0.1666,
+        "Energy": -0.05,
+        "Hydration": -0.05
+      },
+      "DamageReduction": 20,
+      "PenResistance": 3,
+      "EquipmentRepair":
+      {
+        "Headwear": -0.1666,
+        "ArmorVest": -0.1666,
+        "TacticalVest": -0.1666,
+        "FaceCover": -0.1666,
+        "Eyewear": -0.1666
+      },
+      "StaminaRateBuff": 0.0833,
+      "SkillIncreases":
+      {
+        "Search": -20,
+        "StressResistance": 10
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "talisman_berserk",
+    "fleaPriceRoubles": 334000,
+    "handbookPriceRoubles": 304000,
+    "handbookParentId": "6a9b96dd91603a7d84c27136",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Berserk",
+        "shortName": "Berserk",
+        "description": "A sign of the beast within us all."
+      }
+    }
+  },
+  "6ab07ad9f3e73f59259f1e1a":
+  {
+    "itemTplToClone": "6a9ba96856754311ed20f844",
+    "overrideProperties":
+    {
+      "Weight": 0.25,
+      "MaxNumberOfUsage": 1,
+      "SpecialEffect": "ExfilTp",
+      "Curse": 43,
+      "HealthEffects":
+      {
+        "Health": -0.5
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "talisman_last_stand",
+    "fleaPriceRoubles": 853000,
+    "handbookPriceRoubles": 823000,
+    "handbookParentId": "6a9b96dd91603a7d84c27136",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Last Stand",
+        "shortName": "LastStand",
+        "description": "Hope for when the situation is unwinable."
+      }
+    }
+  },
+  "6ab07ad90b6106bae1e695aa":
+  {
+    "itemTplToClone": "6a9ba96856754311ed20f844",
+    "overrideProperties":
+    {
+      "Weight": 0.73,
+      "MaxNumberOfUsage": 1,
+      "SpecialEffect": "DoorBreaker",
+      "Curse": 34
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "talisman_thief",
+    "fleaPriceRoubles": 515000,
+    "handbookPriceRoubles": 485000,
+    "handbookParentId": "6a9b96dd91603a7d84c27136",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Thief",
+        "shortName": "Thief",
+        "description": "No amount of security can get in your way."
+      }
+    }
+  },
+  "6ab07ad9bb1a1a7058a8ad37":
+  {
+    "itemTplToClone": "6a9ba96856754311ed20f844",
+    "overrideProperties":
+    {
+      "Weight": 3.75,
+      "MaxNumberOfUsage": 50,
+      "SpecialEffect": "Reflect",
+      "Curse": 39,
+      "DamageReduction": 10,
+      "PenResistance": 3,
+      "StaminaRateBuff": -0.5,
+      "StaminaMaxBuff": -10
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "talisman_steel",
+    "fleaPriceRoubles": 465000,
+    "handbookPriceRoubles": 435000,
+    "handbookParentId": "6a9b96dd91603a7d84c27136",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Steel",
+        "shortName": "Steel",
+        "description": "Hardens the body against the storm of pain."
+      }
+    }
+  },
+  "6ab07ad991165b0aadc10f84":
+  {
+    "itemTplToClone": "6a9ba96856754311ed20f844",
+    "overrideProperties":
+    {
+      "Weight": 1.2,
+      "Curse": 33,
+      "HealthEffects":
+      {
+        "Health": 0.3333
+      },
+      "DamageReduction": 5,
+      "SkillIncreases":
+      {
+        "Health": 5,
+        "Vitality": 5,
+        "Surgery": 5,
+        "Immunity": 5,
+        "StressResistance": 5
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "talisman_doctor",
+    "fleaPriceRoubles": 593900,
+    "handbookPriceRoubles": 563900,
+    "handbookParentId": "6a9b96dd91603a7d84c27136",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Doctor",
+        "shortName": "Talisman",
+        "description": "A vessel for the vast knowledge of medicine."
+      }
+    }
+  },
+  "6ab07ad97b287b44dbc28632":
+  {
+    "itemTplToClone": "6a9ba96856754311ed20f844",
+    "overrideProperties":
+    {
+      "Weight": 1.35,
+      "Curse": 19,
+      "HealthEffects":
+      {
+        "Energy": 0.0333,
+        "Hydration": 0.0333
+      },
+      "StaminaMaxBuff": -25,
+      "SkillIncreases":
+      {
+        "Metabolism": 5
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "talisman_glutinous",
+    "fleaPriceRoubles": 465800,
+    "handbookPriceRoubles": 435800,
+    "handbookParentId": "6a9b96dd91603a7d84c27136",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Glutinous",
+        "shortName": "Glutinous",
+        "description": "The satiation for empty souls."
+      }
+    }
+  },
+  "6ab07ad92ac0b3a49393c334":
+  {
+    "itemTplToClone": "6a9ba96856754311ed20f844",
+    "overrideProperties":
+    {
+      "Weight": 1.74,
+      "MaxNumberOfUsage": 3,
+      "SpecialEffect": "HeadshotProt",
+      "Curse": 32,
+      "HealthEffects":
+      {
+        "Energy": -0.0166
+      },
+      "DamageReduction": 5,
+      "EquipmentRepair":
+      {
+        "Headwear": -0.0166,
+        "FaceCover": -0.0166
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "talisman_hard_head",
+    "fleaPriceRoubles": 480230,
+    "handbookPriceRoubles": 450230,
+    "handbookParentId": "6a9b96dd91603a7d84c27136",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Hard Head",
+        "shortName": "HardHead",
+        "description": "Protection for your mind."
+      }
+    }
+  },
+  "6ab07ad9576292a951e3ad20":
+  {
+    "itemTplToClone": "6a9ba96856754311ed20f844",
+    "overrideProperties":
+    {
+      "Weight": 2.15,
+      "MaxNumberOfUsage": 3,
+      "Curse": 54,
+      "HealthEffects":
+      {
+        "Energy": -0.0333
+      },
+      "EquipmentRepair":
+      {
+        "Headwear": 0.00833,
+        "ArmorVest": 0.00833,
+        "TacticalVest": 0.00833,
+        "FaceCover": 0.00833,
+        "Eyewear": 0.00833,
+        "FirstPrimaryWeapon": 0.00833,
+        "SecondPrimaryWeapon": 0.00833,
+        "Holster": 0.00833
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "talisman_blacksmith",
+    "fleaPriceRoubles": 683000,
+    "handbookPriceRoubles": 653000,
+    "handbookParentId": "6a9b96dd91603a7d84c27136",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Blacksmith",
+        "shortName": "Blacksmith",
+        "description": "The mender of the body's extensions."
+      }
+    }
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "6ab07ad9a6b880d10a79375a":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "overrideProperties":
+    {
+      "MaxNumberOfUsage": 5,
+      "Curse": 8,
+      "Weight": 0.35,
+      "DamageReduction": 5,
+      "PenResistance": 2,
+      "StaminaRateBuff": 0.0166,
+      "SpecialEffect": "Reflect"
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "trinket_turtle",
+    "fleaPriceRoubles": 1200000,
+    "handbookPriceRoubles": 90000,
+    "handbookParentId": "6a9b96d5ef81726d8c766f45",
+    "locales":
+    {
+      "en":
+      {
+        "name": "The Turtle",
+        "shortName": "Turtle",
+        "description": "Channels the power of the turtle.\n"
+      }
+    }
+  },
+  "6ab07ad94c6c0e121e66f1b4":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "overrideProperties":
+    {
+      "Curse": 9,
+      "Weight": 0.16,
+      "JumpBuff": 0.02,
+      "HealthEffects":
+      {
+        "Hydration": 0.00166
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "trinket_frog",
+    "fleaPriceRoubles": 115000,
+    "handbookPriceRoubles": 85000,
+    "handbookParentId": "6a9b96d5ef81726d8c766f45",
+    "locales":
+    {
+      "en":
+      {
+        "name": "The Frog",
+        "shortName": "Frog",
+        "description": "Channels the power of the frog.\n"
+      }
+    }
+  },
+  "6ab07ad927dfe0e155cba25a":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "overrideProperties":
+    {
+      "Curse": 5,
+      "Weight": 0.16,
+      "SkillIncreases":
+      {
+        "Perception": "3",
+        "Search": "2",
+        "Attention": "2"
+      },
+      "StaminaRateBuff": 0.00166
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "trinket_hawk",
+    "fleaPriceRoubles": 100000,
+    "handbookPriceRoubles": 70000,
+    "handbookParentId": "6a9b96d5ef81726d8c766f45",
+    "locales":
+    {
+      "en":
+      {
+        "name": "The Hawk",
+        "shortName": "Hawk",
+        "description": "Channels the power of the hawk."
+      }
+    }
+  },
+  "6ab07ad9433565e6205f088f":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "overrideProperties":
+    {
+      "Curse": 7,
+      "Weight": 0.15,
+      "HealthEffects":
+      {
+        "Energy": -0.3333,
+        "Hydration": -0.0166
+      },
+      "StaminaRateBuff": 0.05,
+      "StaminaMaxBuff": 5
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "trinket_dog",
+    "fleaPriceRoubles": 125000,
+    "handbookPriceRoubles": 95000,
+    "handbookParentId": "6a9b96d5ef81726d8c766f45",
+    "locales":
+    {
+      "en":
+      {
+        "name": "The Dog",
+        "shortName": "Dog",
+        "description": "Channels the power of the dog."
+      }
+    }
+  },
+  "6ab07ad986352eac4bd62fe8":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "overrideProperties":
+    {
+      "Curse": 13,
+      "Weight": 0.22,
+      "DamageReduction": 15,
+      "PenResistance": 1
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "trinket_cockroach",
+    "fleaPriceRoubles": 135000,
+    "handbookPriceRoubles": 105000,
+    "handbookParentId": "6a9b96d5ef81726d8c766f45",
+    "locales":
+    {
+      "en":
+      {
+        "name": "The Cockroach",
+        "shortName": "Cockroach",
+        "description": "Channels the power of the cockroach."
+      }
+    }
+  },
+  "6ab07ad93de524f343c3dc7b":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "overrideProperties":
+    {
+      "Curse": 11,
+      "Weight": 0.08,
+      "HealthEffects":
+      {
+        "Energy": -0.0166
+      },
+      "StaminaRateBuff": 0.0666,
+      "StaminaMaxBuff": 5,
+      "SkillIncreases":
+      {
+        "Strength": 2
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "trinket_hare",
+    "fleaPriceRoubles": 129000,
+    "handbookPriceRoubles": 99000,
+    "handbookParentId": "6a9b96d5ef81726d8c766f45",
+    "locales":
+    {
+      "en":
+      {
+        "name": "The Hare",
+        "shortName": "Hare",
+        "description": "Channels the power of the hare."
+      }
+    }
+  },
+  "6ab07ad9a75aca693c420bd0":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "overrideProperties":
+    {
+      "MaxNumberOfUsage": 1,
+      "Curse": 13,
+      "Weight": 0.18,
+      "DamageReduction": -5,
+      "StaminaRateBuff": -0.0166,
+      "SpecialEffect": "HeadshotProt"
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "trinket_worm",
+    "fleaPriceRoubles": 165000,
+    "handbookPriceRoubles": 135000,
+    "handbookParentId": "6a9b96d5ef81726d8c766f45",
+    "locales":
+    {
+      "en":
+      {
+        "name": "The Worm",
+        "shortName": "Worm",
+        "description": "Channels the power of the worm."
+      }
+    }
+  },
+  "6ab07ad9f77067b10312095b":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "overrideProperties":
+    {
+      "Curse": 22,
+      "Weight": 0.4,
+      "HealthEffects":
+      {
+        "Health": -0.0166
+      },
+      "EquipmentRepair":
+      {
+        "FirstPrimaryWeapon": 0.000833,
+        "SecondPrimaryWeapon": 0.000833,
+        "Holster": 0.000833
+      },
+      "SkillIncreases":
+      {
+        "MagDrills": 2,
+        "Pistol": 2,
+        "Revolver": 2,
+        "SMG": 2,
+        "Assault": 2,
+        "Shotgun": 2,
+        "Sniper": 2,
+        "LMG": 2,
+        "HMG": 2,
+        "Launcher": 2,
+        "AttachedLauncher": 2,
+        "Throwing": 2,
+        "Misc": 2,
+        "Melee": 2,
+        "DMR": 2
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "trinket_human",
+    "fleaPriceRoubles": 180000,
+    "handbookPriceRoubles": 150000,
+    "handbookParentId": "6a9b96d5ef81726d8c766f45",
+    "locales":
+    {
+      "en":
+      {
+        "name": "The Human",
+        "shortName": "Human",
+        "description": "Channels the power of the human."
+      }
+    }
+  },
+  "6ab07ad996fdb132f4b1668a":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "overrideProperties":
+    {
+      "Curse": 16,
+      "Weight": 0.05,
+      "DamageReduction": 5,
+      "StaminaRateBuff": -0.3333,
+      "JumpBuff": 0.04,
+      "HealthEffects":
+      {
+        "Hydration": -0.00833
+      },
+      "SkillIncreases":
+      {
+        "CovertMovement": 4
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "trinket_cat",
+    "fleaPriceRoubles": 115000,
+    "handbookPriceRoubles": 85000,
+    "handbookParentId": "6a9b96d5ef81726d8c766f45",
+    "locales":
+    {
+      "en":
+      {
+        "name": "The Cat",
+        "shortName": "Cat",
+        "description": "Channels the power of the cat."
+      }
+    }
+  }
+}

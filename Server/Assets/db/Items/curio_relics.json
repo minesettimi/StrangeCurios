@@ -1,0 +1,157 @@
+{
+  "6ab07ad9e56bc63a1f0603b1":
+  {
+    "itemTplToClone": "6a9ba9689be966b80551f5f2",
+    "overrideProperties":
+    {
+      "Weight": 2.3,
+      "Curse": 55,
+      "MaxNumberOfUsage": 2,
+      "SpecialEffect": "NewLife",
+      "PenResistance": 2,
+      "SkillIncreases":
+      {
+        "Vitality": 10
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "relic_darkness",
+    "fleaPriceRoubles": 2430000,
+    "handbookPriceRoubles": 2400000,
+    "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Blessings of Darkness",
+        "shortName": "Darkness",
+        "description": "A mark of blessing from an ancient evil."
+      }
+    }
+  },
+  "6ab07ad9d3fa90aa975efab2":
+  {
+    "itemTplToClone": "6a9ba9689be966b80551f5f2",
+    "overrideProperties":
+    {
+      "Weight": 1.8,
+      "Curse": 35,
+      "MaxNumberOfUsage": 1,
+      "SpecialEffect": "NewLife"
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "relic_heart",
+    "fleaPriceRoubles": 1964000,
+    "handbookPriceRoubles": 1934000,
+    "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Blessing of The Heart",
+        "shortName": "Heard",
+        "description": "The bringer of the body's second self."
+      }
+    }
+  },
+  "6ab07ad9ab634610157400d8":
+  {
+    "itemTplToClone": "6a9ba9689be966b80551f5f2",
+    "overrideProperties":
+    {
+      "Weight": 5,
+      "Curse": 42,
+      "MaxNumberOfUsage": 20,
+      "SpecialEffect": "HeadshotProt",
+      "HealthEffects":
+      {
+        "Health": 1.1333,
+        "Temperature": 0.3333
+      },
+      "DamageReduction": 25,
+      "PenResistance": 5,
+      "StaminaRateBuff": -0.1666,
+      "StaminaMaxBuff": -20,
+      "JumpBuff": -0.02,
+      "SkillIncreases":
+      {
+        "StressResistance": 10
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "relic_tank",
+    "fleaPriceRoubles": 1383000,
+    "handbookPriceRoubles": 1353000,
+    "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Core of a Tank",
+        "shortName": "Tank",
+        "description": "The power of an unkillable might."
+      }
+    }
+  },
+  "6ab07ad92ee4fe844bc816b7":
+  {
+    "itemTplToClone": "6a9ba9689be966b80551f5f2",
+    "overrideProperties":
+    {
+      "Weight": 1.34,
+      "Curse": 62,
+      "MaxNumberOfUsage": 3,
+      "SpecialEffect": "DoorBreaker",
+      "SkillIncreases":
+      {
+        "CovertMovement": 10
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "relic_intruder",
+    "fleaPriceRoubles": 1750000,
+    "handbookPriceRoubles": 1450000,
+    "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Luck of The Intruder",
+        "shortName": "Intruder",
+        "description": "Let nothing stand in your way."
+      }
+    }
+  },
+  "6ab07ad987999f82e6a79725":
+  {
+    "itemTplToClone": "6a9ba9689be966b80551f5f2",
+    "overrideProperties":
+    {
+      "Weight": 3.43,
+      "Curse": 63,
+      "HealthEffects":
+      {
+        "Health": 0.08333,
+        "Energy": 0.16333,
+        "Hydration": 0.16333,
+        "Temperature": -0.16333
+      },
+      "PenResistance": 2,
+      "StaminaMaxBuff": -35
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "relic_khorovod",
+    "fleaPriceRoubles": 3110000,
+    "handbookPriceRoubles": 3080000,
+    "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
+    "locales":
+    {
+      "en":
+      {
+        "name": "Gift of Khorovod",
+        "shortName": "Khorovod",
+        "description": "A gift granted from the powers of the coldest nights."
+      }
+    }
+  }
+}
