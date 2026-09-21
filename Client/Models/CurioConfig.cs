@@ -11,6 +11,7 @@ public record CurioConfig
 public record EffectConfig
 {
     [JsonProperty("cumulativePenResist")] public bool CumulativePen { get; set; }
+    [JsonProperty("cumulativeDamageResist")] public bool CumulativeDamage { get; set; }
     [JsonProperty("cumulativeJumpHeight")] public bool CumulativeJump { get; set; }
     [JsonProperty("cumulativeStamina")] public bool CumulativeStamina { get; set; }
     [JsonProperty("energyLoopTime")] public int EnergyLoopTime { get; set; }

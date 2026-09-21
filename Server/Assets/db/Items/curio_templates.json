@@ -9,7 +9,7 @@
       "AnimationVariantsNumber": 0,
       "BackgroundColor": "tracerGreen",
       "CanRequireOnRagfair": false,
-      "CanSellOnRagfair": true,
+      "CanSellOnRagfair": false,
       "Description": "Item",
       "ExamineExperience": 15,
       "ExamineTime": 1,

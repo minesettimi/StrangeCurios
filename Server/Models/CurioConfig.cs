@@ -11,6 +11,7 @@ public class CurioConfig
 public class EffectConfig
 {
     [JsonPropertyName("cumulativePenResist")] public bool CumulativePen { get; set; } = false;
+    [JsonPropertyName("cumulativeDamageResist")] public bool CumulativeDamage { get; set; } = false;
     [JsonPropertyName("cumulativeJumpHeight")] public bool CumulativeJump { get; set; } = false;
     [JsonPropertyName("cumulativeStamina")] public bool CumulativeStamina { get; set; } = true;
     [JsonPropertyName("energyLoopTime")] public int EnergyLoopTime { get; set; } = 60;

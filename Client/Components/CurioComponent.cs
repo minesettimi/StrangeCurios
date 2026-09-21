@@ -51,7 +51,6 @@ public class CurioComponent : ItemComponent, IRelativeComponent
         AddBasicValue(attributes, Template.JumpBuff, CurioAttributes.JumpBuff, "JUMP BUFF");
         AddBasicValue(attributes, Template.DamageReduction, CurioAttributes.DamageReduction, "DAMAGE REDUCTION");
         AddBasicValue(attributes, Template.PenResistance, CurioAttributes.PenResistance, "PEN RESISTANCE");
-        AddBasicValue(attributes, Template.EquipmentRepair, CurioAttributes.EquipmentRepair, "EQUIPMENT REPAIR");
         AddBasicValue(attributes, Template.StaminaMax, CurioAttributes.StaminaMax, "STAMINA MAX");
         AddBasicValue(attributes, Template.StaminaRate, CurioAttributes.StaminaRate, "STAMINA RATE");
         
@@ -66,11 +65,29 @@ public class CurioComponent : ItemComponent, IRelativeComponent
             });
         }
 
+        if (Template.EquipmentRepair != null)
+        {
+            foreach ((EquipmentSlot slot, float value) in Template.EquipmentRepair)
+            {
+                attributes.Add(new ItemAttribute(CurioAttributes.EquipmentRepair)
+                {
+                    Name = slot.ToString(),
+                    DisplayNameFunc = () => $"{"EQUIPMENT REPAIR".Localized()} {slot.ToString().Localized()}",
+                    DisplayType = () => EItemAttributeDisplayType.Compact,
+                    LabelVariations = EItemAttributeLabelVariations.Colored,
+                    StringValue = () =>
+                        value >= 0
+                            ? $"{"Increase".Localized()}<color=blue>"
+                            : $"{"Decrease".Localized()}<color=red>" + $" { Math.Abs(value)}" + "</color>"
+                });
+            }
+        }
+
         if (Template.SkillIncreases != null)
         {
             foreach ((ESkillId skill, int value) in Template.SkillIncreases)
             {
-                attributes.Add(new ItemAttribute(CurioAttributes.EquipmentRepair)
+                attributes.Add(new ItemAttribute(CurioAttributes.SkillIncrease)
                 {
                     Name = skill.ToString(),
                     DisplayNameFunc = () => $"{"Skill".Localized()} \"{skill.ToString().Localized()}\"",

@@ -10,11 +10,10 @@ public record CuriosTemplateProperties : TemplateItemProperties
     [JsonPropertyName("HealthEffects")] public Dictionary<HealthFactor, int>? HealthEffects;
     [JsonPropertyName("DamageReduction")] public float? DamageReduction { get; set; }
     [JsonPropertyName("PenResistance")] public int? PenResistance { get; set; }
-    [JsonPropertyName("EquipmentRepair")] public float? EquipmentRepair { get; set; }
     [JsonPropertyName("JumpBuff")] public float? JumpBuff { get; set; }
     [JsonPropertyName("StaminaRateBuff")] public float? StaminaRate { get; set; }
     [JsonPropertyName("StaminaMaxBuff")] public float? StaminaMax { get; set; }
-    [JsonPropertyName("EquipmentTargets")] public List<EquipmentSlots>? EquipmentTargets { get; set; }
+    [JsonPropertyName("EquipmentRepair")] public Dictionary<EquipmentSlots, float>? EquipmentRepair { get; set; }
     [JsonPropertyName("SpecialEffect")] public CurioSpecialEffects SpecialEffect { get; set; } = CurioSpecialEffects.None;
     [JsonPropertyName("SkillIncreases")] public Dictionary<SkillTypes, int>? SkillIncreases;
 }
@@ -27,5 +26,6 @@ public enum CurioSpecialEffects
     ExfilTp,
     DoorBreaker,
     Reflect,
-    NewLife
+    NewLife,
+    Lucky
 }

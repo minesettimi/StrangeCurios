@@ -76,29 +76,20 @@ public class CurioController
                 HealthEffects[healthFactor] += value;
             }
             
-            TotalDamageReduction += template.DamageReduction ?? 0;
             EffectConfig effectConfig = CurioPlugin.CurioConfig.EffectConfig;
 
-            SetValueCumulative(effectConfig.CumulativeJump, ref HighestJumpBuff, template.JumpBuff);
             SetValueCumulative(effectConfig.CumulativePen, ref HighestPenResistance, template.PenResistance);
+            SetValueCumulative(effectConfig.CumulativeDamage, ref TotalDamageReduction, template.DamageReduction);
             SetValueCumulative(effectConfig.CumulativeStamina, ref TotalStaminaMax, template.StaminaMax);
             SetValueCumulative(effectConfig.CumulativeStamina, ref TotalStaminaRate, template.StaminaRate);
+            SetValueCumulative(effectConfig.CumulativeJump, ref HighestJumpBuff, template.JumpBuff);
 
-            if (template.EquipmentRepair != null && template.EquipmentRepair != 0)
+            if (template.EquipmentRepair != null)
             {
-                List<EquipmentSlot> equipSlots;
-
-                if (template.EquipmentTargets == null || template.EquipmentTargets.Count == 0)
-                    equipSlots = [.. Inventory.ArmorSlots];
-                else
-                    equipSlots = template.EquipmentTargets;
-
-                float repairAmount = (float)template.EquipmentRepair;
-
-                foreach (EquipmentSlot slot in equipSlots)
+                foreach ((EquipmentSlot slot, float amount) in template.EquipmentRepair)
                 {
                     EquipmentRepair.TryAdd(slot, 0);
-                    EquipmentRepair[slot] += repairAmount;
+                    EquipmentRepair[slot] += amount;
                 }
             }
             
