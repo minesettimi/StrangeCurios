@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using CuriosClient.Models;
 using EFT;
+using EFT.HealthSystem;
 using EFT.InventoryLogic;
 
 namespace CuriosClient.Components;
@@ -65,6 +66,21 @@ public class CurioComponent : ItemComponent, IRelativeComponent
             });
         }
 
+        if (Template.HealthEffects.Count > 0)
+        {
+            foreach ((EHealthFactorType healthFactorType, float value) in Template.HealthEffects)
+            {
+                attributes.Add(new ItemAttribute(CurioAttributes.HealthRates)
+                {
+                    Name = healthFactorType.ToString(),
+                    DisplayNameFunc = () => $"{healthFactorType.ToString().Localized()}",
+                    DisplayType = () => EItemAttributeDisplayType.Compact,
+                    LabelVariations = EItemAttributeLabelVariations.Colored,
+                    StringValue = () => value.ColoredWithPrefix(value > 0)
+                });
+            }
+        }
+
         if (Template.EquipmentRepair != null)
         {
             foreach ((EquipmentSlot slot, float value) in Template.EquipmentRepair)
@@ -75,14 +91,10 @@ public class CurioComponent : ItemComponent, IRelativeComponent
                     DisplayNameFunc = () => $"{"EQUIPMENT REPAIR".Localized()} {slot.ToString().Localized()}",
                     DisplayType = () => EItemAttributeDisplayType.Compact,
                     LabelVariations = EItemAttributeLabelVariations.Colored,
-                    StringValue = () =>
-                        value >= 0
-                            ? $"{"Increase".Localized()}<color=blue>"
-                            : $"{"Decrease".Localized()}<color=red>" + $" { Math.Abs(value)}" + "</color>"
+                    StringValue = () => (value * CurioPlugin.CurioConfig.EffectConfig.ArmorLoopTime).ColoredWithPrefix(value > 0)
                 });
             }
         }
-
         if (Template.SkillIncreases != null)
         {
             foreach ((ESkillId skill, int value) in Template.SkillIncreases)
@@ -94,9 +106,9 @@ public class CurioComponent : ItemComponent, IRelativeComponent
                     DisplayType = () => EItemAttributeDisplayType.Compact,
                     LabelVariations = EItemAttributeLabelVariations.Colored,
                     StringValue = () =>
-                        value >= 0
-                            ? $"{"Increase".Localized()}<color=blue>"
-                            : $"{"Decrease".Localized()}<color=red>" + $" { Math.Abs(value)}" + "</color>"
+                        (value >= 0
+                            ? $"{"Increase".Localized()}<color=#54c1ff>"
+                            : $"{"Decrease".Localized()}<color=red>") + $" {Math.Abs(value)}" + "</color>"
                 });
             }
         }
@@ -110,7 +122,7 @@ public class CurioComponent : ItemComponent, IRelativeComponent
         attributes.Add(new ItemAttribute(attributeEnum)
         {
             Name = translation.Localized(),
-            StringValue = value.ToString,
+            StringValue = () => ((float)value).ColoredWithPrefix(value > 0),
             DisplayType = () => EItemAttributeDisplayType.Compact,
             LabelVariations = EItemAttributeLabelVariations.Colored
         });

@@ -36,6 +36,7 @@ public enum CurioAttributes
 {
     Curse,
     DamageReduction,
+    HealthRates,
     PenResistance,
     EquipmentRepair,
     SpecialEffect,

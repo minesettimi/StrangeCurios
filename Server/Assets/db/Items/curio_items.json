@@ -66,9 +66,9 @@
       {
         "Perception": "3",
         "Search": "2",
-        "Attention": "2",
-        "StaminaRateBuff": 0.00166
-      }
+        "Attention": "2"
+      },
+      "StaminaRateBuff": 0.00166
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "newItemName": "trinket_hawk",
@@ -215,7 +215,7 @@
       {
         "FirstPrimaryWeapon": 0.000833,
         "SecondPrimaryWeapon": 0.000833,
-        "HolsterPrimaryWeapon": 0.000833
+        "Holster": 0.000833
       },
       "SkillIncreases":
       {
