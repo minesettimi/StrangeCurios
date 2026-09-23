@@ -22,6 +22,7 @@ public class EffectConfig
     [JsonPropertyName("reflectMult")] public float ReflectMult { get; set; } = 0.5f;
     [JsonPropertyName("reflectDmgMult")] public float ReflectDmgMult { get; set; } = 4f;
     [JsonPropertyName("penResistMult")] public float PenMult { get; set; } = 0.25f;
+    [JsonPropertyName("unkillableLength")] public float UnkillableLength { get; set; } = 5f;
 }
 
 public class CurseConfig

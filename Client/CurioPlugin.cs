@@ -41,7 +41,7 @@ public class CurioPlugin : BaseUnityPlugin
         }
     }
     
-    private static readonly Type[] CustomEffects = [typeof(Cursed)];
+    private static readonly Type[] CustomEffects = [typeof(Cursed), typeof(IUnkillable)];
 
     private void Start()
     {

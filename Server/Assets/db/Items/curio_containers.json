@@ -61,7 +61,7 @@
     "overrideProperties":
     {
       "BackgroundColor": "red",
-      "CanSellOnRagfair": false,
+      "CanSellOnRagfair": true,
       "Description": "curiocase",
       "Name": "curiocase",
       "LootExperience": 50,

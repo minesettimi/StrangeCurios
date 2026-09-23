@@ -22,6 +22,7 @@ public record EffectConfig
     [JsonProperty("reflectMult")] public float ReflectMult { get; set; }
     [JsonProperty("reflectDmgMult")] public float ReflectDmgMult { get; set; }
     [JsonProperty("penResistMult")] public float PenMult { get; set; }
+    [JsonProperty("unkillableLength")] public float UnkillableLength { get; set; }
 }
 
 public record CurseConfig

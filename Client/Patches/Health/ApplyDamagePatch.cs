@@ -1,4 +1,5 @@
 using System.Reflection;
+using CuriosClient.Effects;
 using CuriosClient.Models;
 using CuriosClient.System;
 using EFT;
@@ -23,6 +24,9 @@ public class ApplyDamagePatch : ModulePatch
     {
         if (!__instance.IsAlive || __instance.DamageCoeff <= 0)
             return true;
+
+        if (__instance.FindActiveEffect<IUnkillable>(EBodyPart.Common) != null)
+            return false;
         
         if (!CurioManager.InvControllerCurioTable.TryGetValue(__instance.Player.InventoryController,
                 out CurioController curioController))

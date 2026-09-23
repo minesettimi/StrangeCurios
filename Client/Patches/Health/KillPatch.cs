@@ -1,4 +1,5 @@
 using System.Reflection;
+using CuriosClient.Effects;
 using CuriosClient.Models;
 using CuriosClient.System;
 using EFT;
@@ -30,6 +31,7 @@ public class KillPatch : ModulePatch
             return true;
 
         __instance.RestoreFullHealth();
+        __instance.AddEffect<Unkillable>(EBodyPart.Common, null, CurioPlugin.CurioConfig.EffectConfig.UnkillableLength);
 
         return false;
     }
