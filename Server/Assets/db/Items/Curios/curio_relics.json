@@ -20,7 +20,7 @@
     "handbookPriceRoubles": 2400000,
     "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
     "registerInHandbook": true,
-    "AddToItemBlacklist": true,
+    "addtoItemBlacklist": true,
     "locales":
     {
       "en":
@@ -46,7 +46,7 @@
     "fleaPriceRoubles": 1964000,
     "handbookPriceRoubles": 1934000,
     "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
-    "AddToItemBlacklist": true,
+    "addtoItemBlacklist": true,
     "locales":
     {
       "en":
@@ -86,7 +86,7 @@
     "fleaPriceRoubles": 1383000,
     "handbookPriceRoubles": 1353000,
     "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
-    "AddToItemBlacklist": true,
+    "addtoItemBlacklist": true,
     "locales":
     {
       "en":
@@ -116,7 +116,7 @@
     "fleaPriceRoubles": 1750000,
     "handbookPriceRoubles": 1450000,
     "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
-    "AddToItemBlacklist": true,
+    "addtoItemBlacklist": true,
     "locales":
     {
       "en":
@@ -149,7 +149,7 @@
     "fleaPriceRoubles": 3110000,
     "handbookPriceRoubles": 3080000,
     "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
-    "AddToItemBlacklist": true,
+    "addtoItemBlacklist": true,
     "locales":
     {
       "en":

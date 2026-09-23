@@ -21,7 +21,8 @@ public class CuriosMod(JsonUtil jsonUtil,
     WTTCustomLocaleService localeService,
     WTTCustomLootspawnService lootspawnService,
     IEnumerable<IRuntimePatch> patches,
-    RagfairConfig ragfairConfig) : IOnLoad
+    RagfairConfig ragfairConfig,
+    TraderConfig traderConfig) : IOnLoad
 {
     public static readonly Assembly Assembly = Assembly.GetExecutingAssembly();
     public static readonly string ModPath = Path.GetDirectoryName(Assembly.Location)!;
@@ -40,10 +41,14 @@ public class CuriosMod(JsonUtil jsonUtil,
         
         templateTable.Handbook.Categories.AddRange(handbookCategories);
 
-        ragfairConfig.Dynamic.ShowAsSingleStack.Add(new MongoId("6a9b52c15dfaf97d11fc341e"));
-     
+        MongoId baseCurio = new("6a9b52c15dfaf97d11fc341e");
+        ragfairConfig.Dynamic.ShowAsSingleStack.Add(baseCurio);
+
+        traderConfig.Fence.Blacklist.Add(baseCurio);
+        
         foreach (IRuntimePatch patch in patches)
             patch.Enable();
+        
         
         await itemParentService.CreateCustomParents(Assembly, "db/Parents");
         await itemServiceExtended.CreateCustomItems(Assembly, "db/Items");
