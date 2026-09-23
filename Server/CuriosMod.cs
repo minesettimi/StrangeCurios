@@ -19,6 +19,7 @@ public class CuriosMod(JsonUtil jsonUtil,
     WTTCustomItemParentService itemParentService,
     WTTCustomItemServiceExtended itemServiceExtended,
     WTTCustomLocaleService localeService,
+    WTTCustomLootspawnService lootspawnService,
     IEnumerable<IRuntimePatch> patches,
     RagfairConfig ragfairConfig,
     ISptLogger<CuriosMod> logger) : IOnLoad
@@ -48,5 +49,6 @@ public class CuriosMod(JsonUtil jsonUtil,
         await itemParentService.CreateCustomParents(Assembly, "db/Parents");
         await itemServiceExtended.CreateCustomItems(Assembly, "db/Items");
         await localeService.CreateCustomLocales(Assembly, "db/Locales");
+        await lootspawnService.CreateCustomLootSpawns(Assembly, "db/LooseLoot");
     }
 }

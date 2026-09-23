@@ -1,0 +1,4272 @@
+{
+  "woods": [
+    {
+      "locationId": "(-513.2078 16.2028 -393.0754)",
+      "probability": 0.1,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459767"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459768"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459769"
+          },
+          "relativeProbability": 490
+        },
+        {
+          "composedKey": {
+            "key": "1790139459770"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459771"
+          },
+          "relativeProbability": 484
+        },
+        {
+          "composedKey": {
+            "key": "1790139459772"
+          },
+          "relativeProbability": 485
+        },
+        {
+          "composedKey": {
+            "key": "1790139459773"
+          },
+          "relativeProbability": 479
+        },
+        {
+          "composedKey": {
+            "key": "1790139459774"
+          },
+          "relativeProbability": 477
+        },
+        {
+          "composedKey": {
+            "key": "1790139459775"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459776"
+          },
+          "relativeProbability": 462
+        },
+        {
+          "composedKey": {
+            "key": "1790139459777"
+          },
+          "relativeProbability": 452
+        },
+        {
+          "composedKey": {
+            "key": "1790139459778"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459779"
+          },
+          "relativeProbability": 422
+        },
+        {
+          "composedKey": {
+            "key": "1790139459780"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459781"
+          },
+          "relativeProbability": 409
+        },
+        {
+          "composedKey": {
+            "key": "1790139459782"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459783"
+          },
+          "relativeProbability": 428
+        },
+        {
+          "composedKey": {
+            "key": "1790139459784"
+          },
+          "relativeProbability": 395
+        },
+        {
+          "composedKey": {
+            "key": "1790139459785"
+          },
+          "relativeProbability": 111
+        },
+        {
+          "composedKey": {
+            "key": "1790139459786"
+          },
+          "relativeProbability": 187
+        },
+        {
+          "composedKey": {
+            "key": "1790139459787"
+          },
+          "relativeProbability": 281
+        },
+        {
+          "composedKey": {
+            "key": "1790139459788"
+          },
+          "relativeProbability": 266
+        },
+        {
+          "composedKey": {
+            "key": "1790139459789"
+          },
+          "relativeProbability": 1
+        }
+      ],
+      "template": {
+        "Id": "curio_shatun_1",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": -513.2078,
+          "y": 16.2028,
+          "z": -393.0754
+        },
+        "Rotation": {
+          "x": 0.4717,
+          "y": 275.331,
+          "z": 91.4601
+        },
+        "IsGroupPosition": false,
+        "GroupPositions": [],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee24066f",
+        "Items": [
+          {
+            "composedKey": "1790139459767",
+            "_id": "6ab35c43ad1bc788ee24066f",
+            "_tpl": "6ab07ad9a6b880d10a79375a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459768",
+            "_id": "6ab35c43ad1bc788ee240670",
+            "_tpl": "6ab07ad94c6c0e121e66f1b4",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459769",
+            "_id": "6ab35c43ad1bc788ee240671",
+            "_tpl": "6ab07ad927dfe0e155cba25a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459770",
+            "_id": "6ab35c43ad1bc788ee240672",
+            "_tpl": "6ab07ad9433565e6205f088f",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459771",
+            "_id": "6ab35c43ad1bc788ee240673",
+            "_tpl": "6ab07ad986352eac4bd62fe8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459772",
+            "_id": "6ab35c43ad1bc788ee240674",
+            "_tpl": "6ab07ad93de524f343c3dc7b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459773",
+            "_id": "6ab35c43ad1bc788ee240675",
+            "_tpl": "6ab07ad9a75aca693c420bd0",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459774",
+            "_id": "6ab35c43ad1bc788ee240676",
+            "_tpl": "6ab07ad9f77067b10312095b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459775",
+            "_id": "6ab35c43ad1bc788ee240677",
+            "_tpl": "6ab07ad996fdb132f4b1668a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459776",
+            "_id": "6ab35c43ad1bc788ee240678",
+            "_tpl": "6ab07ad94fd67008a0bcb68e",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459777",
+            "_id": "6ab35c43ad1bc788ee240679",
+            "_tpl": "6ab07ad92317a28f0be470d3",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459778",
+            "_id": "6ab35c43ad1bc788ee24067a",
+            "_tpl": "6ab07ad9f3e73f59259f1e1a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459779",
+            "_id": "6ab35c43ad1bc788ee24067b",
+            "_tpl": "6ab07ad90b6106bae1e695aa",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459780",
+            "_id": "6ab35c43ad1bc788ee24067c",
+            "_tpl": "6ab07ad9bb1a1a7058a8ad37",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459781",
+            "_id": "6ab35c43ad1bc788ee24067d",
+            "_tpl": "6ab07ad991165b0aadc10f84",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459782",
+            "_id": "6ab35c43ad1bc788ee24067e",
+            "_tpl": "6ab07ad97b287b44dbc28632",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459783",
+            "_id": "6ab35c43ad1bc788ee24067f",
+            "_tpl": "6ab07ad92ac0b3a49393c334",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459784",
+            "_id": "6ab35c43ad1bc788ee240680",
+            "_tpl": "6ab07ad9576292a951e3ad20",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459785",
+            "_id": "6ab35c43ad1bc788ee240681",
+            "_tpl": "6ab07ad9e56bc63a1f0603b1",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459786",
+            "_id": "6ab35c43ad1bc788ee240682",
+            "_tpl": "6ab07ad9d3fa90aa975efab2",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459787",
+            "_id": "6ab35c43ad1bc788ee240683",
+            "_tpl": "6ab07ad9ab634610157400d8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459788",
+            "_id": "6ab35c43ad1bc788ee240684",
+            "_tpl": "6ab07ad92ee4fe844bc816b7",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459789",
+            "_id": "6ab35c43ad1bc788ee240685",
+            "_tpl": "6ab07ad987999f82e6a79725",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(-89.0474 12.4613 -717.4252)",
+      "probability": 0.01,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459790"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459791"
+          },
+          "relativeProbability": 261
+        }
+      ],
+      "template": {
+        "Id": "curio_cultist_circle_2",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": -89.0474,
+          "y": 12.4613,
+          "z": -717.4252
+        },
+        "Rotation": {
+          "x": 349.098,
+          "y": 240.5433,
+          "z": 358.4609
+        },
+        "IsGroupPosition": false,
+        "GroupPositions": [],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee240686",
+        "Items": [
+          {
+            "composedKey": "1790139459790",
+            "_id": "6ab35c43ad1bc788ee240686",
+            "_tpl": "6a9b56cad5853c9309c78fbf",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459791",
+            "_id": "6ab35c43ad1bc788ee240687",
+            "_tpl": "6aace290f6a9a5944e44b162",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(-89.6775 12.4855 -717.3479)",
+      "probability": 0.05,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459792"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459793"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459794"
+          },
+          "relativeProbability": 490
+        },
+        {
+          "composedKey": {
+            "key": "1790139459795"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459796"
+          },
+          "relativeProbability": 484
+        },
+        {
+          "composedKey": {
+            "key": "1790139459797"
+          },
+          "relativeProbability": 485
+        },
+        {
+          "composedKey": {
+            "key": "1790139459798"
+          },
+          "relativeProbability": 479
+        },
+        {
+          "composedKey": {
+            "key": "1790139459799"
+          },
+          "relativeProbability": 477
+        },
+        {
+          "composedKey": {
+            "key": "1790139459800"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459801"
+          },
+          "relativeProbability": 462
+        },
+        {
+          "composedKey": {
+            "key": "1790139459802"
+          },
+          "relativeProbability": 452
+        },
+        {
+          "composedKey": {
+            "key": "1790139459803"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459804"
+          },
+          "relativeProbability": 422
+        },
+        {
+          "composedKey": {
+            "key": "1790139459805"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459806"
+          },
+          "relativeProbability": 409
+        },
+        {
+          "composedKey": {
+            "key": "1790139459807"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459808"
+          },
+          "relativeProbability": 428
+        },
+        {
+          "composedKey": {
+            "key": "1790139459809"
+          },
+          "relativeProbability": 395
+        }
+      ],
+      "template": {
+        "Id": "curio_cultist_circle_3",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": -89.6775,
+          "y": 12.4855,
+          "z": -717.3479
+        },
+        "Rotation": {
+          "x": 9.7294,
+          "y": 30.1868,
+          "z": 174.6837
+        },
+        "IsGroupPosition": true,
+        "GroupPositions": [
+          {
+            "name": "groupPoint[0]",
+            "Weight": 1,
+            "Position": {
+              "x": -89.6775,
+              "y": 12.4855,
+              "z": -717.3479
+            },
+            "Rotation": {
+              "x": 9.7294,
+              "y": 30.1868,
+              "z": 174.6837
+            }
+          },
+          {
+            "name": "groupPoint[1]",
+            "Weight": 1,
+            "Position": {
+              "x": -88.1513,
+              "y": 12.3012,
+              "z": -718.002
+            },
+            "Rotation": {
+              "x": 82.0513,
+              "y": 225.3668,
+              "z": 16.8898
+            }
+          },
+          {
+            "name": "groupPoint[2]",
+            "Weight": 1,
+            "Position": {
+              "x": -89.2691,
+              "y": 12.4908,
+              "z": -718.2662
+            },
+            "Rotation": {
+              "x": 79.4786,
+              "y": 233.0461,
+              "z": 12.004
+            }
+          },
+          {
+            "name": "groupPoint[3]",
+            "Weight": 1,
+            "Position": {
+              "x": -88.5626,
+              "y": 12.398,
+              "z": -718.3101
+            },
+            "Rotation": {
+              "x": 79.9277,
+              "y": 227.3217,
+              "z": 4.4905
+            }
+          },
+          {
+            "name": "groupPoint[4]",
+            "Weight": 1,
+            "Position": {
+              "x": -89.0567,
+              "y": 12.2882,
+              "z": -716.7913
+            },
+            "Rotation": {
+              "x": 79.0775,
+              "y": 227.0854,
+              "z": 274.4762
+            }
+          }
+        ],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee240688",
+        "Items": [
+          {
+            "composedKey": "1790139459792",
+            "_id": "6ab35c43ad1bc788ee240688",
+            "_tpl": "6ab07ad9a6b880d10a79375a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459793",
+            "_id": "6ab35c43ad1bc788ee240689",
+            "_tpl": "6ab07ad94c6c0e121e66f1b4",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459794",
+            "_id": "6ab35c43ad1bc788ee24068a",
+            "_tpl": "6ab07ad927dfe0e155cba25a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459795",
+            "_id": "6ab35c43ad1bc788ee24068b",
+            "_tpl": "6ab07ad9433565e6205f088f",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459796",
+            "_id": "6ab35c43ad1bc788ee24068c",
+            "_tpl": "6ab07ad986352eac4bd62fe8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459797",
+            "_id": "6ab35c43ad1bc788ee24068d",
+            "_tpl": "6ab07ad93de524f343c3dc7b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459798",
+            "_id": "6ab35c43ad1bc788ee24068e",
+            "_tpl": "6ab07ad9a75aca693c420bd0",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459799",
+            "_id": "6ab35c43ad1bc788ee24068f",
+            "_tpl": "6ab07ad9f77067b10312095b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459800",
+            "_id": "6ab35c43ad1bc788ee240690",
+            "_tpl": "6ab07ad996fdb132f4b1668a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459801",
+            "_id": "6ab35c43ad1bc788ee240691",
+            "_tpl": "6ab07ad94fd67008a0bcb68e",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459802",
+            "_id": "6ab35c43ad1bc788ee240692",
+            "_tpl": "6ab07ad92317a28f0be470d3",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459803",
+            "_id": "6ab35c43ad1bc788ee240693",
+            "_tpl": "6ab07ad9f3e73f59259f1e1a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459804",
+            "_id": "6ab35c43ad1bc788ee240694",
+            "_tpl": "6ab07ad90b6106bae1e695aa",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459805",
+            "_id": "6ab35c43ad1bc788ee240695",
+            "_tpl": "6ab07ad9bb1a1a7058a8ad37",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459806",
+            "_id": "6ab35c43ad1bc788ee240696",
+            "_tpl": "6ab07ad991165b0aadc10f84",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459807",
+            "_id": "6ab35c43ad1bc788ee240697",
+            "_tpl": "6ab07ad97b287b44dbc28632",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459808",
+            "_id": "6ab35c43ad1bc788ee240698",
+            "_tpl": "6ab07ad92ac0b3a49393c334",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459809",
+            "_id": "6ab35c43ad1bc788ee240699",
+            "_tpl": "6ab07ad9576292a951e3ad20",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(-158.4668 45.9355 -232.7643)",
+      "probability": 0.05,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459810"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459811"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459812"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459813"
+          },
+          "relativeProbability": 490
+        },
+        {
+          "composedKey": {
+            "key": "1790139459814"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459815"
+          },
+          "relativeProbability": 484
+        },
+        {
+          "composedKey": {
+            "key": "1790139459816"
+          },
+          "relativeProbability": 485
+        },
+        {
+          "composedKey": {
+            "key": "1790139459817"
+          },
+          "relativeProbability": 479
+        },
+        {
+          "composedKey": {
+            "key": "1790139459818"
+          },
+          "relativeProbability": 477
+        },
+        {
+          "composedKey": {
+            "key": "1790139459819"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459820"
+          },
+          "relativeProbability": 462
+        },
+        {
+          "composedKey": {
+            "key": "1790139459821"
+          },
+          "relativeProbability": 452
+        },
+        {
+          "composedKey": {
+            "key": "1790139459822"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459823"
+          },
+          "relativeProbability": 422
+        },
+        {
+          "composedKey": {
+            "key": "1790139459824"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459825"
+          },
+          "relativeProbability": 409
+        },
+        {
+          "composedKey": {
+            "key": "1790139459826"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459827"
+          },
+          "relativeProbability": 428
+        },
+        {
+          "composedKey": {
+            "key": "1790139459828"
+          },
+          "relativeProbability": 395
+        }
+      ],
+      "template": {
+        "Id": "curio_bunker_circle_4",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": -158.4668,
+          "y": 45.9355,
+          "z": -232.7643
+        },
+        "Rotation": {
+          "x": 89.9802,
+          "y": 336.7166,
+          "z": 0
+        },
+        "IsGroupPosition": true,
+        "GroupPositions": [
+          {
+            "name": "groupPoint[0]",
+            "Weight": 1,
+            "Position": {
+              "x": -158.4668,
+              "y": 45.9355,
+              "z": -232.7643
+            },
+            "Rotation": {
+              "x": 89.9802,
+              "y": 336.7166,
+              "z": 0
+            }
+          },
+          {
+            "name": "groupPoint[1]",
+            "Weight": 1,
+            "Position": {
+              "x": -157.8116,
+              "y": 45.9338,
+              "z": -233.9422
+            },
+            "Rotation": {
+              "x": 0.0455,
+              "y": 257.5007,
+              "z": 89.9736
+            }
+          },
+          {
+            "name": "groupPoint[2]",
+            "Weight": 1,
+            "Position": {
+              "x": -158.0432,
+              "y": 45.9256,
+              "z": -233.3252
+            },
+            "Rotation": {
+              "x": 88.497,
+              "y": 325.3619,
+              "z": 182.1031
+            }
+          }
+        ],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee24069a",
+        "Items": [
+          {
+            "composedKey": "1790139459810",
+            "_id": "6ab35c43ad1bc788ee24069a",
+            "_tpl": "6a9b56cad5853c9309c78fbf",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459811",
+            "_id": "6ab35c43ad1bc788ee24069b",
+            "_tpl": "6ab07ad9a6b880d10a79375a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459812",
+            "_id": "6ab35c43ad1bc788ee24069c",
+            "_tpl": "6ab07ad94c6c0e121e66f1b4",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459813",
+            "_id": "6ab35c43ad1bc788ee24069d",
+            "_tpl": "6ab07ad927dfe0e155cba25a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459814",
+            "_id": "6ab35c43ad1bc788ee24069e",
+            "_tpl": "6ab07ad9433565e6205f088f",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459815",
+            "_id": "6ab35c43ad1bc788ee24069f",
+            "_tpl": "6ab07ad986352eac4bd62fe8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459816",
+            "_id": "6ab35c43ad1bc788ee2406a0",
+            "_tpl": "6ab07ad93de524f343c3dc7b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459817",
+            "_id": "6ab35c43ad1bc788ee2406a1",
+            "_tpl": "6ab07ad9a75aca693c420bd0",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459818",
+            "_id": "6ab35c43ad1bc788ee2406a2",
+            "_tpl": "6ab07ad9f77067b10312095b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459819",
+            "_id": "6ab35c43ad1bc788ee2406a3",
+            "_tpl": "6ab07ad996fdb132f4b1668a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459820",
+            "_id": "6ab35c43ad1bc788ee2406a4",
+            "_tpl": "6ab07ad94fd67008a0bcb68e",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459821",
+            "_id": "6ab35c43ad1bc788ee2406a5",
+            "_tpl": "6ab07ad92317a28f0be470d3",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459822",
+            "_id": "6ab35c43ad1bc788ee2406a6",
+            "_tpl": "6ab07ad9f3e73f59259f1e1a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459823",
+            "_id": "6ab35c43ad1bc788ee2406a7",
+            "_tpl": "6ab07ad90b6106bae1e695aa",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459824",
+            "_id": "6ab35c43ad1bc788ee2406a8",
+            "_tpl": "6ab07ad9bb1a1a7058a8ad37",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459825",
+            "_id": "6ab35c43ad1bc788ee2406a9",
+            "_tpl": "6ab07ad991165b0aadc10f84",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459826",
+            "_id": "6ab35c43ad1bc788ee2406aa",
+            "_tpl": "6ab07ad97b287b44dbc28632",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459827",
+            "_id": "6ab35c43ad1bc788ee2406ab",
+            "_tpl": "6ab07ad92ac0b3a49393c334",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459828",
+            "_id": "6ab35c43ad1bc788ee2406ac",
+            "_tpl": "6ab07ad9576292a951e3ad20",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "bigmap": [
+    {
+      "locationId": "(183.9688 5.9396 183.0354)",
+      "probability": 0.15,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459829"
+          },
+          "relativeProbability": 1
+        },
+        {
+          "composedKey": {
+            "key": "1790139459830"
+          },
+          "relativeProbability": 1
+        }
+      ],
+      "template": {
+        "Id": "curio_marked_room_1",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": 183.9688,
+          "y": 5.9396,
+          "z": 183.0354
+        },
+        "Rotation": {
+          "x": 0.0023,
+          "y": 27.8295,
+          "z": 0.0035
+        },
+        "IsGroupPosition": false,
+        "GroupPositions": [],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee2406ad",
+        "Items": [
+          {
+            "composedKey": "1790139459829",
+            "_id": "6ab35c43ad1bc788ee2406ad",
+            "_tpl": "6a9b56cad5853c9309c78fbf",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459830",
+            "_id": "6ab35c43ad1bc788ee2406ae",
+            "_tpl": "6aace290f6a9a5944e44b162",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(183.1441 5.9703 182.4856)",
+      "probability": 0.15,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459831"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459832"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459833"
+          },
+          "relativeProbability": 490
+        },
+        {
+          "composedKey": {
+            "key": "1790139459834"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459835"
+          },
+          "relativeProbability": 484
+        },
+        {
+          "composedKey": {
+            "key": "1790139459836"
+          },
+          "relativeProbability": 485
+        },
+        {
+          "composedKey": {
+            "key": "1790139459837"
+          },
+          "relativeProbability": 479
+        },
+        {
+          "composedKey": {
+            "key": "1790139459838"
+          },
+          "relativeProbability": 477
+        },
+        {
+          "composedKey": {
+            "key": "1790139459839"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459840"
+          },
+          "relativeProbability": 462
+        },
+        {
+          "composedKey": {
+            "key": "1790139459841"
+          },
+          "relativeProbability": 452
+        },
+        {
+          "composedKey": {
+            "key": "1790139459842"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459843"
+          },
+          "relativeProbability": 422
+        },
+        {
+          "composedKey": {
+            "key": "1790139459844"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459845"
+          },
+          "relativeProbability": 409
+        },
+        {
+          "composedKey": {
+            "key": "1790139459846"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459847"
+          },
+          "relativeProbability": 428
+        },
+        {
+          "composedKey": {
+            "key": "1790139459848"
+          },
+          "relativeProbability": 395
+        },
+        {
+          "composedKey": {
+            "key": "1790139459849"
+          },
+          "relativeProbability": 111
+        },
+        {
+          "composedKey": {
+            "key": "1790139459850"
+          },
+          "relativeProbability": 187
+        },
+        {
+          "composedKey": {
+            "key": "1790139459851"
+          },
+          "relativeProbability": 281
+        },
+        {
+          "composedKey": {
+            "key": "1790139459852"
+          },
+          "relativeProbability": 266
+        },
+        {
+          "composedKey": {
+            "key": "1790139459853"
+          },
+          "relativeProbability": 1
+        }
+      ],
+      "template": {
+        "Id": "curio_marked_room_2",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": 183.1441,
+          "y": 5.9703,
+          "z": 182.4856
+        },
+        "Rotation": {
+          "x": 325.4718,
+          "y": 197.585,
+          "z": 358.8447
+        },
+        "IsGroupPosition": true,
+        "GroupPositions": [
+          {
+            "name": "groupPoint[0]",
+            "Weight": 1,
+            "Position": {
+              "x": 183.1441,
+              "y": 5.9703,
+              "z": 182.4856
+            },
+            "Rotation": {
+              "x": 325.4718,
+              "y": 197.585,
+              "z": 358.8447
+            }
+          },
+          {
+            "name": "groupPoint[1]",
+            "Weight": 1,
+            "Position": {
+              "x": 186.4275,
+              "y": 6.3533,
+              "z": 184.2407
+            },
+            "Rotation": {
+              "x": 359.9935,
+              "y": 344.7885,
+              "z": 180.0189
+            }
+          }
+        ],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee2406af",
+        "Items": [
+          {
+            "composedKey": "1790139459831",
+            "_id": "6ab35c43ad1bc788ee2406af",
+            "_tpl": "6ab07ad9a6b880d10a79375a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459832",
+            "_id": "6ab35c43ad1bc788ee2406b0",
+            "_tpl": "6ab07ad94c6c0e121e66f1b4",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459833",
+            "_id": "6ab35c43ad1bc788ee2406b1",
+            "_tpl": "6ab07ad927dfe0e155cba25a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459834",
+            "_id": "6ab35c43ad1bc788ee2406b2",
+            "_tpl": "6ab07ad9433565e6205f088f",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459835",
+            "_id": "6ab35c43ad1bc788ee2406b3",
+            "_tpl": "6ab07ad986352eac4bd62fe8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459836",
+            "_id": "6ab35c43ad1bc788ee2406b4",
+            "_tpl": "6ab07ad93de524f343c3dc7b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459837",
+            "_id": "6ab35c43ad1bc788ee2406b5",
+            "_tpl": "6ab07ad9a75aca693c420bd0",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459838",
+            "_id": "6ab35c43ad1bc788ee2406b6",
+            "_tpl": "6ab07ad9f77067b10312095b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459839",
+            "_id": "6ab35c43ad1bc788ee2406b7",
+            "_tpl": "6ab07ad996fdb132f4b1668a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459840",
+            "_id": "6ab35c43ad1bc788ee2406b8",
+            "_tpl": "6ab07ad94fd67008a0bcb68e",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459841",
+            "_id": "6ab35c43ad1bc788ee2406b9",
+            "_tpl": "6ab07ad92317a28f0be470d3",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459842",
+            "_id": "6ab35c43ad1bc788ee2406ba",
+            "_tpl": "6ab07ad9f3e73f59259f1e1a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459843",
+            "_id": "6ab35c43ad1bc788ee2406bb",
+            "_tpl": "6ab07ad90b6106bae1e695aa",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459844",
+            "_id": "6ab35c43ad1bc788ee2406bc",
+            "_tpl": "6ab07ad9bb1a1a7058a8ad37",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459845",
+            "_id": "6ab35c43ad1bc788ee2406bd",
+            "_tpl": "6ab07ad991165b0aadc10f84",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459846",
+            "_id": "6ab35c43ad1bc788ee2406be",
+            "_tpl": "6ab07ad97b287b44dbc28632",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459847",
+            "_id": "6ab35c43ad1bc788ee2406bf",
+            "_tpl": "6ab07ad92ac0b3a49393c334",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459848",
+            "_id": "6ab35c43ad1bc788ee2406c0",
+            "_tpl": "6ab07ad9576292a951e3ad20",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459849",
+            "_id": "6ab35c43ad1bc788ee2406c1",
+            "_tpl": "6ab07ad9e56bc63a1f0603b1",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459850",
+            "_id": "6ab35c43ad1bc788ee2406c2",
+            "_tpl": "6ab07ad9d3fa90aa975efab2",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459851",
+            "_id": "6ab35c43ad1bc788ee2406c3",
+            "_tpl": "6ab07ad9ab634610157400d8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459852",
+            "_id": "6ab35c43ad1bc788ee2406c4",
+            "_tpl": "6ab07ad92ee4fe844bc816b7",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459853",
+            "_id": "6ab35c43ad1bc788ee2406c5",
+            "_tpl": "6ab07ad987999f82e6a79725",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "shoreline": [
+    {
+      "locationId": "(251.6727 -53.1513 -104.8291)",
+      "probability": 0.05,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459854"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459855"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459856"
+          },
+          "relativeProbability": 490
+        },
+        {
+          "composedKey": {
+            "key": "1790139459857"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459858"
+          },
+          "relativeProbability": 484
+        },
+        {
+          "composedKey": {
+            "key": "1790139459859"
+          },
+          "relativeProbability": 485
+        },
+        {
+          "composedKey": {
+            "key": "1790139459860"
+          },
+          "relativeProbability": 479
+        },
+        {
+          "composedKey": {
+            "key": "1790139459861"
+          },
+          "relativeProbability": 477
+        },
+        {
+          "composedKey": {
+            "key": "1790139459862"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459863"
+          },
+          "relativeProbability": 462
+        },
+        {
+          "composedKey": {
+            "key": "1790139459864"
+          },
+          "relativeProbability": 452
+        },
+        {
+          "composedKey": {
+            "key": "1790139459865"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459866"
+          },
+          "relativeProbability": 422
+        },
+        {
+          "composedKey": {
+            "key": "1790139459867"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459868"
+          },
+          "relativeProbability": 409
+        },
+        {
+          "composedKey": {
+            "key": "1790139459869"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459870"
+          },
+          "relativeProbability": 428
+        },
+        {
+          "composedKey": {
+            "key": "1790139459871"
+          },
+          "relativeProbability": 395
+        }
+      ],
+      "template": {
+        "Id": "curio_church_1",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": 251.6727,
+          "y": -53.1513,
+          "z": -104.8291
+        },
+        "Rotation": {
+          "x": 85.4543,
+          "y": 355.7134,
+          "z": 165.6602
+        },
+        "IsGroupPosition": false,
+        "GroupPositions": [],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee2406c6",
+        "Items": [
+          {
+            "composedKey": "1790139459854",
+            "_id": "6ab35c43ad1bc788ee2406c6",
+            "_tpl": "6ab07ad9a6b880d10a79375a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459855",
+            "_id": "6ab35c43ad1bc788ee2406c7",
+            "_tpl": "6ab07ad94c6c0e121e66f1b4",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459856",
+            "_id": "6ab35c43ad1bc788ee2406c8",
+            "_tpl": "6ab07ad927dfe0e155cba25a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459857",
+            "_id": "6ab35c43ad1bc788ee2406c9",
+            "_tpl": "6ab07ad9433565e6205f088f",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459858",
+            "_id": "6ab35c43ad1bc788ee2406ca",
+            "_tpl": "6ab07ad986352eac4bd62fe8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459859",
+            "_id": "6ab35c43ad1bc788ee2406cb",
+            "_tpl": "6ab07ad93de524f343c3dc7b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459860",
+            "_id": "6ab35c43ad1bc788ee2406cc",
+            "_tpl": "6ab07ad9a75aca693c420bd0",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459861",
+            "_id": "6ab35c43ad1bc788ee2406cd",
+            "_tpl": "6ab07ad9f77067b10312095b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459862",
+            "_id": "6ab35c43ad1bc788ee2406ce",
+            "_tpl": "6ab07ad996fdb132f4b1668a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459863",
+            "_id": "6ab35c43ad1bc788ee2406cf",
+            "_tpl": "6ab07ad94fd67008a0bcb68e",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459864",
+            "_id": "6ab35c43ad1bc788ee2406d0",
+            "_tpl": "6ab07ad92317a28f0be470d3",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459865",
+            "_id": "6ab35c43ad1bc788ee2406d1",
+            "_tpl": "6ab07ad9f3e73f59259f1e1a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459866",
+            "_id": "6ab35c43ad1bc788ee2406d2",
+            "_tpl": "6ab07ad90b6106bae1e695aa",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459867",
+            "_id": "6ab35c43ad1bc788ee2406d3",
+            "_tpl": "6ab07ad9bb1a1a7058a8ad37",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459868",
+            "_id": "6ab35c43ad1bc788ee2406d4",
+            "_tpl": "6ab07ad991165b0aadc10f84",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459869",
+            "_id": "6ab35c43ad1bc788ee2406d5",
+            "_tpl": "6ab07ad97b287b44dbc28632",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459870",
+            "_id": "6ab35c43ad1bc788ee2406d6",
+            "_tpl": "6ab07ad92ac0b3a49393c334",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459871",
+            "_id": "6ab35c43ad1bc788ee2406d7",
+            "_tpl": "6ab07ad9576292a951e3ad20",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(248.371 -63.7503 433.4247)",
+      "probability": 0.05,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459872"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459873"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459874"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459875"
+          },
+          "relativeProbability": 490
+        },
+        {
+          "composedKey": {
+            "key": "1790139459876"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459877"
+          },
+          "relativeProbability": 484
+        },
+        {
+          "composedKey": {
+            "key": "1790139459878"
+          },
+          "relativeProbability": 485
+        },
+        {
+          "composedKey": {
+            "key": "1790139459879"
+          },
+          "relativeProbability": 479
+        },
+        {
+          "composedKey": {
+            "key": "1790139459880"
+          },
+          "relativeProbability": 477
+        },
+        {
+          "composedKey": {
+            "key": "1790139459881"
+          },
+          "relativeProbability": 487
+        }
+      ],
+      "template": {
+        "Id": "curio_island_house_2",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": 248.371,
+          "y": -63.7503,
+          "z": 433.4247
+        },
+        "Rotation": {
+          "x": 0.24,
+          "y": 162.4046,
+          "z": 275.3716
+        },
+        "IsGroupPosition": false,
+        "GroupPositions": [],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee2406d8",
+        "Items": [
+          {
+            "composedKey": "1790139459872",
+            "_id": "6ab35c43ad1bc788ee2406d8",
+            "_tpl": "6a9b56cad5853c9309c78fbf",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459873",
+            "_id": "6ab35c43ad1bc788ee2406d9",
+            "_tpl": "6ab07ad9a6b880d10a79375a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459874",
+            "_id": "6ab35c43ad1bc788ee2406da",
+            "_tpl": "6ab07ad94c6c0e121e66f1b4",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459875",
+            "_id": "6ab35c43ad1bc788ee2406db",
+            "_tpl": "6ab07ad927dfe0e155cba25a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459876",
+            "_id": "6ab35c43ad1bc788ee2406dc",
+            "_tpl": "6ab07ad9433565e6205f088f",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459877",
+            "_id": "6ab35c43ad1bc788ee2406dd",
+            "_tpl": "6ab07ad986352eac4bd62fe8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459878",
+            "_id": "6ab35c43ad1bc788ee2406de",
+            "_tpl": "6ab07ad93de524f343c3dc7b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459879",
+            "_id": "6ab35c43ad1bc788ee2406df",
+            "_tpl": "6ab07ad9a75aca693c420bd0",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459880",
+            "_id": "6ab35c43ad1bc788ee2406e0",
+            "_tpl": "6ab07ad9f77067b10312095b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459881",
+            "_id": "6ab35c43ad1bc788ee2406e1",
+            "_tpl": "6ab07ad996fdb132f4b1668a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(247.9838 -63.64 434.0229)",
+      "probability": 0.01,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459882"
+          },
+          "relativeProbability": 261
+        }
+      ],
+      "template": {
+        "Id": "curio_island_house_3",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": 247.9838,
+          "y": -63.64,
+          "z": 434.0229
+        },
+        "Rotation": {
+          "x": 3.9952,
+          "y": 3.2641,
+          "z": 353.024
+        },
+        "IsGroupPosition": false,
+        "GroupPositions": [],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee2406e2",
+        "Items": [
+          {
+            "composedKey": "1790139459882",
+            "_id": "6ab35c43ad1bc788ee2406e2",
+            "_tpl": "6aace290f6a9a5944e44b162",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(-235.86 -39.8423 195.8801)",
+      "probability": 0.25,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459883"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459884"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459885"
+          },
+          "relativeProbability": 490
+        },
+        {
+          "composedKey": {
+            "key": "1790139459886"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459887"
+          },
+          "relativeProbability": 484
+        },
+        {
+          "composedKey": {
+            "key": "1790139459888"
+          },
+          "relativeProbability": 485
+        },
+        {
+          "composedKey": {
+            "key": "1790139459889"
+          },
+          "relativeProbability": 479
+        },
+        {
+          "composedKey": {
+            "key": "1790139459890"
+          },
+          "relativeProbability": 477
+        },
+        {
+          "composedKey": {
+            "key": "1790139459891"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459892"
+          },
+          "relativeProbability": 462
+        },
+        {
+          "composedKey": {
+            "key": "1790139459893"
+          },
+          "relativeProbability": 452
+        },
+        {
+          "composedKey": {
+            "key": "1790139459894"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459895"
+          },
+          "relativeProbability": 422
+        },
+        {
+          "composedKey": {
+            "key": "1790139459896"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459897"
+          },
+          "relativeProbability": 409
+        },
+        {
+          "composedKey": {
+            "key": "1790139459898"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459899"
+          },
+          "relativeProbability": 428
+        },
+        {
+          "composedKey": {
+            "key": "1790139459900"
+          },
+          "relativeProbability": 395
+        },
+        {
+          "composedKey": {
+            "key": "1790139459901"
+          },
+          "relativeProbability": 111
+        },
+        {
+          "composedKey": {
+            "key": "1790139459902"
+          },
+          "relativeProbability": 187
+        },
+        {
+          "composedKey": {
+            "key": "1790139459903"
+          },
+          "relativeProbability": 281
+        },
+        {
+          "composedKey": {
+            "key": "1790139459904"
+          },
+          "relativeProbability": 266
+        },
+        {
+          "composedKey": {
+            "key": "1790139459905"
+          },
+          "relativeProbability": 1
+        }
+      ],
+      "template": {
+        "Id": "curio_voron_4",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": -235.86,
+          "y": -39.8423,
+          "z": 195.8801
+        },
+        "Rotation": {
+          "x": 0.0021,
+          "y": 280.6518,
+          "z": 180.0291
+        },
+        "IsGroupPosition": true,
+        "GroupPositions": [
+          {
+            "name": "groupPoint[0]",
+            "Weight": 1,
+            "Position": {
+              "x": -235.86,
+              "y": -39.8423,
+              "z": 195.8801
+            },
+            "Rotation": {
+              "x": 0.0021,
+              "y": 280.6518,
+              "z": 180.0291
+            }
+          },
+          {
+            "name": "groupPoint[1]",
+            "Weight": 1,
+            "Position": {
+              "x": -238.9318,
+              "y": -40.033,
+              "z": 193.3066
+            },
+            "Rotation": {
+              "x": 49.5498,
+              "y": 67.5551,
+              "z": 179.5157
+            }
+          }
+        ],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee2406e3",
+        "Items": [
+          {
+            "composedKey": "1790139459883",
+            "_id": "6ab35c43ad1bc788ee2406e3",
+            "_tpl": "6ab07ad9a6b880d10a79375a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459884",
+            "_id": "6ab35c43ad1bc788ee2406e4",
+            "_tpl": "6ab07ad94c6c0e121e66f1b4",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459885",
+            "_id": "6ab35c43ad1bc788ee2406e5",
+            "_tpl": "6ab07ad927dfe0e155cba25a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459886",
+            "_id": "6ab35c43ad1bc788ee2406e6",
+            "_tpl": "6ab07ad9433565e6205f088f",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459887",
+            "_id": "6ab35c43ad1bc788ee2406e7",
+            "_tpl": "6ab07ad986352eac4bd62fe8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459888",
+            "_id": "6ab35c43ad1bc788ee2406e8",
+            "_tpl": "6ab07ad93de524f343c3dc7b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459889",
+            "_id": "6ab35c43ad1bc788ee2406e9",
+            "_tpl": "6ab07ad9a75aca693c420bd0",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459890",
+            "_id": "6ab35c43ad1bc788ee2406ea",
+            "_tpl": "6ab07ad9f77067b10312095b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459891",
+            "_id": "6ab35c43ad1bc788ee2406eb",
+            "_tpl": "6ab07ad996fdb132f4b1668a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459892",
+            "_id": "6ab35c43ad1bc788ee2406ec",
+            "_tpl": "6ab07ad94fd67008a0bcb68e",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459893",
+            "_id": "6ab35c43ad1bc788ee2406ed",
+            "_tpl": "6ab07ad92317a28f0be470d3",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459894",
+            "_id": "6ab35c43ad1bc788ee2406ee",
+            "_tpl": "6ab07ad9f3e73f59259f1e1a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459895",
+            "_id": "6ab35c43ad1bc788ee2406ef",
+            "_tpl": "6ab07ad90b6106bae1e695aa",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459896",
+            "_id": "6ab35c43ad1bc788ee2406f0",
+            "_tpl": "6ab07ad9bb1a1a7058a8ad37",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459897",
+            "_id": "6ab35c43ad1bc788ee2406f1",
+            "_tpl": "6ab07ad991165b0aadc10f84",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459898",
+            "_id": "6ab35c43ad1bc788ee2406f2",
+            "_tpl": "6ab07ad97b287b44dbc28632",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459899",
+            "_id": "6ab35c43ad1bc788ee2406f3",
+            "_tpl": "6ab07ad92ac0b3a49393c334",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459900",
+            "_id": "6ab35c43ad1bc788ee2406f4",
+            "_tpl": "6ab07ad9576292a951e3ad20",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459901",
+            "_id": "6ab35c43ad1bc788ee2406f5",
+            "_tpl": "6ab07ad9e56bc63a1f0603b1",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459902",
+            "_id": "6ab35c43ad1bc788ee2406f6",
+            "_tpl": "6ab07ad9d3fa90aa975efab2",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459903",
+            "_id": "6ab35c43ad1bc788ee2406f7",
+            "_tpl": "6ab07ad9ab634610157400d8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459904",
+            "_id": "6ab35c43ad1bc788ee2406f8",
+            "_tpl": "6ab07ad92ee4fe844bc816b7",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459905",
+            "_id": "6ab35c43ad1bc788ee2406f9",
+            "_tpl": "6ab07ad987999f82e6a79725",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "lighthouse": [
+    {
+      "locationId": "(323.6355 6.141 488.9409)",
+      "probability": 0.15,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459906"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459907"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459908"
+          },
+          "relativeProbability": 490
+        },
+        {
+          "composedKey": {
+            "key": "1790139459909"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459910"
+          },
+          "relativeProbability": 484
+        },
+        {
+          "composedKey": {
+            "key": "1790139459911"
+          },
+          "relativeProbability": 485
+        },
+        {
+          "composedKey": {
+            "key": "1790139459912"
+          },
+          "relativeProbability": 479
+        },
+        {
+          "composedKey": {
+            "key": "1790139459913"
+          },
+          "relativeProbability": 477
+        },
+        {
+          "composedKey": {
+            "key": "1790139459914"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459915"
+          },
+          "relativeProbability": 462
+        },
+        {
+          "composedKey": {
+            "key": "1790139459916"
+          },
+          "relativeProbability": 452
+        },
+        {
+          "composedKey": {
+            "key": "1790139459917"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459918"
+          },
+          "relativeProbability": 422
+        },
+        {
+          "composedKey": {
+            "key": "1790139459919"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459920"
+          },
+          "relativeProbability": 409
+        },
+        {
+          "composedKey": {
+            "key": "1790139459921"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459922"
+          },
+          "relativeProbability": 428
+        },
+        {
+          "composedKey": {
+            "key": "1790139459923"
+          },
+          "relativeProbability": 395
+        },
+        {
+          "composedKey": {
+            "key": "1790139459924"
+          },
+          "relativeProbability": 111
+        },
+        {
+          "composedKey": {
+            "key": "1790139459925"
+          },
+          "relativeProbability": 187
+        },
+        {
+          "composedKey": {
+            "key": "1790139459926"
+          },
+          "relativeProbability": 281
+        },
+        {
+          "composedKey": {
+            "key": "1790139459927"
+          },
+          "relativeProbability": 266
+        },
+        {
+          "composedKey": {
+            "key": "1790139459928"
+          },
+          "relativeProbability": 1
+        }
+      ],
+      "template": {
+        "Id": "curio_marked_room_1",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": 323.6355,
+          "y": 6.141,
+          "z": 488.9409
+        },
+        "Rotation": {
+          "x": -0.0018,
+          "y": 329.8749,
+          "z": 179.9944
+        },
+        "IsGroupPosition": true,
+        "GroupPositions": [
+          {
+            "name": "groupPoint[0]",
+            "Weight": 1,
+            "Position": {
+              "x": 323.6355,
+              "y": 6.141,
+              "z": 488.9409
+            },
+            "Rotation": {
+              "x": -0.0018,
+              "y": 329.8749,
+              "z": 179.9944
+            }
+          },
+          {
+            "name": "groupPoint[1]",
+            "Weight": 1,
+            "Position": {
+              "x": 329.2963,
+              "y": 5.9047,
+              "z": 484.1519
+            },
+            "Rotation": {
+              "x": 359.9891,
+              "y": 278.2946,
+              "z": 180.0012
+            }
+          }
+        ],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee2406fa",
+        "Items": [
+          {
+            "composedKey": "1790139459906",
+            "_id": "6ab35c43ad1bc788ee2406fa",
+            "_tpl": "6ab07ad9a6b880d10a79375a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459907",
+            "_id": "6ab35c43ad1bc788ee2406fb",
+            "_tpl": "6ab07ad94c6c0e121e66f1b4",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459908",
+            "_id": "6ab35c43ad1bc788ee2406fc",
+            "_tpl": "6ab07ad927dfe0e155cba25a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459909",
+            "_id": "6ab35c43ad1bc788ee2406fd",
+            "_tpl": "6ab07ad9433565e6205f088f",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459910",
+            "_id": "6ab35c43ad1bc788ee2406fe",
+            "_tpl": "6ab07ad986352eac4bd62fe8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459911",
+            "_id": "6ab35c43ad1bc788ee2406ff",
+            "_tpl": "6ab07ad93de524f343c3dc7b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459912",
+            "_id": "6ab35c43ad1bc788ee240700",
+            "_tpl": "6ab07ad9a75aca693c420bd0",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459913",
+            "_id": "6ab35c43ad1bc788ee240701",
+            "_tpl": "6ab07ad9f77067b10312095b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459914",
+            "_id": "6ab35c43ad1bc788ee240702",
+            "_tpl": "6ab07ad996fdb132f4b1668a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459915",
+            "_id": "6ab35c43ad1bc788ee240703",
+            "_tpl": "6ab07ad94fd67008a0bcb68e",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459916",
+            "_id": "6ab35c43ad1bc788ee240704",
+            "_tpl": "6ab07ad92317a28f0be470d3",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459917",
+            "_id": "6ab35c43ad1bc788ee240705",
+            "_tpl": "6ab07ad9f3e73f59259f1e1a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459918",
+            "_id": "6ab35c43ad1bc788ee240706",
+            "_tpl": "6ab07ad90b6106bae1e695aa",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459919",
+            "_id": "6ab35c43ad1bc788ee240707",
+            "_tpl": "6ab07ad9bb1a1a7058a8ad37",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459920",
+            "_id": "6ab35c43ad1bc788ee240708",
+            "_tpl": "6ab07ad991165b0aadc10f84",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459921",
+            "_id": "6ab35c43ad1bc788ee240709",
+            "_tpl": "6ab07ad97b287b44dbc28632",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459922",
+            "_id": "6ab35c43ad1bc788ee24070a",
+            "_tpl": "6ab07ad92ac0b3a49393c334",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459923",
+            "_id": "6ab35c43ad1bc788ee24070b",
+            "_tpl": "6ab07ad9576292a951e3ad20",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459924",
+            "_id": "6ab35c43ad1bc788ee24070c",
+            "_tpl": "6ab07ad9e56bc63a1f0603b1",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459925",
+            "_id": "6ab35c43ad1bc788ee24070d",
+            "_tpl": "6ab07ad9d3fa90aa975efab2",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459926",
+            "_id": "6ab35c43ad1bc788ee24070e",
+            "_tpl": "6ab07ad9ab634610157400d8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459927",
+            "_id": "6ab35c43ad1bc788ee24070f",
+            "_tpl": "6ab07ad92ee4fe844bc816b7",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459928",
+            "_id": "6ab35c43ad1bc788ee240710",
+            "_tpl": "6ab07ad987999f82e6a79725",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(322.3889 5.7151 487.8206)",
+      "probability": 0.1,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459929"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459930"
+          },
+          "relativeProbability": 261
+        }
+      ],
+      "template": {
+        "Id": "curio_marked_room_2",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": 322.3889,
+          "y": 5.7151,
+          "z": 487.8206
+        },
+        "Rotation": {
+          "x": 359.9209,
+          "y": 264.3691,
+          "z": 0.6798
+        },
+        "IsGroupPosition": false,
+        "GroupPositions": [],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee240711",
+        "Items": [
+          {
+            "composedKey": "1790139459929",
+            "_id": "6ab35c43ad1bc788ee240711",
+            "_tpl": "6a9b56cad5853c9309c78fbf",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459930",
+            "_id": "6ab35c43ad1bc788ee240712",
+            "_tpl": "6aace290f6a9a5944e44b162",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(-77.5496 9.0586 -294.5359)",
+      "probability": 0.15,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459931"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459932"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459933"
+          },
+          "relativeProbability": 490
+        },
+        {
+          "composedKey": {
+            "key": "1790139459934"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459935"
+          },
+          "relativeProbability": 484
+        },
+        {
+          "composedKey": {
+            "key": "1790139459936"
+          },
+          "relativeProbability": 485
+        },
+        {
+          "composedKey": {
+            "key": "1790139459937"
+          },
+          "relativeProbability": 479
+        },
+        {
+          "composedKey": {
+            "key": "1790139459938"
+          },
+          "relativeProbability": 477
+        },
+        {
+          "composedKey": {
+            "key": "1790139459939"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459940"
+          },
+          "relativeProbability": 462
+        },
+        {
+          "composedKey": {
+            "key": "1790139459941"
+          },
+          "relativeProbability": 452
+        },
+        {
+          "composedKey": {
+            "key": "1790139459942"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459943"
+          },
+          "relativeProbability": 422
+        },
+        {
+          "composedKey": {
+            "key": "1790139459944"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459945"
+          },
+          "relativeProbability": 409
+        },
+        {
+          "composedKey": {
+            "key": "1790139459946"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459947"
+          },
+          "relativeProbability": 428
+        },
+        {
+          "composedKey": {
+            "key": "1790139459948"
+          },
+          "relativeProbability": 395
+        },
+        {
+          "composedKey": {
+            "key": "1790139459949"
+          },
+          "relativeProbability": 111
+        },
+        {
+          "composedKey": {
+            "key": "1790139459950"
+          },
+          "relativeProbability": 187
+        },
+        {
+          "composedKey": {
+            "key": "1790139459951"
+          },
+          "relativeProbability": 281
+        },
+        {
+          "composedKey": {
+            "key": "1790139459952"
+          },
+          "relativeProbability": 266
+        },
+        {
+          "composedKey": {
+            "key": "1790139459953"
+          },
+          "relativeProbability": 1
+        }
+      ],
+      "template": {
+        "Id": "curio_leon_3",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": -77.5496,
+          "y": 9.0586,
+          "z": -294.5359
+        },
+        "Rotation": {
+          "x": 88.4985,
+          "y": 272.8497,
+          "z": 182.2075
+        },
+        "IsGroupPosition": false,
+        "GroupPositions": [],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee240713",
+        "Items": [
+          {
+            "composedKey": "1790139459931",
+            "_id": "6ab35c43ad1bc788ee240713",
+            "_tpl": "6ab07ad9a6b880d10a79375a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459932",
+            "_id": "6ab35c43ad1bc788ee240714",
+            "_tpl": "6ab07ad94c6c0e121e66f1b4",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459933",
+            "_id": "6ab35c43ad1bc788ee240715",
+            "_tpl": "6ab07ad927dfe0e155cba25a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459934",
+            "_id": "6ab35c43ad1bc788ee240716",
+            "_tpl": "6ab07ad9433565e6205f088f",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459935",
+            "_id": "6ab35c43ad1bc788ee240717",
+            "_tpl": "6ab07ad986352eac4bd62fe8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459936",
+            "_id": "6ab35c43ad1bc788ee240718",
+            "_tpl": "6ab07ad93de524f343c3dc7b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459937",
+            "_id": "6ab35c43ad1bc788ee240719",
+            "_tpl": "6ab07ad9a75aca693c420bd0",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459938",
+            "_id": "6ab35c43ad1bc788ee24071a",
+            "_tpl": "6ab07ad9f77067b10312095b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459939",
+            "_id": "6ab35c43ad1bc788ee24071b",
+            "_tpl": "6ab07ad996fdb132f4b1668a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459940",
+            "_id": "6ab35c43ad1bc788ee24071c",
+            "_tpl": "6ab07ad94fd67008a0bcb68e",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459941",
+            "_id": "6ab35c43ad1bc788ee24071d",
+            "_tpl": "6ab07ad92317a28f0be470d3",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459942",
+            "_id": "6ab35c43ad1bc788ee24071e",
+            "_tpl": "6ab07ad9f3e73f59259f1e1a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459943",
+            "_id": "6ab35c43ad1bc788ee24071f",
+            "_tpl": "6ab07ad90b6106bae1e695aa",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459944",
+            "_id": "6ab35c43ad1bc788ee240720",
+            "_tpl": "6ab07ad9bb1a1a7058a8ad37",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459945",
+            "_id": "6ab35c43ad1bc788ee240721",
+            "_tpl": "6ab07ad991165b0aadc10f84",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459946",
+            "_id": "6ab35c43ad1bc788ee240722",
+            "_tpl": "6ab07ad97b287b44dbc28632",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459947",
+            "_id": "6ab35c43ad1bc788ee240723",
+            "_tpl": "6ab07ad92ac0b3a49393c334",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459948",
+            "_id": "6ab35c43ad1bc788ee240724",
+            "_tpl": "6ab07ad9576292a951e3ad20",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459949",
+            "_id": "6ab35c43ad1bc788ee240725",
+            "_tpl": "6ab07ad9e56bc63a1f0603b1",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459950",
+            "_id": "6ab35c43ad1bc788ee240726",
+            "_tpl": "6ab07ad9d3fa90aa975efab2",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459951",
+            "_id": "6ab35c43ad1bc788ee240727",
+            "_tpl": "6ab07ad9ab634610157400d8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459952",
+            "_id": "6ab35c43ad1bc788ee240728",
+            "_tpl": "6ab07ad92ee4fe844bc816b7",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459953",
+            "_id": "6ab35c43ad1bc788ee240729",
+            "_tpl": "6ab07ad987999f82e6a79725",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "rezervbase": [
+    {
+      "locationId": "(191.3089 -6.7339 -225.9368)",
+      "probability": 0.15,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459954"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459955"
+          },
+          "relativeProbability": 261
+        }
+      ],
+      "template": {
+        "Id": "curio_marked_room_train_1",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": 191.3089,
+          "y": -6.7339,
+          "z": -225.9368
+        },
+        "Rotation": {
+          "x": 0.0019,
+          "y": 143.3374,
+          "z": 0.0008
+        },
+        "IsGroupPosition": false,
+        "GroupPositions": [],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee24072a",
+        "Items": [
+          {
+            "composedKey": "1790139459954",
+            "_id": "6ab35c43ad1bc788ee24072a",
+            "_tpl": "6a9b56cad5853c9309c78fbf",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459955",
+            "_id": "6ab35c43ad1bc788ee24072b",
+            "_tpl": "6aace290f6a9a5944e44b162",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(191.5557 -6.0831 -227.6749)",
+      "probability": 0.1,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459956"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459957"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459958"
+          },
+          "relativeProbability": 490
+        },
+        {
+          "composedKey": {
+            "key": "1790139459959"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459960"
+          },
+          "relativeProbability": 484
+        },
+        {
+          "composedKey": {
+            "key": "1790139459961"
+          },
+          "relativeProbability": 485
+        },
+        {
+          "composedKey": {
+            "key": "1790139459962"
+          },
+          "relativeProbability": 479
+        },
+        {
+          "composedKey": {
+            "key": "1790139459963"
+          },
+          "relativeProbability": 477
+        },
+        {
+          "composedKey": {
+            "key": "1790139459964"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459965"
+          },
+          "relativeProbability": 462
+        },
+        {
+          "composedKey": {
+            "key": "1790139459966"
+          },
+          "relativeProbability": 452
+        },
+        {
+          "composedKey": {
+            "key": "1790139459967"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459968"
+          },
+          "relativeProbability": 422
+        },
+        {
+          "composedKey": {
+            "key": "1790139459969"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459970"
+          },
+          "relativeProbability": 409
+        },
+        {
+          "composedKey": {
+            "key": "1790139459971"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459972"
+          },
+          "relativeProbability": 428
+        },
+        {
+          "composedKey": {
+            "key": "1790139459973"
+          },
+          "relativeProbability": 395
+        }
+      ],
+      "template": {
+        "Id": "curio_marked_room_train_2",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": 191.5557,
+          "y": -6.0831,
+          "z": -227.6749
+        },
+        "Rotation": {
+          "x": 87.9539,
+          "y": 337.6242,
+          "z": 127.1132
+        },
+        "IsGroupPosition": true,
+        "GroupPositions": [
+          {
+            "name": "groupPoint[0]",
+            "Weight": 1,
+            "Position": {
+              "x": 191.5557,
+              "y": -6.0831,
+              "z": -227.6749
+            },
+            "Rotation": {
+              "x": 87.9539,
+              "y": 337.6242,
+              "z": 127.1132
+            }
+          },
+          {
+            "name": "groupPoint[1]",
+            "Weight": 1,
+            "Position": {
+              "x": 191.6525,
+              "y": -6.0154,
+              "z": -225.1156
+            },
+            "Rotation": {
+              "x": 89.9161,
+              "y": 338.8418,
+              "z": 0
+            }
+          }
+        ],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee24072c",
+        "Items": [
+          {
+            "composedKey": "1790139459956",
+            "_id": "6ab35c43ad1bc788ee24072c",
+            "_tpl": "6ab07ad9a6b880d10a79375a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459957",
+            "_id": "6ab35c43ad1bc788ee24072d",
+            "_tpl": "6ab07ad94c6c0e121e66f1b4",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459958",
+            "_id": "6ab35c43ad1bc788ee24072e",
+            "_tpl": "6ab07ad927dfe0e155cba25a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459959",
+            "_id": "6ab35c43ad1bc788ee24072f",
+            "_tpl": "6ab07ad9433565e6205f088f",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459960",
+            "_id": "6ab35c43ad1bc788ee240730",
+            "_tpl": "6ab07ad986352eac4bd62fe8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459961",
+            "_id": "6ab35c43ad1bc788ee240731",
+            "_tpl": "6ab07ad93de524f343c3dc7b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459962",
+            "_id": "6ab35c43ad1bc788ee240732",
+            "_tpl": "6ab07ad9a75aca693c420bd0",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459963",
+            "_id": "6ab35c43ad1bc788ee240733",
+            "_tpl": "6ab07ad9f77067b10312095b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459964",
+            "_id": "6ab35c43ad1bc788ee240734",
+            "_tpl": "6ab07ad996fdb132f4b1668a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459965",
+            "_id": "6ab35c43ad1bc788ee240735",
+            "_tpl": "6ab07ad94fd67008a0bcb68e",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459966",
+            "_id": "6ab35c43ad1bc788ee240736",
+            "_tpl": "6ab07ad92317a28f0be470d3",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459967",
+            "_id": "6ab35c43ad1bc788ee240737",
+            "_tpl": "6ab07ad9f3e73f59259f1e1a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459968",
+            "_id": "6ab35c43ad1bc788ee240738",
+            "_tpl": "6ab07ad90b6106bae1e695aa",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459969",
+            "_id": "6ab35c43ad1bc788ee240739",
+            "_tpl": "6ab07ad9bb1a1a7058a8ad37",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459970",
+            "_id": "6ab35c43ad1bc788ee24073a",
+            "_tpl": "6ab07ad991165b0aadc10f84",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459971",
+            "_id": "6ab35c43ad1bc788ee24073b",
+            "_tpl": "6ab07ad97b287b44dbc28632",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459972",
+            "_id": "6ab35c43ad1bc788ee24073c",
+            "_tpl": "6ab07ad92ac0b3a49393c334",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459973",
+            "_id": "6ab35c43ad1bc788ee24073d",
+            "_tpl": "6ab07ad9576292a951e3ad20",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(-154.418 -9.1108 73.7301)",
+      "probability": 0.15,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459974"
+          },
+          "relativeProbability": 1
+        },
+        {
+          "composedKey": {
+            "key": "1790139459975"
+          },
+          "relativeProbability": 1
+        }
+      ],
+      "template": {
+        "Id": "curio_marked_room_building_3",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": -154.418,
+          "y": -9.1108,
+          "z": 73.7301
+        },
+        "Rotation": {
+          "x": 0.0005,
+          "y": 42.0571,
+          "z": 0.0005
+        },
+        "IsGroupPosition": false,
+        "GroupPositions": [],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee24073e",
+        "Items": [
+          {
+            "composedKey": "1790139459974",
+            "_id": "6ab35c43ad1bc788ee24073e",
+            "_tpl": "6a9b56cad5853c9309c78fbf",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459975",
+            "_id": "6ab35c43ad1bc788ee24073f",
+            "_tpl": "6aace290f6a9a5944e44b162",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(-152.5844 -8.328 73.225)",
+      "probability": 0.15,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459976"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459977"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459978"
+          },
+          "relativeProbability": 490
+        },
+        {
+          "composedKey": {
+            "key": "1790139459979"
+          },
+          "relativeProbability": 486
+        },
+        {
+          "composedKey": {
+            "key": "1790139459980"
+          },
+          "relativeProbability": 484
+        },
+        {
+          "composedKey": {
+            "key": "1790139459981"
+          },
+          "relativeProbability": 485
+        },
+        {
+          "composedKey": {
+            "key": "1790139459982"
+          },
+          "relativeProbability": 479
+        },
+        {
+          "composedKey": {
+            "key": "1790139459983"
+          },
+          "relativeProbability": 477
+        },
+        {
+          "composedKey": {
+            "key": "1790139459984"
+          },
+          "relativeProbability": 487
+        },
+        {
+          "composedKey": {
+            "key": "1790139459985"
+          },
+          "relativeProbability": 462
+        },
+        {
+          "composedKey": {
+            "key": "1790139459986"
+          },
+          "relativeProbability": 452
+        },
+        {
+          "composedKey": {
+            "key": "1790139459987"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139459988"
+          },
+          "relativeProbability": 422
+        },
+        {
+          "composedKey": {
+            "key": "1790139459989"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459990"
+          },
+          "relativeProbability": 409
+        },
+        {
+          "composedKey": {
+            "key": "1790139459991"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139459992"
+          },
+          "relativeProbability": 428
+        },
+        {
+          "composedKey": {
+            "key": "1790139459993"
+          },
+          "relativeProbability": 395
+        },
+        {
+          "composedKey": {
+            "key": "1790139459994"
+          },
+          "relativeProbability": 111
+        },
+        {
+          "composedKey": {
+            "key": "1790139459995"
+          },
+          "relativeProbability": 187
+        },
+        {
+          "composedKey": {
+            "key": "1790139459996"
+          },
+          "relativeProbability": 281
+        },
+        {
+          "composedKey": {
+            "key": "1790139459997"
+          },
+          "relativeProbability": 266
+        },
+        {
+          "composedKey": {
+            "key": "1790139459998"
+          },
+          "relativeProbability": 1
+        }
+      ],
+      "template": {
+        "Id": "curio_marked_room_building_4",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": -152.5844,
+          "y": -8.328,
+          "z": 73.225
+        },
+        "Rotation": {
+          "x": 356.1295,
+          "y": 254.2932,
+          "z": 171.3596
+        },
+        "IsGroupPosition": true,
+        "GroupPositions": [
+          {
+            "name": "groupPoint[0]",
+            "Weight": 1,
+            "Position": {
+              "x": -152.5844,
+              "y": -8.328,
+              "z": 73.225
+            },
+            "Rotation": {
+              "x": 356.1295,
+              "y": 254.2932,
+              "z": 171.3596
+            }
+          },
+          {
+            "name": "groupPoint[1]",
+            "Weight": 1,
+            "Position": {
+              "x": -154.9242,
+              "y": -9.1079,
+              "z": 75.0685
+            },
+            "Rotation": {
+              "x": 0.1964,
+              "y": 119.1904,
+              "z": 143.9583
+            }
+          },
+          {
+            "name": "groupPoint[2]",
+            "Weight": 1,
+            "Position": {
+              "x": -156.2437,
+              "y": -8.7024,
+              "z": 74.8226
+            },
+            "Rotation": {
+              "x": 1.1519,
+              "y": 233.4129,
+              "z": 359.886
+            }
+          }
+        ],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee240740",
+        "Items": [
+          {
+            "composedKey": "1790139459976",
+            "_id": "6ab35c43ad1bc788ee240740",
+            "_tpl": "6ab07ad9a6b880d10a79375a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459977",
+            "_id": "6ab35c43ad1bc788ee240741",
+            "_tpl": "6ab07ad94c6c0e121e66f1b4",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459978",
+            "_id": "6ab35c43ad1bc788ee240742",
+            "_tpl": "6ab07ad927dfe0e155cba25a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459979",
+            "_id": "6ab35c43ad1bc788ee240743",
+            "_tpl": "6ab07ad9433565e6205f088f",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459980",
+            "_id": "6ab35c43ad1bc788ee240744",
+            "_tpl": "6ab07ad986352eac4bd62fe8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459981",
+            "_id": "6ab35c43ad1bc788ee240745",
+            "_tpl": "6ab07ad93de524f343c3dc7b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459982",
+            "_id": "6ab35c43ad1bc788ee240746",
+            "_tpl": "6ab07ad9a75aca693c420bd0",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459983",
+            "_id": "6ab35c43ad1bc788ee240747",
+            "_tpl": "6ab07ad9f77067b10312095b",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459984",
+            "_id": "6ab35c43ad1bc788ee240748",
+            "_tpl": "6ab07ad996fdb132f4b1668a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459985",
+            "_id": "6ab35c43ad1bc788ee240749",
+            "_tpl": "6ab07ad94fd67008a0bcb68e",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459986",
+            "_id": "6ab35c43ad1bc788ee24074a",
+            "_tpl": "6ab07ad92317a28f0be470d3",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459987",
+            "_id": "6ab35c43ad1bc788ee24074b",
+            "_tpl": "6ab07ad9f3e73f59259f1e1a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459988",
+            "_id": "6ab35c43ad1bc788ee24074c",
+            "_tpl": "6ab07ad90b6106bae1e695aa",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459989",
+            "_id": "6ab35c43ad1bc788ee24074d",
+            "_tpl": "6ab07ad9bb1a1a7058a8ad37",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459990",
+            "_id": "6ab35c43ad1bc788ee24074e",
+            "_tpl": "6ab07ad991165b0aadc10f84",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459991",
+            "_id": "6ab35c43ad1bc788ee24074f",
+            "_tpl": "6ab07ad97b287b44dbc28632",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459992",
+            "_id": "6ab35c43ad1bc788ee240750",
+            "_tpl": "6ab07ad92ac0b3a49393c334",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459993",
+            "_id": "6ab35c43ad1bc788ee240751",
+            "_tpl": "6ab07ad9576292a951e3ad20",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459994",
+            "_id": "6ab35c43ad1bc788ee240752",
+            "_tpl": "6ab07ad9e56bc63a1f0603b1",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459995",
+            "_id": "6ab35c43ad1bc788ee240753",
+            "_tpl": "6ab07ad9d3fa90aa975efab2",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459996",
+            "_id": "6ab35c43ad1bc788ee240754",
+            "_tpl": "6ab07ad9ab634610157400d8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459997",
+            "_id": "6ab35c43ad1bc788ee240755",
+            "_tpl": "6ab07ad92ee4fe844bc816b7",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139459998",
+            "_id": "6ab35c43ad1bc788ee240756",
+            "_tpl": "6ab07ad987999f82e6a79725",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locationId": "(-122.5584 -14.4277 27.9154)",
+      "probability": 0.25,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139459999"
+          },
+          "relativeProbability": 1
+        },
+        {
+          "composedKey": {
+            "key": "1790139460000"
+          },
+          "relativeProbability": 1
+        }
+      ],
+      "template": {
+        "Id": "curio_marked_room_bunker_5",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": -122.5584,
+          "y": -14.4277,
+          "z": 27.9154
+        },
+        "Rotation": {
+          "x": 0.0202,
+          "y": 266.3631,
+          "z": 0.0365
+        },
+        "IsGroupPosition": false,
+        "GroupPositions": [],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee240757",
+        "Items": [
+          {
+            "composedKey": "1790139459999",
+            "_id": "6ab35c43ad1bc788ee240757",
+            "_tpl": "6a9b56cad5853c9309c78fbf",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460000",
+            "_id": "6ab35c43ad1bc788ee240758",
+            "_tpl": "6aace290f6a9a5944e44b162",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "interchange": [
+    {
+      "locationId": "(-200.2675 21.9179 -346.4913)",
+      "probability": 0.05,
+      "itemDistribution": [
+        {
+          "composedKey": {
+            "key": "1790139460001"
+          },
+          "relativeProbability": 462
+        },
+        {
+          "composedKey": {
+            "key": "1790139460002"
+          },
+          "relativeProbability": 452
+        },
+        {
+          "composedKey": {
+            "key": "1790139460003"
+          },
+          "relativeProbability": 367
+        },
+        {
+          "composedKey": {
+            "key": "1790139460004"
+          },
+          "relativeProbability": 422
+        },
+        {
+          "composedKey": {
+            "key": "1790139460005"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139460006"
+          },
+          "relativeProbability": 409
+        },
+        {
+          "composedKey": {
+            "key": "1790139460007"
+          },
+          "relativeProbability": 430
+        },
+        {
+          "composedKey": {
+            "key": "1790139460008"
+          },
+          "relativeProbability": 428
+        },
+        {
+          "composedKey": {
+            "key": "1790139460009"
+          },
+          "relativeProbability": 395
+        },
+        {
+          "composedKey": {
+            "key": "1790139460010"
+          },
+          "relativeProbability": 111
+        },
+        {
+          "composedKey": {
+            "key": "1790139460011"
+          },
+          "relativeProbability": 187
+        },
+        {
+          "composedKey": {
+            "key": "1790139460012"
+          },
+          "relativeProbability": 281
+        },
+        {
+          "composedKey": {
+            "key": "1790139460013"
+          },
+          "relativeProbability": 266
+        },
+        {
+          "composedKey": {
+            "key": "1790139460014"
+          },
+          "relativeProbability": 1
+        }
+      ],
+      "template": {
+        "Id": "curio_grumpy_1",
+        "IsContainer": false,
+        "UseGravity": true,
+        "Position": {
+          "x": -200.2675,
+          "y": 21.9179,
+          "z": -346.4913
+        },
+        "Rotation": {
+          "x": 0.0054,
+          "y": 253.4509,
+          "z": -0.0042
+        },
+        "IsGroupPosition": false,
+        "GroupPositions": [],
+        "IsAlwaysSpawn": false,
+        "Root": "6ab35c43ad1bc788ee240759",
+        "Items": [
+          {
+            "composedKey": "1790139460001",
+            "_id": "6ab35c43ad1bc788ee240759",
+            "_tpl": "6ab07ad94fd67008a0bcb68e",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460002",
+            "_id": "6ab35c43ad1bc788ee24075a",
+            "_tpl": "6ab07ad92317a28f0be470d3",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460003",
+            "_id": "6ab35c43ad1bc788ee24075b",
+            "_tpl": "6ab07ad9f3e73f59259f1e1a",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460004",
+            "_id": "6ab35c43ad1bc788ee24075c",
+            "_tpl": "6ab07ad90b6106bae1e695aa",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460005",
+            "_id": "6ab35c43ad1bc788ee24075d",
+            "_tpl": "6ab07ad9bb1a1a7058a8ad37",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460006",
+            "_id": "6ab35c43ad1bc788ee24075e",
+            "_tpl": "6ab07ad991165b0aadc10f84",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460007",
+            "_id": "6ab35c43ad1bc788ee24075f",
+            "_tpl": "6ab07ad97b287b44dbc28632",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460008",
+            "_id": "6ab35c43ad1bc788ee240760",
+            "_tpl": "6ab07ad92ac0b3a49393c334",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460009",
+            "_id": "6ab35c43ad1bc788ee240761",
+            "_tpl": "6ab07ad9576292a951e3ad20",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460010",
+            "_id": "6ab35c43ad1bc788ee240762",
+            "_tpl": "6ab07ad9e56bc63a1f0603b1",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460011",
+            "_id": "6ab35c43ad1bc788ee240763",
+            "_tpl": "6ab07ad9d3fa90aa975efab2",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460012",
+            "_id": "6ab35c43ad1bc788ee240764",
+            "_tpl": "6ab07ad9ab634610157400d8",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460013",
+            "_id": "6ab35c43ad1bc788ee240765",
+            "_tpl": "6ab07ad92ee4fe844bc816b7",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          },
+          {
+            "composedKey": "1790139460014",
+            "_id": "6ab35c43ad1bc788ee240766",
+            "_tpl": "6ab07ad987999f82e6a79725",
+            "upd": {
+              "StackObjectsCount": 1
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
