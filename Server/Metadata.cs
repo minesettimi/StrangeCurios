@@ -24,7 +24,7 @@ public static class Metadata
             { "com.wtt.commonlib", new Range("^3.0.6") }
         };
 
-        public string? Url { get; init; } = "https://github.com/minesettimi/TushonkaTerritories";
-        public string License { get; init; } = "MIT";
+        public string? Url { get; init; } = "https://github.com/minesettimi/StrangeCurios";
+        public string License { get; init; } = "Creative Commons BY-NC-ND 4.0";
     }
 }
