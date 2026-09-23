@@ -80,21 +80,7 @@ public class CurioComponent : ItemComponent, IRelativeComponent
                 });
             }
         }
-
-        if (Template.EquipmentRepair != null)
-        {
-            foreach ((EquipmentSlot slot, float value) in Template.EquipmentRepair)
-            {
-                attributes.Add(new ItemAttribute(CurioAttributes.EquipmentRepair)
-                {
-                    Name = slot.ToString(),
-                    DisplayNameFunc = () => $"{"EQUIPMENT REPAIR".Localized()} {slot.ToString().Localized()}",
-                    DisplayType = () => EItemAttributeDisplayType.Compact,
-                    LabelVariations = EItemAttributeLabelVariations.Colored,
-                    StringValue = () => (value * CurioPlugin.CurioConfig.EffectConfig.ArmorLoopTime).ColoredWithPrefix(value > 0)
-                });
-            }
-        }
+        
         if (Template.SkillIncreases != null)
         {
             foreach ((ESkillId skill, int value) in Template.SkillIncreases)
@@ -109,6 +95,42 @@ public class CurioComponent : ItemComponent, IRelativeComponent
                         (value >= 0
                             ? $"{"Increase".Localized()}<color=#54c1ff>"
                             : $"{"Decrease".Localized()}<color=red>") + $" {Math.Abs(value)}" + "</color>"
+                });
+            }
+        }
+        
+        if (Template.EquipmentRepair != null)
+        {
+            if (Template.EquipmentRepair.Count < 5)
+            {
+                foreach ((EquipmentSlot slot, float value) in Template.EquipmentRepair)
+                {
+                    attributes.Add(new ItemAttribute(CurioAttributes.EquipmentRepair)
+                    {
+                        Name = slot.ToString(),
+                        DisplayNameFunc = () => $"{"EQUIPMENT REPAIR".Localized()} {slot.ToString().Localized()}",
+                        DisplayType = () => EItemAttributeDisplayType.Compact,
+                        LabelVariations = EItemAttributeLabelVariations.Colored,
+                        StringValue = () => (value * CurioPlugin.CurioConfig.EffectConfig.ArmorLoopTime).ColoredWithPrefix(value > 0)
+                    });
+                }
+            }
+            else
+            {
+                float totalValue = 0;
+
+                foreach ((EquipmentSlot slot, float value) in Template.EquipmentRepair)
+                {
+                    totalValue += value;
+                }
+                float avg = totalValue / Template.EquipmentRepair.Count;
+                
+                attributes.Add(new ItemAttribute(CurioAttributes.EquipmentRepair)
+                {
+                    Name = "EQUIPMENT REPAIR".Localized(),
+                    DisplayType = () => EItemAttributeDisplayType.Compact,
+                    LabelVariations = EItemAttributeLabelVariations.Colored,
+                    StringValue = () => (avg * CurioPlugin.CurioConfig.EffectConfig.ArmorLoopTime).ColoredWithPrefix(avg > 0)
                 });
             }
         }

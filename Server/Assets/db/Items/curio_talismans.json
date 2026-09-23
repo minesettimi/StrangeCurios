@@ -239,8 +239,8 @@
     {
       "Weight": 1.74,
       "MaxNumberOfUsage": 3,
-      "SpecialEffect": "HeadshotProt",
       "Curse": 32,
+      "SpecialEffect": "HeadshotProt",
       "HealthEffects":
       {
         "Energy": -0.0166
@@ -273,7 +273,6 @@
     "overrideProperties":
     {
       "Weight": 2.15,
-      "MaxNumberOfUsage": 3,
       "Curse": 54,
       "HealthEffects":
       {

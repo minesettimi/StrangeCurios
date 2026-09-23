@@ -35,13 +35,13 @@ public enum CurioSpecialEffects
 public enum CurioAttributes
 {
     Curse,
+    SpecialEffect,
     DamageReduction,
     HealthRates,
     PenResistance,
-    EquipmentRepair,
-    SpecialEffect,
     JumpBuff,
     StaminaMax,
     StaminaRate,
-    SkillIncrease
+    SkillIncrease,
+    EquipmentRepair
 }

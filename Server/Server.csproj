@@ -43,9 +43,6 @@
         <None Update="Assets/**">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
-        <None Update="Assets\bundles\minesettimi\item_curio_case.bundle">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
     </ItemGroup>
 
     <ItemGroup>
@@ -62,13 +59,13 @@
             <CopyFiles Remove="$(TargetDir)/Assets/**/*.*" />
             <CopyAssets Include="$(TargetDir)/Assets/**/*.*" />
         </ItemGroup>
-        <Copy SourceFiles="@(CopyFiles)" DestinationFolder="$(SolutionDir)../../SPT_Runtime/user/mods/$(AssemblyName)\%(RecursiveDir)" />
-        <Copy SourceFiles="@(CopyAssets)" DestinationFolder="$(SolutionDir)../../SPT_Runtime/user/mods/$(AssemblyName)\%(RecursiveDir)" />
+        <Copy SourceFiles="@(CopyFiles)" DestinationFolder="$(SolutionDir)../../SPT_Runtime/user/mods/$(SolutionName)\%(RecursiveDir)" />
+        <Copy SourceFiles="@(CopyAssets)" DestinationFolder="$(SolutionDir)../../SPT_Runtime/user/mods/$(SolutionName)\%(RecursiveDir)" />
     </Target>
 
     <Target Name="PostBuildCopy" AfterTargets="PostBuild" Condition="$(Configuration) == Release">
-        <Copy SourceFiles="@(CopyFiles)" DestinationFolder="$(SolutionDir)release/SPT_Runtime/user/mods/$(AssemblyName)\%(RecursiveDir)"/>
-<!--        <Copy SourceFiles="$(TargetDir)\TerritoriesPrepatch.json" DestinationFolder="$(SolutionDir)release/SPT_Runtime/user/patchers/com.minesettimi.territories" />-->
+        <Copy SourceFiles="@(CopyFiles)" DestinationFolder="$(SolutionDir)release/SPT_Runtime/user/mods/$(SolutionName)\%(RecursiveDir)"/>
+        <Copy SourceFiles="@(CopyAssets)" DestinationFolder="$(SolutionDir)release/SPT_Runtime/user/mods/$(SolutionName)\%(RecursiveDir)" />
     </Target>
 
 </Project>
