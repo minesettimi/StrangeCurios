@@ -44,6 +44,7 @@
     },
     "registerInHandbook": false,
     "registerInFleaPrices": false,
+    "AddToItemBlacklist": true,
     "locales":
     {
       "en":
@@ -77,6 +78,7 @@
     },
     "registerInHandbook": false,
     "registerInFleaPrices": false,
+    "AddToItemBlacklist": true,
     "locales":
     {
       "en":
@@ -110,6 +112,7 @@
     },
     "registerInHandbook": false,
     "registerInFleaPrices": false,
+    "AddToItemBlacklist": true,
     "locales":
     {
       "en":

@@ -48,6 +48,6 @@ public class CuriosMod(JsonUtil jsonUtil,
         await itemParentService.CreateCustomParents(Assembly, "db/Parents");
         await itemServiceExtended.CreateCustomItems(Assembly, "db/Items");
         await localeService.CreateCustomLocales(Assembly, "db/Locales");
-        await lootspawnService.CreateCustomLootSpawns(Assembly, "db/LooseLoot");
+        await lootspawnService.CreateCustomLootSpawns(Assembly, "db/LooseLoot"); 
     }
 }
