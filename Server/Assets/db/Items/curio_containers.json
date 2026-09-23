@@ -104,9 +104,9 @@
     "fleaPriceRoubles": 2124000,
     "handbookPriceRoubles": 1476000,
     "handbookParentId": "5b5f6fa186f77409407a7eb7",
-    "addToFleaPriceDb": false,
+    "addToFleaPriceDb": true,
     "addToWeaponShelf": false,
-    "addtoSecureFilters": true,
+    "addtoSecureFilters": false,
     "locales":
     {
       "en":
