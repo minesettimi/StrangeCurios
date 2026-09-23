@@ -8,8 +8,7 @@ using SPTarkov.Server.Web.Services;
 namespace CuriosServer.Loaders;
 
 [Injectable(InjectionType.Singleton)]
-public class EditorProvider(CurioConfig curioConfig, 
-    SptWebSocketConnectionHandler webSocketConnectionHandler) : IConfigEditorConfigProvider
+public class EditorProvider(CurioConfig curioConfig) : IConfigEditorConfigProvider
 {
     public IEnumerable<ConfigEditorConfigRegistration> GetConfigs()
     {

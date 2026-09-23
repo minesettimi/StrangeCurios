@@ -21,8 +21,7 @@ public class CuriosMod(JsonUtil jsonUtil,
     WTTCustomLocaleService localeService,
     WTTCustomLootspawnService lootspawnService,
     IEnumerable<IRuntimePatch> patches,
-    RagfairConfig ragfairConfig,
-    ISptLogger<CuriosMod> logger) : IOnLoad
+    RagfairConfig ragfairConfig) : IOnLoad
 {
     public static readonly Assembly Assembly = Assembly.GetExecutingAssembly();
     public static readonly string ModPath = Path.GetDirectoryName(Assembly.Location)!;

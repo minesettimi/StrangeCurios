@@ -47,7 +47,7 @@ public class RandomizeConditionPatch : AbstractPatch
         if (curioObj is not UpdCurio curioUpd)
             return true;
         
-        curioUpd.NumberOfUsages = (int)Math.Round(itemDetails.Properties.MaximumNumberOfUsage.Value * (1 - maxMultiplier));
+        curioUpd.NumberOfUsages = (int)Math.Round(itemDetails.Properties?.MaximumNumberOfUsage ?? 0 * (1 - maxMultiplier));
 
         return false;
     }

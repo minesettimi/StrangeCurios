@@ -12,7 +12,7 @@ public class EffectConfig
 {
     [JsonPropertyName("cumulativePenResist")] public bool CumulativePen { get; set; } = false;
     [JsonPropertyName("cumulativeDamageResist")] public bool CumulativeDamage { get; set; } = false;
-    [JsonPropertyName("cumulativeJumpHeight")] public bool CumulativeJump { get; set; } = false;
+    [JsonPropertyName("cumulativeJumpHeight")] public bool CumulativeJump { get; set; } = true;
     [JsonPropertyName("cumulativeStamina")] public bool CumulativeStamina { get; set; } = true;
     [JsonPropertyName("energyLoopTime")] public int EnergyLoopTime { get; set; } = 60;
     [JsonPropertyName("healthLoopTime")] public int HealthLoopTime { get; set; } = 60;
