@@ -2,7 +2,6 @@ using System.Reflection;
 using CuriosClient.Effects;
 using EFT;
 using EFT.HealthSystem;
-using EFT.InventoryLogic;
 using HarmonyLib;
 using SPT.Reflection.Patching;
 
@@ -21,6 +20,6 @@ public class PlayerInitPatch : ModulePatch
         if (!__instance.IsYourPlayer || __instance.HealthController is not ActiveHealthController healthController)
             return;
         
-        healthController.AddEffect<Cursed>(EBodyPart.Head);
+        healthController.AddEffect<CustomActiveEffects.Cursed>(EBodyPart.Head);
     }
 }

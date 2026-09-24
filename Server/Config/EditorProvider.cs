@@ -1,7 +1,6 @@
 using CuriosServer.Models;
 using CuriosServer.Services;
 using SPTarkov.DI.Annotations;
-using SPTarkov.Server.Core.Servers.Ws;
 using SPTarkov.Server.Web.Models.Configs;
 using SPTarkov.Server.Web.Services;
 
