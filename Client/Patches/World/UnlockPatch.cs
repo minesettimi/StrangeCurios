@@ -6,7 +6,9 @@ using EFT.Interactive;
 using EFT.InventoryLogic;
 using HarmonyLib;
 using SPT.Reflection.Patching;
+using Unity.Mathematics.Geometry;
 using UnityEngine;
+using Math = System.Math;
 
 namespace CuriosClient.Patches.World;
 
@@ -32,7 +34,7 @@ public class UnlockKeycardPatch : ModulePatch
         int minCurse = CurioPlugin.CurioConfig.CurseConfig.CurseKeysMin;
         if (!result.Succeeded || key.NumberOfUsages >= key.Template.MaximumNumberOfUsage || curioController.TotalCurse < minCurse) return;
         
-        int extraKeyUses = Mathf.FloorToInt((curioController.TotalCurse - minCurse) / CurioPlugin.CurioConfig.CurseConfig.CurseKeys);
+        int extraKeyUses = Mathf.FloorToInt((curioController.TotalCurse - minCurse) / Math.Max(CurioPlugin.CurioConfig.CurseConfig.CurseKeys, 1));
         key.NumberOfUsages += extraKeyUses;
         
         CurioPlugin.PluginLogger.LogInfo($"Total curse keys; {curioController.TotalCurse}");

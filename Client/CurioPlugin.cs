@@ -50,7 +50,9 @@ public class CurioPlugin : BaseUnityPlugin
         BinarySerializationMirrorExtensions._types.Add(typeof(CurioComponentDescriptor));
         MirrorExtensionReadPatch.CurioIndex = BinarySerializationMirrorExtensions._types.Count - 1;
 
-        HealthHelper.EffectTypeCode._effectTypes.AddRangeToArray(CustomEffectTypes);
+        Type[] activeTypes = typeof(CustomActiveEffects).GetNestedTypes(BindingFlags.Public | BindingFlags.NonPublic);
+        
+        HealthHelper.EffectTypeCode._effectTypes = HealthHelper.EffectTypeCode._effectTypes.AddRangeToArray(activeTypes);
         foreach (Type type in CustomEffectTypes)
         {
             byte index = (byte)Array.IndexOf(HealthHelper.EffectTypeCode._effectTypes, type);
@@ -59,8 +61,7 @@ public class CurioPlugin : BaseUnityPlugin
         }
 
         HealthHelper.EffectActivator<ActiveHealthController>._effectTypes =
-            HealthHelper.EffectActivator<ActiveHealthController>._effectTypes.AddRangeToArray(
-                typeof(CustomActiveEffects).GetNestedTypes(BindingFlags.Public | BindingFlags.NonPublic));
+            HealthHelper.EffectActivator<ActiveHealthController>._effectTypes.AddRangeToArray(activeTypes);
         HealthHelper.EffectActivator<NetworkHealthController>._effectTypes =
             HealthHelper.EffectActivator<NetworkHealthController>._effectTypes.AddRangeToArray(
                 typeof(CustomNetworkEffects).GetNestedTypes(BindingFlags.Public | BindingFlags.NonPublic));

@@ -1,3 +1,4 @@
+using System;
 using System.Reflection;
 using CuriosClient.System;
 using EFT.HealthSystem;
@@ -32,7 +33,7 @@ public class MedEffectResiduePatch : ModulePatch
             return;
         
         //TODO: Separate uses for food
-        float extraUses = Mathf.Floor((curioController.TotalCurse - minCurse) / CurioPlugin.CurioConfig.CurseConfig.CurseMeds);
+        float extraUses = Mathf.Floor((curioController.TotalCurse - minCurse) / Math.Max(CurioPlugin.CurioConfig.CurseConfig.CurseMeds, 1));
         
         if (medkit is { HpResource: > 0 })
         {
