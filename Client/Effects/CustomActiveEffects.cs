@@ -159,8 +159,7 @@ public class CustomActiveEffects
             {
                 _curArmorLoopTime -= _armorLoopTime;
 
-                //dictionaries suck for indexing, im just going to break instead of using LINQ
-                foreach ((EquipmentSlot equipmentSlot, float amount) in _curioController.EquipmentRepair.Randomize())
+                foreach ((EquipmentSlot equipmentSlot, float amount) in _curioController.EquipmentRepair)
                 {
                     if (amount == 0)
                         continue;
@@ -174,11 +173,16 @@ public class CustomActiveEffects
 
                     foreach (ArmorComponent armor in armorList.Randomize())
                     {
-                        armor.ApplyDurabilityDamage(-amount * _armorLoopTime, armorList);
+                        float damageAmount = amount * _armorLoopTime;
+                        if (armor.Repairable.Durability >= armor.Repairable.MaxDurability)
+                            continue;
+                        damageAmount = Math.Clamp(damageAmount, -armor.Repairable.Durability,
+                            armor.Repairable.MaxDurability - armor.Repairable.Durability);
+                        
+                        armor.ApplyDurabilityDamage(-damageAmount, armorList);
+                        
                         break;
                     }
-
-                    break;
                 }
             }
         }
