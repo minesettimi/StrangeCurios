@@ -13,7 +13,7 @@ using SPT.Reflection.Patching;
 
 namespace CuriosClient;
 
-[BepInPlugin("com.minesettimi.curios", "Strange Curios", "1.0.3")]
+[BepInPlugin("com.minesettimi.curios", "Strange Curios", "1.1.0")]
 public class CurioPlugin : BaseUnityPlugin
 {
     public static ManualLogSource PluginLogger = null!;
