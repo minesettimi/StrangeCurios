@@ -36,7 +36,11 @@
           },
           "_proto": "6a9b58a7dcb7181f276eba3b"
         }
-      ]
+      ],
+      "Prefab": {
+        "path": "minesettimi/item_curio_loop.bundle",
+        "rcid": ""
+      }
     },
     "parentId": "5795f317245977243854e041",
     "newItemName": "item_container_curio",
@@ -52,7 +56,7 @@
       {
         "name": "Curio Loop",
         "shortName": "CurioLoop",
-        "description": "A loop of rope enchanted to hold extra curios while withstanding their curse."
+        "description": "A loop made of some kind of metal cable capable of holding the power of curios."
       }
     }
   },
