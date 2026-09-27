@@ -94,7 +94,7 @@
       "Weight": 0.15,
       "HealthEffects":
       {
-        "Energy": -0.3333,
+        "Energy": -0.03333,
         "Hydration": -0.0166
       },
       "StaminaRateBuff": 0.05,
