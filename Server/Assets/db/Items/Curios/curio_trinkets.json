@@ -259,7 +259,7 @@
       "Curse": 16,
       "Weight": 0.05,
       "DamageReduction": 5,
-      "StaminaRateBuff": -0.3333,
+      "StaminaRateBuff": -0.03333,
       "JumpBuff": 0.04,
       "HealthEffects":
       {
@@ -282,6 +282,49 @@
         "name": "The Cat",
         "shortName": "Cat",
         "description": "Channels the power of the cat."
+      }
+    }
+  },
+  "6ab9f68a9d93fef866a4f81b":
+  {
+    "itemTplToClone": "6a9ba968f28685d280db910c",
+    "overrideProperties":
+    {
+      "Curse": 20,
+      "Weight": 0.25,
+      "StaminaRateBuff": -0.06666,
+      "StaminaMaxBuff": -15,
+      "JumpBuff": -0.04,
+      "HealthEffects":
+      {
+        "Hydration": 0.016667,
+        "Energy": 0.016667
+      },
+      "SkillIncreases":
+      {
+        "CovertMovement": 3,
+        "ProneMovement": 3,
+        "Search": 3,
+        "Attention": 3,
+        "Perception": 3,
+        "MagDrills": -3,
+        "Vitality": -3,
+        "Health": -3,
+        "Stress Resistance": -3
+      }
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "trinket_rat",
+    "fleaPriceRoubles": 155000,
+    "handbookPriceRoubles": 140000,
+    "handbookParentId": "6a9b96d5ef81726d8c766f45",
+    "locales":
+    {
+      "en":
+      {
+        "name": "The Rat",
+        "shortName": "Rat",
+        "description": "Channels the power of the rat."
       }
     }
   }

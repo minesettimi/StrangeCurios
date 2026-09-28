@@ -42,7 +42,7 @@
       "SpecialEffect": "NewLife"
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
-    "newItemName": "relic_heart",
+    "newItemName": "relic_phoenix",
     "fleaPriceRoubles": 1964000,
     "handbookPriceRoubles": 1934000,
     "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
@@ -51,9 +51,9 @@
     {
       "en":
       {
-        "name": "Blessing of The Heart",
-        "shortName": "Heart",
-        "description": "The bringer of the body's second self."
+        "name": "Blessing of The Phoenix",
+        "shortName": "Phoenix",
+        "description": "The blazing fires shall reveal a new revitalized self.\n"
       }
     }
   },
@@ -69,7 +69,7 @@
       "HealthEffects":
       {
         "Health": 1.1333,
-        "Temperature": 0.3333
+        "Temperature": 0.03333
       },
       "DamageReduction": 25,
       "PenResistance": 5,
@@ -146,8 +146,8 @@
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "newItemName": "relic_khorovod",
-    "fleaPriceRoubles": 3110000,
-    "handbookPriceRoubles": 3080000,
+    "fleaPriceRoubles": 2410000,
+    "handbookPriceRoubles": 2380000,
     "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
     "addtoItemBlacklist": true,
     "locales":
@@ -157,6 +157,32 @@
         "name": "Gift of Khorovod",
         "shortName": "Khorovod",
         "description": "A gift granted from the powers of the coldest nights."
+      }
+    }
+  },
+  "6ab9f557f86f9c4133dab15f":
+  {
+    "itemTplToClone": "6a9ba9689be966b80551f5f2",
+    "overrideProperties":
+    {
+      "Weight": 1.96,
+      "Curse": 52,
+      "MaxNumberOfUsage": 3,
+      "SpecialEffect": "ExfilTp"
+    },
+    "parentId": "6a9b52c15dfaf97d11fc341e",
+    "newItemName": "relic_star",
+    "fleaPriceRoubles": 3600000,
+    "handbookPriceRoubles": 3400000,
+    "handbookParentId": "6a9b96e1a54f9affdaaa22b4",
+    "addtoItemBlacklist": true,
+    "locales":
+    {
+      "en":
+      {
+        "name": "Light of The Star",
+        "shortName": "Star",
+        "description": "Let the light guide your way to safety."
       }
     }
   }
