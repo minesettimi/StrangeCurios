@@ -310,7 +310,7 @@
         "MagDrills": -3,
         "Vitality": -3,
         "Health": -3,
-        "Stress Resistance": -3
+        "StressResistance": -3
       }
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
