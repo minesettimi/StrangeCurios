@@ -61,6 +61,9 @@
         </ItemGroup>
         <Copy SourceFiles="@(CopyFiles)" DestinationFolder="$(SolutionDir)../../SPT_Runtime/user/mods/$(SolutionName)\%(RecursiveDir)" />
         <Copy SourceFiles="@(CopyAssets)" DestinationFolder="$(SolutionDir)../../SPT_Runtime/user/mods/$(SolutionName)\%(RecursiveDir)" />
+        <!--Fika Testing-->
+        <Copy SourceFiles="@(CopyFiles)" DestinationFolder="$(SolutionDir)../../../SPTDevelopment2/SPT_Runtime/user/mods/$(SolutionName)\%(RecursiveDir)" />
+        <Copy SourceFiles="@(CopyAssets)" DestinationFolder="$(SolutionDir)../../../SPTDevelopment2/SPT_Runtime/user/mods/$(SolutionName)\%(RecursiveDir)" />
     </Target>
 
     <Target Name="PostBuildCopy" AfterTargets="PostBuild" Condition="$(Configuration) == Release">

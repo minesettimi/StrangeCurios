@@ -27,11 +27,11 @@ public class KillPatch : ModulePatch
                 out CurioController curioController))
             return true;
 
-        if ((damageType & _damageMask) > 0 && !curioController.UseSpecialEffect(CurioSpecialEffects.NewLife))
+        if (!__instance._isAlive || (damageType & _damageMask) == 0 || !curioController.UseSpecialEffect(CurioSpecialEffects.NewLife))
             return true;
 
         __instance.RestoreFullHealth();
-        __instance.AddEffect<CustomActiveEffects.Unkillable>(EBodyPart.Common, null, CurioPlugin.CurioConfig.EffectConfig.UnkillableLength);
+        __instance.AddEffect<CustomActiveEffects.Unkillable>(EBodyPart.Head, null, CurioPlugin.CurioConfig.EffectConfig.UnkillableLength);
 
         return false;
     }

@@ -241,5 +241,9 @@ public class CustomActiveEffects
 
     public class Unkillable : ActiveHealthController.Effect, IUnkillable
     {
+        public override void Removed()
+        {
+            HealthController.RestoreFullHealth();
+        }
     }
 }

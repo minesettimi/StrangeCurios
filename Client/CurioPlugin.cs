@@ -1,6 +1,8 @@
 using System;
+using System.Linq;
 using System.Reflection;
 using BepInEx;
+using BepInEx.Bootstrap;
 using BepInEx.Logging;
 using CuriosClient.Effects;
 using CuriosClient.Models;
@@ -14,12 +16,14 @@ using SPT.Reflection.Patching;
 namespace CuriosClient;
 
 [BepInPlugin("com.minesettimi.curios", "Strange Curios", "1.1.0")]
+[BepInDependency("com.fika.core", BepInDependency.DependencyFlags.SoftDependency)]
 public class CurioPlugin : BaseUnityPlugin
 {
     public static ManualLogSource PluginLogger = null!;
     public static CurioConfig CurioConfig = null!;
 
     private PatchManager _patchManager = null!;
+    public static bool IsFika;
 
     private void Awake()
     {
@@ -28,6 +32,8 @@ public class CurioPlugin : BaseUnityPlugin
 
         PluginLogger = Logger;
         SyncConfig();
+        
+        IsFika = Chainloader.PluginInfos.Keys.Contains("com.fika.core");
     }
 
     private static void SyncConfig()
@@ -42,7 +48,7 @@ public class CurioPlugin : BaseUnityPlugin
         }
     }
 
-    private static readonly Type[] CustomEffectTypes = [typeof(ICursed), typeof(IUnkillable)];
+    private static readonly Type[] CustomEffectTypes = [typeof(CustomActiveEffects.Cursed), typeof(CustomActiveEffects.Unkillable)];
 
     private void Start()
     {

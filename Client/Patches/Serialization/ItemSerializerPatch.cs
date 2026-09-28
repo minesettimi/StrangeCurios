@@ -20,7 +20,12 @@ public class ItemDeserializerPatch : ModulePatch
     {
         if (descriptor is CurioComponentDescriptor curioDescriptor)
         {
-            item.GetItemComponent<CurioComponent>()!.NumberOfUsages = curioDescriptor.NumberOfUsages;
+            if (item.GetItemComponent<CurioComponent>() == null)
+            {
+                CurioPlugin.PluginLogger.LogInfo("Failed to get curio component!");
+            }
+            
+            item.GetItemComponent<CurioComponent>().NumberOfUsages = curioDescriptor.NumberOfUsages;
             return false;
         }
 

@@ -15,11 +15,11 @@ public class MirrorExtensionsPatch : ModulePatch
     {
         return AccessTools.Method(typeof(BinarySerializationMirrorExtensions),
             nameof(BinarySerializationMirrorExtensions.WritePolymorph), 
-            generics: [typeof(ItemComponentDescriptor)]);
+            generics: [typeof(object)]);
     }
     
     [PatchPrefix]
-    public static bool Prefix(NetworkWriter writer, ItemComponentDescriptor target)
+    public static bool Prefix(NetworkWriter writer, object target)
     {
         if (target is CurioComponentDescriptor curioComponentDescriptor)
         {
@@ -39,11 +39,11 @@ public class MirrorExtensionReadPatch : ModulePatch
     {
         return AccessTools.Method(typeof(BinarySerializationMirrorExtensions),
             nameof(BinarySerializationMirrorExtensions.ReadPolymorph), 
-            generics: [typeof(ItemComponentDescriptor)]);
+            generics: [typeof(object)]);
     }
 
     [PatchPrefix]
-    public static bool Prefix(NetworkReader reader, ref ItemComponentDescriptor __result)
+    public static bool Prefix(NetworkReader reader, ref object __result)
     {
         byte b = reader.ReadByte();
 

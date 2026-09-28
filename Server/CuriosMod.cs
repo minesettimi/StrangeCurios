@@ -21,7 +21,8 @@ public class CuriosMod(JsonUtil jsonUtil,
     WTTCustomLootspawnService lootspawnService,
     IEnumerable<IRuntimePatch> patches,
     RagfairConfig ragfairConfig,
-    TraderConfig traderConfig) : IOnLoad
+    TraderConfig traderConfig,
+    LocationTable locationTable) : IOnLoad
 {
     public static readonly Assembly Assembly = Assembly.GetExecutingAssembly();
     public static readonly string ModPath = Path.GetDirectoryName(Assembly.Location)!;
@@ -53,5 +54,6 @@ public class CuriosMod(JsonUtil jsonUtil,
         await itemServiceExtended.CreateCustomItems(Assembly, "db/Items");
         await localeService.CreateCustomLocales(Assembly, "db/Locales");
         await lootspawnService.CreateCustomLootSpawns(Assembly, "db/LooseLoot"); 
+        
     }
 }
