@@ -11,9 +11,9 @@
         "Energy": -0.0833,
         "Hydration": -0.0833
       },
-      "StaminaRegenBuff": 0.0833,
+      "StaminaRateBuff": 0.0833,
       "StaminaMaxBuff": 10,
-      "JumpBuff": 0.04,
+      "JumpBuff": 0.2,
       "SkillIncreases":
       {
         "Endurance": 4,
@@ -98,8 +98,8 @@
     },
     "parentId": "6a9b52c15dfaf97d11fc341e",
     "newItemName": "talisman_last_stand",
-    "fleaPriceRoubles": 853000,
-    "handbookPriceRoubles": 823000,
+    "fleaPriceRoubles": 1253000,
+    "handbookPriceRoubles": 1223000,
     "handbookParentId": "6a9b96dd91603a7d84c27136",
     "addtoItemBlacklist": true,
     "locales":

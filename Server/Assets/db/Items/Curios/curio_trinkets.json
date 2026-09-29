@@ -34,7 +34,7 @@
     {
       "Curse": 9,
       "Weight": 0.16,
-      "JumpBuff": 0.02,
+      "JumpBuff": 0.06,
       "HealthEffects":
       {
         "Hydration": 0.00166
@@ -260,7 +260,7 @@
       "Weight": 0.05,
       "DamageReduction": 5,
       "StaminaRateBuff": -0.03333,
-      "JumpBuff": 0.04,
+      "JumpBuff": 0.12,
       "HealthEffects":
       {
         "Hydration": -0.00833
@@ -294,7 +294,7 @@
       "Weight": 0.25,
       "StaminaRateBuff": -0.06666,
       "StaminaMaxBuff": -15,
-      "JumpBuff": -0.04,
+      "JumpBuff": -0.12,
       "HealthEffects":
       {
         "Hydration": 0.016667,

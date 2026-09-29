@@ -75,7 +75,7 @@
       "PenResistance": 5,
       "StaminaRateBuff": -0.1666,
       "StaminaMaxBuff": -20,
-      "JumpBuff": -0.02,
+      "JumpBuff": -0.06,
       "SkillIncreases":
       {
         "StressResistance": 10
