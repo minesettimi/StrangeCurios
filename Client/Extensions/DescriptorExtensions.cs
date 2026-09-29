@@ -29,6 +29,6 @@ public static class DescriptorExtensions
 
     public static void WriteCurioComponentDescriptor(this NetworkWriter writer, CurioComponentDescriptor target)
     {
-        writer.WriteInt(target.NumberOfUsages);
+        writer.Write(target.NumberOfUsages);
     }
 }

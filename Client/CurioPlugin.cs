@@ -49,13 +49,13 @@ public class CurioPlugin : BaseUnityPlugin
     }
 
     private static readonly Type[] CustomEffectTypes = [typeof(CustomActiveEffects.Cursed), typeof(CustomActiveEffects.Unkillable)];
-
+    
     private void Start()
     {
         //add to static classes
         BinarySerializationMirrorExtensions._types.Add(typeof(CurioComponentDescriptor));
         MirrorExtensionReadPatch.CurioIndex = BinarySerializationMirrorExtensions._types.Count - 1;
-
+    
         Type[] activeTypes = typeof(CustomActiveEffects).GetNestedTypes(BindingFlags.Public | BindingFlags.NonPublic);
         
         HealthHelper.EffectTypeCode._effectTypes = HealthHelper.EffectTypeCode._effectTypes.AddRangeToArray(activeTypes);
@@ -65,7 +65,7 @@ public class CurioPlugin : BaseUnityPlugin
             HealthHelper.EffectTypeCode._typeToByte[type.Name] = index;
             HealthHelper.EffectTypeCode._byteToType[index] = type.Name;
         }
-
+    
         HealthHelper.EffectActivator<ActiveHealthController>._effectTypes =
             HealthHelper.EffectActivator<ActiveHealthController>._effectTypes.AddRangeToArray(activeTypes);
         HealthHelper.EffectActivator<NetworkHealthController>._effectTypes =

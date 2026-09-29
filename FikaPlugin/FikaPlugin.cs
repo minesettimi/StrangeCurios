@@ -30,11 +30,11 @@ public class FikaPlugin : BaseUnityPlugin
     }
 }
 
-public class ExtractPatch : ModulePatch
+public class HostExtractPatch : ModulePatch
 {
     protected override MethodBase GetTargetMethod()
     {
-        return AccessTools.Method(typeof(BaseGameController), nameof(BaseGameController.Extract));
+        return AccessTools.Method(typeof(HostGameController), nameof(HostGameController.Extract));
     }
 
     [PatchPrefix]
@@ -45,9 +45,16 @@ public class ExtractPatch : ModulePatch
             return;
         }
         
+        ChangeExtract(player, coopGame);
+    }
+
+    public static void ChangeExtract(FikaPlayer player, CoopGame coopGame)
+    {
         if (!CurioManager.InvControllerCurioTable.TryGetValue(player.InventoryController,
                 out CurioController curioController))
             return;
+        
+        CurioPlugin.PluginLogger.LogInfo($"Old exit status: {coopGame.ExitStatus}");
         
         switch (coopGame.ExitStatus)
         {
@@ -59,5 +66,26 @@ public class ExtractPatch : ModulePatch
                 coopGame.ExitStatus = ExitStatus.Left;
                 break;
         }
+        
+        CurioPlugin.PluginLogger.LogInfo($"New exit status: {coopGame.ExitStatus}");
+    }
+}
+
+public class ClientExtractPatch : ModulePatch
+{
+    protected override MethodBase GetTargetMethod()
+    {
+        return AccessTools.Method(typeof(ClientGameController), nameof(ClientGameController.Extract));
+    }
+
+    [PatchPrefix]
+    public static void Prefix(FikaPlayer player, IFikaGame ____fikaGame)
+    {
+        if (____fikaGame is not CoopGame coopGame)
+        {
+            return;
+        }
+
+        HostExtractPatch.ChangeExtract(player, coopGame);
     }
 }

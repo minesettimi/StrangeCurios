@@ -45,10 +45,6 @@
         </None>
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Scripts\" />
-    </ItemGroup>
-
     <Target  Name="PostBuild" AfterTargets="PostBuildEvent">
         <ItemGroup>
             <CompileFiles Include="$(TargetDir)*.deps.json;$(TargetDir)*.endpoints.json;$(TargetDir)*.runtime.json" />

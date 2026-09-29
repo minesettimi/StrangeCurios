@@ -33,22 +33,21 @@ public class CuriosMod(JsonUtil jsonUtil,
     {
         List<HandbookCategory>? handbookCategories = await jsonUtil.DeserializeFromFileAsync<List<HandbookCategory>>(
             Path.Join(DataPath, "handbook.json"), cancellationToken);
-
+        
         if (handbookCategories == null)
         {
             throw new Exception("[Curios] Failed to load handbook.json!");
         }
         
         templateTable.Handbook.Categories.AddRange(handbookCategories);
-
+        
         MongoId baseCurio = new("6a9b52c15dfaf97d11fc341e");
         ragfairConfig.Dynamic.ShowAsSingleStack.Add(baseCurio);
-
+        
         traderConfig.Fence.Blacklist.Add(baseCurio);
         
         foreach (IRuntimePatch patch in patches)
             patch.Enable();
-        
         
         await itemParentService.CreateCustomParents(Assembly, "db/Parents");
         await itemServiceExtended.CreateCustomItems(Assembly, "db/Items");

@@ -8,7 +8,7 @@ namespace CuriosClient.Patches.Movement;
 
 public class JumpStateEnterPatch : ModulePatch
 {
-    private static FieldInfo _playerField;
+    private static FieldInfo _playerField = null!;
     
     protected override MethodBase GetTargetMethod()
     {

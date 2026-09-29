@@ -1,9 +1,10 @@
 using CuriosClient.Components;
+using CuriosClient.Models;
 using EFT.InventoryLogic;
 using Newtonsoft.Json;
 using WTTClientCommonLib.Attributes;
 
-namespace CuriosClient.Models;
+namespace CuriosClient.Items;
 
 [CustomParent("6a9b52c15dfaf97d11fc341e", typeof(Curio), typeof(CuriosTemplate))]
 public class Curio : Item
