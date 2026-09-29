@@ -17,16 +17,13 @@ public class GameEndPatch : ModulePatch
     [PatchPrefix]
     public static void Prefix(BaseLocalGame<EftGamePlayerOwner> __instance, ref ExitStatus exitStatus)
     {
-        if (CurioPlugin.IsFika)
-            return;
-        
         if (!CurioManager.InvControllerCurioTable.TryGetValue(__instance.PlayerOwner.Player.InventoryController,
                 out CurioController curioController))
             return;
 
         switch (exitStatus)
         {
-            case ExitStatus.MissingInAction or ExitStatus.Left when
+            case ExitStatus.MissingInAction or ExitStatus.Left or ExitStatus.Killed when
                 curioController.UseSpecialEffect(CurioSpecialEffects.ExfilTp):
                 exitStatus = exitStatus == ExitStatus.Left ? ExitStatus.Runner : ExitStatus.Survived;
                 return;
