@@ -53,10 +53,5 @@ public class CuriosMod(JsonUtil jsonUtil,
         await itemServiceExtended.CreateCustomItems(Assembly, "db/Items");
         await localeService.CreateCustomLocales(Assembly, "db/Locales");
         await lootspawnService.CreateCustomLootSpawns(Assembly, "db/LooseLoot"); 
-        
-        //TODO: Remove debug
-        locationTable.Factory4Day.Base.EscapeTimeLimit = 1;
-        locationTable.Factory4Day.Base.EscapeTimeLimitPVE = 1;
-        locationTable.Factory4Day.Base.EscapeTimeLimitCoop = 1;
     }
 }
